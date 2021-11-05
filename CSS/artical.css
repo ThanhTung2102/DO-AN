@@ -1,0 +1,148 @@
+body,html{
+    margin: 0;
+    position: relative;
+    background-color: #D1E2E8;
+}
+/* Absolute ảnh đầu header */
+#art__container--2{
+    padding: 0 330px;
+    margin-top: 15px;
+    position: absolute;
+    top: 200px;
+}
+/* Chỉnh kích thước ảnh đầu phần nội dung */
+#art__container--2 .img--header{
+    width: 100%;
+}
+/* Phần Nội dung blog */
+#art__container--3{
+    padding: 0 330px;
+    margin-top: 350px;
+}
+
+/* Tạo khung nền dưới phần header */
+#art__container--1{
+    width: 100%;
+    height: 310px;
+    background-color: #065F73;
+    position: relative;
+    margin-top: 0px;
+}
+
+/* Tiêu đề */
+.art--header>h1{
+    text-align: center;
+    padding: 30px 300px;
+    color: white;
+    margin-top: 0px;
+    padding: 30px 330px;
+}
+
+
+/* Chỉnh độ rộng phần nội dung và recommend */
+.art__content--all{
+    width: 60%;
+}
+#art__container--3 .art--content{
+    margin: 25px 0px;
+}
+.art--bold{
+    font-weight: bold;
+}
+.art--recommend{
+    float: right;
+}
+#art__header--recommend{
+    margin-top: 0px;
+}
+
+/* Điều chỉnh ảnh liên quan đến nội dung */
+.art__img--content{
+    padding-left: 15px;
+}
+.art__img--content img{
+    width: 80%;
+}
+
+/* chú thích dưới mỗi hình ảnh trong phần nội dung  */
+.art--note{
+    margin-top: 2px;
+    padding-right: 20%
+}
+.art--small{
+    font-size: small;
+}
+.art--large{
+    font-size: large ;
+}
+.art--gradient{
+    color: rgb(73, 70, 70)
+}
+
+/* đăng ký  */
+.art__recommend--signup{
+    background-color: white;
+    width: 100%;
+}
+.art__recommend--signup>div{
+    padding: 20px;
+}
+.art__recommend--signup h3{
+    margin: 0px auto;
+}
+#art--signup{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+/* related toppic */
+#art__container--4{
+    padding: 0 120px;
+}
+.art__row--related{
+    display: flex;
+    justify-content: space-between;
+}
+.art--related{
+    background-color: white;
+    width: 240px;
+    height: 350px;
+    margin: 5px 0px 30px 0px;
+    /* border: 1px solid black; */
+}
+.art__img--related{
+    width: 100%;
+}
+.art--information{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+.art--information .art--bold{
+    text-decoration: none;
+    color: black;
+}
+.art--information a:hover{
+    color: #065F73;
+}
+
+/* Tạo thanh đỏ */
+#art__container--3 hr{
+    border:1px solid red;
+}
+
+/* Tạo radius và bóng cho các tin tức */
+.art--related , #art__container--2 img , .art__recommend--signup {
+    border-radius: 20px;
+}
+.art--related img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#art__container--2 img , .art--related img{
+    box-shadow: 6px 3px 5px  rgba(88, 88, 88, 0.192);
+}
