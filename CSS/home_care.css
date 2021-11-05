@@ -125,7 +125,7 @@ a{
 .product__form-container{
     padding-right: 200px;
     position: relative;
-    background-color: white;
+    background-color: transparent;
     max-width: 900px;
     padding: 25px 30px;
     border-radius: 20px;
