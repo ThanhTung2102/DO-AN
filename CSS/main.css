@@ -1,0 +1,376 @@
+body{
+    background-color: #DFF0F2;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* .thanhtieude{
+    display: flex;
+    width: 100%;
+    height: 112px;
+    background-color: #065F73;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    flex-wrap: nowrap;
+}
+.thanhcongcu{
+   flex: 1;
+   text-align: right;
+   line-height: 112px;
+   font-size: 30px;
+   position: relative;
+}
+.contact-us{
+   text-align: left;
+   line-height: 112px;
+   
+}
+
+.congcu{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    padding-right: 30px;
+    position: relative;
+}
+/* .login{
+    vertical-align: middle;
+    margin-right: 30px;
+    position: relative;
+} */
+/* .thanhcongcu input{
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #73BCD9;
+    color: black;
+}
+.thanhcongcu input:hover{
+    background-color: #63a3bd;
+}
+.phone{
+    margin-left: 30px;
+    vertical-align: middle;
+}
+.taskbar{
+    display: flex;
+    height: 117px;
+    background-color: white;
+    line-height: 117px;
+}
+.menu{
+    margin-left: 30px;
+    vertical-align: middle;
+}
+.logo{
+    margin-left: 50px;
+    vertical-align: middle;
+}
+.schedule{
+    margin-left: 100px;
+    vertical-align: middle;
+}
+.homecare{
+    margin-left: 100px;
+    vertical-align: middle;
+}
+.virtual-doctor{
+    margin-left: 100px;
+    vertical-align: middle;
+}  */
+
+
+
+.container--1{
+    background-color: rgba(6, 95, 115, 1);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    transition: top 0.3s;
+}
+.icon__phone{
+    height: 50px;
+}
+.search img{
+    height: 40px;
+    margin-top: 5px;
+}
+input[type="text"]{
+    height: 30px;
+    margin-top: 7px;
+}
+.search{
+    display: flex;
+    margin: auto 15px;
+}
+#contact{  
+    margin-left: 5px;
+    margin: auto 3px;
+    font-size: 20px;
+    color: white;
+}
+#contact p{
+    margin: 0;
+}
+.option{
+    float: right;
+    flex: 3;
+}
+.box__icon{
+    display: flex;
+    flex: 1;
+}
+.id{
+    float: right;
+    display: flex;
+}
+.link{
+    color: white;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-right: 10px;
+    line-height: 50px;
+}
+#button-login{
+    height: 30px;
+    border-radius: 5px;
+    width: 70px;
+    background-color: rgba(115, 188, 217, 1);
+    color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.container--2{
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+    display: flex;
+    background-color: white;
+    /* position: fixed; */
+    /* z-index: 2; */
+}
+.name__menu img{
+    height: 50px;
+}
+#menu{
+    margin: 20px 60px 20px 10px;
+    height: 30px;
+}
+.img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+   
+.name img{
+    margin: 10px auto;
+}
+   
+.name__menu{
+    flex: 2;
+    display: flex;
+}
+.button-function{
+    background-color: rgba(115, 188, 217, 1);
+    font-weight: bold;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.function--3{
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+}
+.div--row a:hover{
+    color: #005669;
+}
+  
+  
+.product__title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 90px;
+    font-size: 70px;
+    color: #065F73;
+}
+.product__body-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.product__menu-fr{
+    background-color: #73BCD9;
+    width: 400px;
+    height: 500px;
+    border: 0.5px solid #73BCD9;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.product__fr-title{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #4C4747;
+    text-decoration: none;
+}
+.product__img-fr{
+    width: 280px;
+}
+.product__capnhat{
+   background-color: white;
+   margin: 0 auto;
+   text-align: left;
+   font-size: 30px;
+   margin: 40px;
+   padding: 20px;
+   border-radius: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+.product__capnhat input{
+    background-color: #065F73;
+    color: white;
+    height: 30px;
+    width: 200px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.product__capnhat input:hover{
+    background-color: #08272e;
+}
+.product__infor{
+    position: relative;
+}
+.product__topic{
+    display: flex;
+    margin: 0 auto;
+}
+.product__topic-content{
+    margin: 30px;
+}
+.product__topic-1{
+  background-repeat: no-repeat;
+  height: 500px;
+  border-radius: 20px;
+  width: 500px;
+  background-size: cover;
+}
+.product__topic-2{
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 20px;
+    width: 500px;
+    background-size: cover;
+}
+.product__topic-3{
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 50px;
+    width: 500px;
+    background-size: cover;
+}
+.product__topic-link{
+    background-color: #73BCD9;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+.product__link{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin: 10px;
+}
+.product__dangky{
+    text-align: center;
+    margin: 30px;
+}
+.product__dangky input{
+    height: 90px;
+    width: 350px;
+    font-size: 35px;
+    border-radius: 20px;
+    background-color: #065F73;
+    color: white;
+}
+.product__dangky input:hover{
+    background-color:#0a2930;
+}
+.footer{
+    background-color: rgba(6, 95, 115, 1);
+}
+.footer-bar{
+    display: flex;
+}
+.footer-mar{
+    margin: 30px;
+    flex: 1;
+}
+.footer-logo img{
+    margin-top: 30px;
+}
+.title-inf{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lienhe>p , .diachi>p{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.copyright{
+    background-color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+
+
+/* .footer{
+    background-color: #065F73;
+}
+.footer-bar{
+    display: flex;
+}
+.footer-mar{
+    margin: 30px;
+}
+.title-inf{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lienhe>p{
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.diachi>p{
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.copyright{
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+ */
