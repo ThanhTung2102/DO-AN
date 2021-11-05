@@ -2,11 +2,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(../images/vaccine_covid.jpg);
+    background-image: url(../Images/virtual-bg.png);
 }
 .form--container{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     
@@ -22,13 +22,14 @@ body{
 /* logo */
 .form--container>.form--row>h3{
     font-size: xx-large;
-    color: rgb(48, 107, 196);
+    color: white;
 }
 /* sologan */
 .form--container>div>p{
     font-weight: bold;
     text-align: center;
-    margin: 10px auto;
+    width: 50%;
+    margin: 10px auto 30px auto;
 }
 /* form2 */
 .form--container2{
@@ -75,34 +76,20 @@ input , .form--container2{
     border-radius: 5px;
 }
 
-/* Radio button */
 
 /* 2 buttons */
 .form--row>.form--button{
-    width: 100%;
-    margin: auto;
-    margin: 10px;
+    width: 40%;
+    margin: 10px auto;
     height: 40px;
     color: white;
     font-weight: bold;
     font-size: large;
     border: none;
 }
-/* forgot password */
-.form--container2>.form--row>p{
-    color: rgb(48, 107, 196);
-    font-size: small;
-    font-weight: bold;
-    margin: auto;
-    margin-bottom: 15px;
-    
-}
- /* color for button login */
-#login{
-    background-color: rgb(48, 107, 196);
-}
-#cr_account{
-    background-color: rgb(19, 145, 19);
+
+#nexttopayment{
+    background-color: rgba(6, 95, 115, 0.5);
 }
 hr{
     margin: auto 10px;
