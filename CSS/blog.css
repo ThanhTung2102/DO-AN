@@ -33,6 +33,9 @@ h2{
 .bold{
   font-weight: bold;
 }
+.blog--gradient{
+  color: rgb(73, 70, 70)
+}
 /* Thời gian ra bài */
 .p__note--time>p:nth-of-type(1){
   float: left;
@@ -51,6 +54,9 @@ h2{
 
 
 /* thong tin bo sung trên bài đăng */
+.blog__trending--title{
+  float: right;
+}
 .div--information{
   padding-left: 20px;
   position: relative;
