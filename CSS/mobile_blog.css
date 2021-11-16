@@ -22,5 +22,16 @@
     .div__row--2 > div{
         line-height: 70px;
     }
-    
+    /* .hotpick, */
+    .live{
+        float: none;
+    }
+    .sieu_manh{
+        display: flex;
+        overflow-x: scroll;
+    }
+    .div__row--3{
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -24,7 +24,7 @@ h2{
   height: 385px;
 }
 
-.div--row{
+.div--row , .div--row--last, .div--row__blog {
   display: flex;
 }
 .red{
@@ -87,12 +87,24 @@ h2{
   color: #065F73;
 }
 /* Thanh menu nhỏ */
-.div__row--3{
+.div__row--315{
   width: 100%;
   height: 50px;
   background-color:white;
+  margin-top: 20px;
+  /* border-radius: 15px; */
 }
 .div__row--3>a{
+  color: white;
+}
+.div__row--3{
+  width: 52%;
+  height: 50px;
+  background-color:#065F73;
+  margin-top: 40px;
+  border-radius: 15px;
+}
+.div__row--3>a , .div__row--315>a {
   margin: 0px 20px;
   line-height: 50px;
   text-align: center;
@@ -130,8 +142,10 @@ hr{
 
 /* Blog mini */
 .blog--mini{
-  width: 546.42px;
-  height: 161.09px
+  /* width: 546.42px; */
+  width: 50%;
+  /* justify-content: space-between; */
+  /* height: 161.09px */
 }
 .blog--mini img{
   width: 222.16px;
@@ -176,10 +190,12 @@ a{
   float: right;
 }
 
-
+.numpage{
+  text-align: center;
+}
 /* ký hiệu trang */
 .hotpick--page{
-  margin: 10px  auto; 
+  margin: 10px auto; 
 }
 .hotpick--page a{
   margin: 10px 5px;
