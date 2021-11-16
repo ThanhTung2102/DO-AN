@@ -8,6 +8,7 @@ body, html{
 #container{
   padding: 0 120px 0 120px;
   margin-top: 5px;
+  /* position: relative; */
 }
 h2{
   color:black;
@@ -181,12 +182,33 @@ a{
   height: 218px;
 }
 .live{
-  width: 370px;
-  height: 324px;
+  width: 320px;
+  height: 280px;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 2px 4px  rgba(88, 88, 88, 0.192);
+  z-index: 100;
+}
+.live p{
+  padding: 5px 7px;
+  margin-top: 2px;
+}
+.live img{
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
+/* .live a{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+} */
+
 /* Chèn live và hotpick qua phải */
-.live , .hotpick{
+.hotpick{
   float: right;
 }
 
