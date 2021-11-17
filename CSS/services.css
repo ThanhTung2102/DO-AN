@@ -19,15 +19,11 @@ body,html{
     line-height: 40px;
     font-family: Lato;
     color: #545859
-    
-
 }
 .service--content{
     padding: 30px;
     margin-top: auto;
     margin-bottom: auto;
-
-
 }
 .service--content--tittle
 
@@ -35,6 +31,7 @@ body,html{
     font-size: 50px ;
     font-family: Lato;
     font-weight: bold;
+    color: #545859;
 }
 .service--content--textbox{
    border-radius: 20px;
@@ -43,8 +40,6 @@ body,html{
     padding: 10px;
     max-width: 400px;
 }
-
-
 .service--button
 {  left: 420px;
     position: absolute ;
@@ -55,7 +50,6 @@ body,html{
     box-shadow: 4px 4px gray;
     right: 20px;
 }
-
 .service--optionbar{
     display: flex;
     justify-content: center;
@@ -65,6 +59,13 @@ body,html{
     font-weight: bold;
     color:#545859;
     line-height: 35px;
+}
+.service--container{
+    padding: 20px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 100px;
 }
 .service--optionbar--links{
    
@@ -106,8 +107,7 @@ body,html{
 }
 .iconify{
     width: 120px;
-    height: 120px;
-    
+    height: 120px
 }
 .icon--name{
     margin-top: 50px;
@@ -120,394 +120,4 @@ body,html{
     color: #545859;
     font-family: Lato;
     
-}
-.service--container{
-    padding: 20px; 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 25px 100px;
-}
-.pservice-content--text{
-    font-size: 25px;
-    margin: 10px 0px;
-}
-.pservice-content--subtext{
-    font-style: italic;
-    margin: 20px 0px;
-}
-.pservice--image>img{
-    width: 100%;
-    height: 100%;
-}
-#services-next{
-    width: 22px;
-    height: 22px;
-    padding-top:2px;
-}
-.pservice-content--textbox>div{
-    line-height: 30px;
-    
-  
-}
-.pservice-content--box{
-    width: 60%;
-    max-width: 500px;
-    margin: 20px 20px;
-}
-.pservice--image{
-border-radius: 60% 50% 58% 82% / 87% 60% 82% 55%;
-    background-color: #CBE6EE;
-}
-.pservice-content--textbox{
-    background-color: white;
-    border-radius:30px ;
-    padding: 15px;
-}
-.list--package{
-    margin:20px 15px;
-    padding: 10px;
-    background-color:#B0D7E2 ;
-}
-.list-package--tittle{
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-}
-.list--package--content{
-    padding: 20px;
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #545859;
-    font-family: Lato;
-}
-.list--package--column{
-    border: 2px solid black;
-    background-color: white;
-    padding: 20px;
-    margin: 0px 20px;
-    width: 30%;
-    max-width: 300px;
-    max-height: 600px;
-}
-.list--package--header{
-    font-weight: bold;
-    font-size: 28px;
-    height: 120px;
-    text-align: center;
-}
-.one-line{
-    line-height: 120px;
-}
-.list-package--tittle>span{
-    color: white;
-}
-#package-services{
-    height: 40px;
-    width: 40px;
-    background-color: #0A3D48;
-    color: white;
-    border-radius: 50%;
-}
-.list-package--price{
-    font-size: 23px;
-    font-style: italic;
-    margin: 5px 0px;
-}
-.two-line{
-    line-height: 50px;
-}
-.list-package--instruction{
-    font-size: 20px;
-    margin: 3px 0px;
-   
-}
-.list--package--more{
-    text-align: right;
-    font-size: 20px;
-}
-.list--package--more>a{
-    text-decoration: none;
-}
-.specialist{
-    flex-direction: column;
-}
-.specialist--container{
-    display: flex;
- flex-direction: row;
- justify-content: center;
-}
-.specialist--table{
-    
-    width: 90%;
-    height: 60%;
-    text-align: center;
-    display: flex;
-    margin: 30px;
-    max-height: 800px;
-    background: white;
-    max-width:1100px ;
-    border-radius: 30px;
-}
-.specialist--table--column{
-    max-height: 400px;
-    height: 40%;
-}
-.specialist--table--cell{
-    height: 50%;
-    font-size: 25px;
-    font-weight: bold;
-}
-.specialist--table--cell>img{
-    width: 100%;
-    max-width: 300px;
-    max-height: 200px;
-    height: 100%;
-}
-.line-height-full{
-   vertical-align:middle
-}
-.color-green{
-    color:#95BAC6
-}
-.border-top-left{
-    border-radius: 30px 0px 0px 0px
-}
-.border-bottom-right{
-    border-radius: 0px 0px 30px 0px;
-}
-.specialist--table--cell>img:hover{
-    opacity: 0.8;
-    cursor: help;
-
-}
-
-/* after hours services page = ah */
-.ah--container{
-    display: flex;
-    flex-direction: row;
-    background-image: url(../Images/background.png);
-}
-.ah--box{
-    width: 40%;
-    max-width: 600px;
-   
-    color: #545859;
-    font-family: Lato;
-    margin-top: 20px;
-}
-.after-hours--tittle{
-    font-weight:bolder;
-}
-.ah-right--box--content{
-font-size: 30px;
-font-weight: 700;
-margin: 15px 0px 20px;
-}
-.ah-right--box--subcontent{
-    font-size: 25px;
-    margin-bottom: 10x;
-}
-.ah-right--box--link{
-    font-size: 18px;
-    font-style: italic;
-}
-.ah-right--box--call{
-    margin: 30px 0px;
-    color: #F9F9FF;
-    font-size: 35px;
-    font-weight: 800;
-
-}
-.ah-right--box--phone{
-    padding-left: 100px;
-    font-size: 40px;
-    color: #8F2828;
-    font-weight: bolder;
-}
-.ah--image{
-    background-color:#73BCD9 ;
-    margin-top: 20px;
-}
-.left--box{
-    background-color: #73BCD9;
-    padding: 20px 60px;
-}
-.right--box{
-    font-weight: bold;
-    font-size: 45px;
-    text-align: center;
-
-}
-.ah--right--box--item{
-width: 100%;
-height: 33.33%;
-
-}
-.box-item-1{
-    background-color: #95BAC6;
-}
-.box-item-2{
-    background-color: #B0D7E2;
-}
-.box-item-3{
-    background-color: #DAB1B1;
-}
-.ah--container--article{
-    color: #545859;
- padding: 20px 80px;
-    background-color: #DFF0F2;
-    font-family: Lato;
-
-}
-.article-section--tittle{
-    text-align: center;
- 
-}
-.ah--article--titlle{
-    margin-top: 20px;
-font-size: 30px;
-font-weight: 900;
-}
-.ah--article--section--header{
-    font-size: 25px;
-    font-weight: 700;
-}
-.ah--article--textbox{
-    padding: 20px;
-    color: black;
-    font-size: 20px;
-    border-radius:20px ;
-    background-color: white;
-    margin: 30px 0px;
-}
-.ah--article--contact{
-    text-align: center;
-}
-.ah--article--footer{
-    font-size: 14px;
-    margin: 30px 0px;
-}
-#ah--button{
-    border-radius:50px ;
-    font-size: 13px;
-    font-weight: bold;
-    color: white;
-    background-color:#73BCD9 ;
-    width: 60px;
-    height: 30px;
-    bordeR: 1px solid #73BCD9;
-    margin: 0px 7px;
-}
-.ah--article--section--para{
-    margin: 22px 0px;
-    padding: 0px 0px;
-    
-}
-.ah--container--article>div{
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-    max-width: 600px;
-  
-}
-.detail--container{
-    display: flex;
-flex-direction: row;
-width: 100%;
-color: #545859;
-font-family: Lato;
-}
-.detail--column-one{
-    width: 15%;
-    max-width: 200px;
-    
-    background-color: #B0D7E2;
-    padding: 0px 20px;
-}
-
-.detail--column-two{
-    width: 85%;
-    padding: 50px;
-    background-color: #DFF0F2;
-
-   
-}
-.column--one--header{
-    font-size: 28px;
-    font-weight: 900;
-    
-}
-.column--one--specializaion{
-    transform: rotate();
-   
-}
-.detail--description{
-    display: flex;
-    flex-direction: row;
-}
-.description--image>img{
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
-    margin-right: 100px;
-    border-radius: 20px;
-}
-.services--description{
-    width: 50%;
-    max-width: 600px;
-}
-.description--title{
-    font-size: 50px;
-    font-weight: bold;
-}
-.description--price{
-    font-size:40px ;
-    color: red;
-}
-.description--header{
-    font-size: 38px;
-}
-.description--content{
-    font-size: 30px;
-}
-.services--description>input{
-    border-radius: 30px;
-    background-color: white;
-    font-size: 25px;
-    height: 50px;
-    margin-top:15px
-}
-.detail--related{
-    margin: 50px 0px 0px;
-}
-.detail--related--caption{
-font-size: 30px;
-font-weight: 700;
-margin-top: 10px;
-}
-.detail--related--option{
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0px 0px;
-
-}
-.related--option--box{
-    width: 20%;
-}
-.option--box--img{
-    width: 100%;
-}
-.option--box--img>img{
-    width: 100%;
-    height: 100%;
-    max-width: 200px;
-  height: 200px;
-}
-.option--box--caption{
-    font-size: 25px;
-    text-align: center;
-    font-weight: 600;
 }

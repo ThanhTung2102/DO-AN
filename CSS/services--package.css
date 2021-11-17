@@ -1,0 +1,105 @@
+
+
+.pservice-content--text{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.pservice-content--subtext{
+    font-style: italic;
+    margin: 20px 0px;
+}
+.pservice--image>img{
+    width: 100%;
+    height: 100%;
+}
+#services-next{
+    width: 22px;
+    height: 22px;
+    padding-top:2px;
+}
+.pservice-content--textbox>div{
+    line-height: 30px;
+    
+  
+}
+.pservice-content--box{
+    width: 60%;
+    max-width: 500px;
+    margin: 20px 20px;
+}
+.pservice--image{
+border-radius: 60% 50% 58% 82% / 87% 60% 82% 55%;
+    background-color: #CBE6EE;
+}
+.pservice-content--textbox{
+    background-color: white;
+    border-radius:30px ;
+    padding: 15px;
+}
+.list--package{
+    margin:20px 15px;
+    padding: 10px;
+    background-color:#B0D7E2 ;
+}
+.list-package--tittle{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+.list--package--content{
+    padding: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #545859;
+    font-family: Lato;
+}
+.list--package--column{
+    border: 2px solid black;
+    background-color: white;
+    padding: 20px;
+    margin: 0px 20px;
+    width: 30%;
+    max-width: 300px;
+    max-height: 600px;
+}
+.list--package--header{
+    font-weight: bold;
+    font-size: 28px;
+    height: 120px;
+    text-align: center;
+}
+.one-line{
+    line-height: 120px;
+}
+.list-package--tittle>span{
+    color: white;
+}
+#package-services{
+    height: 40px;
+    width: 40px;
+    background-color: #0A3D48;
+    color: white;
+    border-radius: 50%;
+}
+.list-package--price{
+    font-size: 23px;
+    font-style: italic;
+    margin: 5px 0px;
+}
+.two-line{
+    line-height: 50px;
+}
+.list-package--instruction{
+    font-size: 20px;
+    margin: 3px 0px;
+   
+}
+.list--package--more{
+    text-align: right;
+    font-size: 20px;
+}
+.list--package--more>a{
+    text-decoration: none;
+}
