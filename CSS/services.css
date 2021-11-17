@@ -106,7 +106,8 @@ body,html{
 }
 .iconify{
     width: 120px;
-    height: 120px
+    height: 120px;
+    color: black;
 }
 .icon--name{
     margin-top: 50px;
