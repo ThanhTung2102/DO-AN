@@ -12,13 +12,12 @@ body,html{
 }
 .service-navigation{
     background-color: #73BCD9;
-    ;
     height: 40px;
     font-weight: bold;
     font-size: 25px;
     line-height: 40px;
-    font-family: Lato;
-    color: #545859
+  padding-left: 20px;
+  padding-bottom: 2px;
 }
 .service--content{
     padding: 30px;
@@ -32,16 +31,17 @@ body,html{
     font-family: Lato;
     font-weight: bold;
     color: #545859;
+    margin-bottom: 20px;
 }
 .service--content--textbox{
    border-radius: 20px;
     background-color: #95BAC6;
     box-shadow: 4px 4px gray ;
-    padding: 10px;
+    padding: 15px;
     max-width: 400px;
 }
 .service--button
-{  left: 420px;
+{  left: 650px;
     position: absolute ;
     border-radius: 50px;
     font-size:25px ;
@@ -68,10 +68,10 @@ body,html{
     padding: 25px 100px;
 }
 .service--optionbar--links{
-   
+
     background-color: #95BAC6;
     margin: 0px 5px;
-    padding: 0px 10px;
+    padding:0px 10px;
     
 }
 .service--optionbar--links>a{
@@ -90,34 +90,202 @@ body,html{
     
 }
 .service--mainOption{
-    margin: 20px;
+    margin: 20px 60px;
     display: flex;
     justify-content: space-between;
 
 }
-.service--options{
-    width: 150px;
+.icon--container{ width: 150px;
     height: 150px;
     background-color: #95BAC6;
-    margin: 20px;
+    margin: 10px 25px;
     border-radius: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     box-shadow: #545859 2px 2px 2px;
+
+}
+.service--options{
+    margin-top: 50px;
+   text-align: center;
 }
 .iconify{
     width: 120px;
     height: 120px
 }
 .icon--name{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: auto;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+
 }
 .pservice--body{
     background-image: url(../Images/background.png);
     color: #545859;
     font-family: Lato;
     
+}
+/* tablet */
+@media screen and (max-width:1048px) {
+   
+    .service--body{
+        width: 100%;
+    }
+   .service--content{
+       padding: 20px;
+
+      
+   }
+   .service--content--tittle{
+    font-size: 50px;
+    margin-bottom: 10px;
+}   
+   .service--optionbar{
+       height: 30px;
+       line-height: 15px;
+   }
+ 
+   .search--box{
+       width: 100px;
+       max-height: 20px;
+       margin: auto 5px;
+   }
+   .service--body{
+      display: inline-block;
+       
+   }
+   .iconify{
+       width: 100px;
+       height: 110px
+   }
+   .icon--container{
+       width: 120px;
+       height: 120px;
+   }
+   .service--options{
+       width: 100%;
+       max-width: 375px;
+       display: inline-block;
+   } 
+   .service--content--textbox{
+       font-size: 25px;
+       max-width: 600px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .service--mainOption{
+       width: 100%;
+       margin: 5px 5px 20px 5px;
+       display: flex;
+   }
+   .icon--name{
+       margin-top: 20px;
+       font-size: 25px;
+       width: 80%;
+      padding-top: 15px;
+   }
+   .service--options>div{
+    margin-right: auto;
+    margin-left: auto;
+   }
+   .service--button
+   {  left: 750px;
+       position: absolute ;
+       border-radius: 50px;
+       font-size:25px ;
+       line-height: 40px;
+       box-shadow: 2px 2px gray;
+       right: 20px;
+   }
+   .service--options>div{
+      text-align: center;
+   }
+   
+   }
+ 
+/* Phone */
+@media screen and (max-width:380px) {
+  .service-navigation{
+      font-size: 10px;
+      height: 20px;
+      line-height: 20px; 
+  }
+ .service--body{
+     width: 100%;
+ }
+.service--content{
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.service--content--tittle
+{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.service--optionbar{
+    height: 55px;
+    line-height: 15px;
+   
+ 
+}
+.service--optionbar--links>a{
+   font-size: 5px;
+}
+.service--optionbar--search{
+    font-size: 5px;
+  display: block;
+  ;
+}
+.search--box{
+    width: 50px;
+    max-height: 20px;
+    margin: auto 5px;
+}
+.service--body{
+   display: inline-block;
+    
+}
+.iconify{
+    width: 60px;
+    height: 70px
+}
+.icon--container{
+    width: 80px;
+    height: 80px
+}
+.service--options{
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.service--content--textbox{
+    font-size: 8px;
+    max-width: 200px;
+}
+.service--mainOption{
+    width: 100%;
+    display: inline-block;
+    margin: 5px 5px 20px 5px;
+}
+.icon--name{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 60%;
+   padding-top: 15px;
+
+}
+.service--button
+{  left: 200px;
+    position: absolute ;
+    border-radius: 50px;
+    font-size:20px ;
+    line-height: 25px;
+    box-shadow: 2px 2px gray;
+    right: 20px;
+}
 }
