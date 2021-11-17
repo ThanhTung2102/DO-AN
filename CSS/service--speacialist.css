@@ -1,0 +1,55 @@
+/* 
+specialization service */
+.specialist{
+    flex-direction: column;
+}
+.specialist--container{
+    display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+.specialist--table{
+    
+    width: 90%;
+    height: 60%;
+    text-align: center;
+    display: flex;
+    margin: 30px;
+    max-height: 800px;
+    background: white;
+    max-width:1100px ;
+    border-radius: 30px;
+}
+.specialist--table--column{
+    max-height: 400px;
+    height: 40%;
+}
+.specialist--table--cell{
+    height: 50%;
+    font-size: 25px;
+    font-weight: bold;
+   
+}
+.specialist--table--cell>img{
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    height: 100%;
+}
+.line-height-full{
+   vertical-align:middle
+}
+.color-green{
+    color:#95BAC6
+}
+.border-top-left{
+    border-radius: 30px 0px 0px 0px
+}
+.border-bottom-right{
+    border-radius: 0px 0px 30px 0px;
+}
+.specialist--table--cell>img:hover{
+    opacity: 0.8;
+    cursor: help;
+
+}
