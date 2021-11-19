@@ -104,13 +104,13 @@ body,html{
 }
 .art__row--related{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .art--related{
     background-color: white;
     width: 240px;
     height: 350px;
-    margin: 5px 0px 30px 0px;
+    margin: 5px 10px 30px 0px;
     /* border: 1px solid black; */
 }
 .art__img--related{
@@ -129,7 +129,7 @@ body,html{
     color: #065F73;
 }
 
-/* Tạo thanh đỏ */
+/* Tạo thanh đỏ absolute*/
 #art__container--3 hr{
     border:1px solid red;
 }
