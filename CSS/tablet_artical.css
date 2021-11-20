@@ -35,7 +35,10 @@
 
     }
     .art__row--related{
-        /* display: initial; */
+        display: inherit;
+    }
+    .art--scroll{
+        display: flex;
         overflow-x: scroll;
     }
 }
