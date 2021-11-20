@@ -75,12 +75,16 @@ hr{
 }
 #doctor--appointment{
    float: right;
+   height: 20px;
    margin-top: 40px;
    border: 1px, black, solid;
    border-radius: 5px;
    background-color: rgba(115, 188, 217, 1);
 }
-.ul{
+.button{
+    display: none;
+}
+.doctor__ul{
     display: flex;
     margin-left: 30%;
 }
@@ -102,3 +106,72 @@ hr{
     margin: 10px 2px;
     text-align: center;
 }
+.doctor__ul-mobile{
+    display: none;
+}
+@media screen and (max-width:428px) {
+    .container--1{
+        display: none;
+    }
+    .container--2{
+        display: none;
+    }
+    .doctor--role{
+        display: none;
+    }
+    .doctor__background-header{
+        height: 8vh;
+    }
+    .doctor__container-1{
+        padding-top: 10px;
+        height: 135vh;
+    }
+    .doctor__title{
+        font-size: 25px;
+        line-height: 8vh;
+        margin-left: 30%;
+    }
+    .doctor__list >hr{
+        display: none;
+    }
+    .doctor__list--item{
+        border: 1px solid;
+        padding: 15px 15px;
+        border-radius: 10px;
+        width: 85%;
+        margin-left: 4%;
+        margin-top: 10px;
+    }
+    .doctor__img{
+        width: 150px;
+        height: 170px;
+    }
+    .doctor--information--bonus{
+        display: none;
+    }
+    .doctor__name{
+        font-size: 20px;
+    }
+    .doctor--information{
+        font-size: 15px;
+    }
+    .button{
+        display: inline;
+        height: 20px;
+    }
+    .doctor__ul{
+        display: none;
+    }
+    .doctor__ul-mobile{
+        display: inline;
+        width: 100%;
+        margin-left: 30%;
+        margin-top: 20px;
+    }
+    .doctor__ul-mobile > a{
+        font-size: 20px;
+        color: black;
+        text-decoration: underline;
+    }
+}
+
