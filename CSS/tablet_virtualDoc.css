@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1024px){
+    body{
+        background-size: auto;
+    }
+    .form--row{
+        display: inherit;
+    }
+    .form--container2, .form--container>div>p{
+        width: 96%;
+    }
+    .form--container>div>h3{
+        text-align: center;
+        margin: 10px auto;
+    }
+    .form--row>select, .form--row>input {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .form--row>label{
+        margin-top: 10px;
+    }
+    .form--input{
+        width: 96%;
+    }
+    
+}

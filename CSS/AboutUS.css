@@ -14,10 +14,13 @@
 .about--container--2{
     display: flex;
 }
+.about--content--mobile{
+    display: none;
+}
 .img-overview{
     flex: 1;
-    width: 700px;
-    height: 410px;
+    max-width: 700px;
+    max-height: 410px;
     border-radius: 10px ;
     margin: 20px 20px 0px 30px;
 }
@@ -54,7 +57,7 @@
     display: flex;
     margin-top: 20px;
 }
-.img--mission{
+.img-mission{
     max-width: 700px;
     border-radius: 10px;
     margin: 20px 20px 0px 30px;
@@ -110,7 +113,7 @@
 .about__listdoctor{
     display: flex;
     justify-content:space-around;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 40px;
 }
 .img-doctor{
@@ -121,4 +124,174 @@
 .img-doctor:hover{
     transform: scale(1.1);
     transition: all ease-in-out 0.5s;
+}
+@media screen and (max-width: 428px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .about--container--1{
+        display: none;
+    }
+    .about--container--2{
+        flex-direction:column;
+    }
+    .img-overview{
+        max-width: 400px;
+        max-height: 200px;
+        margin-left: 14px;
+        position: relative;
+        z-index: 1;
+    }
+    .about--content--mobile{
+        display: inline;
+        position: absolute;
+        z-index: 2;
+        font-family: arial;
+        font-size: 30px;
+        font-weight:bold;
+        color: rgba(78, 84, 87, 1);
+        margin-top: 30%;
+        margin-left: 30%;
+    }
+    .about--content--1{
+        
+        display: none;
+    }
+    .about--question{
+        color: rgba(141, 146, 192, 1);
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .about--reason{
+        color: rgba(132, 140, 217, 1);
+        font-size: 20px;
+        margin-top: -20px;
+    }
+    .about--container--4{
+        flex-direction: column-reverse;
+    }
+    .img-mission{
+        max-width: 400px;
+        max-height: 200px;
+        margin: 0px 14px;
+        position: relative;
+        z-index: 1;
+    }
+    .about--content__item--3{
+    margin-left: 30%;
+    margin-top:-30% ;
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+    }
+    .about--content__item--4{
+    text-align: center;
+    font-size: 25px;
+    font-family: arial;
+    padding:0px 10px 0px 0px;
+    margin-top: 0px;
+    }
+    .about--container--5{
+        flex-direction: column;
+    }
+    .img-vision{
+        max-width: 400px;
+        max-height: 200px;
+        margin-left: 14px;
+        margin-top: -30px;
+        position: relative;
+        z-index: 1;
+    }
+    .about--position--1{
+        margin-top: -33%;
+        z-index: 2;
+    }
+    .about--position--2{
+        margin-top: 30px;
+        margin-left: 14px;
+    }
+    .about--container--6{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .about--container--6 > a{
+        font-size: 30px;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width:834px) {
+    .about--container--1{
+        display: none;
+    }
+    .about--container--2{
+        display: flex;
+    }
+    .about--content--mobile{
+        display: none;
+    }
+    .img-overview{
+        flex: 1;
+        max-width: 45%;
+        max-height: 300px;
+        border-radius: 10px ;
+        margin: 20px 20px 0px 30px;
+    }
+    .about--content--1{
+        flex: 1;
+        margin: 0px 30px 0px 20px;
+    }
+    .about--content__item--1{
+        font-size: 25px;
+    }
+    .about--content__item--2{
+        margin-top: -10px;
+        font-size: 20px;
+    }
+    .about--container--3{
+        margin-top: -10px;
+    }
+    .about--container--4{
+        display: flex;
+        margin-top: -20px;
+    }
+    .img-mission{
+        max-width: 45%;
+        max-height: 200px;
+    }
+    .about--content--2{
+        max-width: 45%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .about--content__item--3{
+        font-size: 25px;
+
+    }
+    .about--content__item--4{
+        text-align: left;
+        font-size: 20px;
+    }
+    .img-vision{
+        max-width: 45%;
+        max-height: 200px;
+        border-radius: 10px;
+        margin-left: 20px;
+        flex: 1;
+    }
+    .about--container--6{
+        margin-top: 20px;
+    }
+    .about--container--6 > a{
+        font-size: 30px;
+    }
+    .about__listdoctor{
+        display: flex;
+        justify-content:space-around;
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+    .img-doctor{
+        max-width: 150px;
+    }
 }
