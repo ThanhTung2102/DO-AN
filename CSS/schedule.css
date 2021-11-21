@@ -1,158 +1,109 @@
-body{
+/*----------- header--------------- */
+.navbar{
+    background-color: #065F73;
+}
+.nav-brand__color{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 5px;
+}
+.nav-brand__color:hover{
+    color: #73BCD9;
+}
+.nav-item__detail{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+.nav-item__detail:hover{
+    color: #73BCD9;
+}
+.material-icons{
+    color: white;
+}
+.login-btn{
+    width: 100px;
+    color: white;
+    background-color:#73BCD9;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.login-btn:hover{
+    background-color: #84bfd6;
+}
+/*---------------- body----------------------*/
+.col img{
+    width: 250px;
+}
+.col-sm-6 button{
+    margin: 10px;
+    background-color: #73BCD9;
+    border-radius: 10px;
+}
+.col-sm-6 button:hover{
+    background-color: #84bfd6;
+}
+.mid-nav{
     background-color: white;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.main{
+    background-color: #DFF0F2;
+    padding: 20px;
+}
+.form{
+    margin: 20px;
+    border-radius: 20px;
+    padding: 42px;
+}
+.form-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-sm{
+    background-color: #73BCD9;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.col-12{
+    text-align: center;
+}
+.col-12 button{
+    width: 200px;
+}
+.regis-btn{
+    border-radius: 20px;
+    background-color: #73BCD9;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}
+.regis-btn:hover{
+    background-color: #369ac2;
+    color: white;
 }
 
-.product__page{
-    /* background-image: url(/image/schedule.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    height: 900px;
-    width: 100%;
-    padding-top: 200px;
-    font-family: Arial, Helvetica, sans-serif;
+/*-------- footer--------*/
+.bg-footer{
+    background-color: #065F73;
+    color: white;
 }
-.product__form-container{
-    padding-right: 200px;
-    position: relative;
+.cpr-bg{
     background-color: white;
-    max-width: 900px;
-    padding: 25px 30px;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-    margin: 0 auto;
 }
-.product__form-title{
-    text-transform: uppercase;
-    color: #065F73;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 50px;
+.cpr-bg a{
+    color: black;
+    text-decoration: black;
 }
-.product__form-content .product__user-details{
-    font-size: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px 50px 12px 80px;
-}
-.product__user-details .product__input-box{
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-}
-.product__input-box .product__details{
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-.product__form-input{
-    width: 100%;
-    height: 50px;
-    margin-top: 7px;
-}
-.product__user-details .product__input-box .product__form-input{
-    height: 45px;
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-}
-.product__user-details .product__input-box .product__form-input:focus,
-.product__user-details .product__form-input:valid{
-  border-color: #0A3D48;
-}
-.product__gender-details{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-left: 80px;
-}
-.product__gender-title{
-    font-size: 25px;
-}
-.product__category{
-    margin-top: 10px;
-    font-size: 20px;
-}
-.product__form-button{
-    height: 45px;
-    margin: 35px 0;
-    text-align: center;
-}
-.product__form-button input{
-   height: 100%;
-   width: 400px;
-   border-radius: 5px;
-   border: none;
-   color: #fff;
-   font-size: 18px;
-   font-weight: 500;
-   letter-spacing: 1px;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   border-radius: 15px;
-   background: linear-gradient(125deg,#5ab1bb, #0A3D48);
-}
-.product__form-button input:hover{
-    background: linear-gradient(-125deg,#5ab1bb,#0A3D48);
-}
-.product__goivip-btn{
-    margin-top: 50px;
-    text-align: center;
-}
-.product__goivip-btn input{
-   height: 100%;
-   width: 400px;
-   padding: 35px;
-   border-radius: 10px;
-   border: none;
-   color: #fff;
-   font-size: 30px;
-   font-weight: 500;
-   letter-spacing: 1px;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   border-radius: 15px;
-   background-color: #73BCD9;
-}
-.product__goivip-btn input:hover{
-    background: #5ba3c0;
-}
-.footer{
-    background-color: rgba(6, 95, 115, 1);
-}
-.footer-bar{
-    display: flex;
-}
-.footer-mar{
-    margin: 30px;
-    flex: 1;
-}
-.footer-logo img{
-    margin-top: 30px;
-}
-.title-inf{
+.ft-link{
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.lienhe>p , .diachi>p{
-    font-size: 18px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.copyright{
-    background-color: white;
-    font-size: 18px;
-    padding: 10px;
-    text-align: center;
+.ft-link:hover{
+    color: #73BCD9;
 }
