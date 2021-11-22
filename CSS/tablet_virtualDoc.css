@@ -22,5 +22,15 @@
     .form--input{
         width: 96%;
     }
-    
+    #nexttopayment{
+        margin: 10px auto;
+    }
+    .form--row:last-child{
+        text-align: center;
+    }
+    input[type="radio"]{
+        line-height: 70px;
+        /* margin-top: 15px; */
+        bottom: 0;
+    }
 }
