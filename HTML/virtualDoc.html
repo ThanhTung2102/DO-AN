@@ -10,6 +10,7 @@
         @import url(../CSS/footer.css);
         @import url(../CSS/virtualDoc.css);
         @import url(../CSS/tablet_virtualDoc.css);
+        @import url(../CSS/mobile_virtualDoc.css);
     </style>
 </head>
 <body>
@@ -74,10 +75,11 @@
                 </select>
             </div>
             <div class="form--row">
-                <label for="">Connecting Way</label>
-                <input type="radio"  name="connect" value="Phone Call"> <span>Phone Call</span> 
+                <label for="" class="connect">Connecting Way</label>
+            <div class="radio--row">
+                <input type="radio"  name="connect" value="Phone Call"><span>Phone Call</span>
                 <input type="radio"  name="connect" value="Video Call"> <span>Video Call</span>
-
+            </div>
             </div>
             <div class="form--row">
                 <label for="">Which pharmacy would you like to use?</label>
@@ -108,6 +110,10 @@
                     <option value="">Củ Chi District</option>
                     <option value="">Cần Giờ District</option>
                 </select>
+            </div>
+            <div class="form--row">
+                <label for="">Pick your day</label>
+                <input class="form--input" type="date"  name="date" value="date">  
             </div>
             <hr>
             <div class="form--row">
