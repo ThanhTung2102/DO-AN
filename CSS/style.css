@@ -91,6 +91,35 @@ a{
 .pt-nav a{
     text-decoration: none;
 }
+.pt-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.pt-nav__left{
+    display: flex;
+}
+.pt-main__years{
+    margin: 2vh 12vw;
+    
+}
+.pt-main__years table{
+    width: 100%;
+}
+.pt-main__years table th{
+    background-color: #065F73;
+    color: white;
+    height: 40px;
+}
+.pt-main__years table th, td{
+    border-bottom: 1px solid rgb(196, 181, 181);
+    border-right: 1px solid rgb(196, 181, 181);
+    padding: 0 20px;
+    text-align: center;
+}
+.pt-main__years table td{
+    background-color: white;
+    height: 70px;
+}
 
 .pt-navbar_1 a{
     color: black;
@@ -203,7 +232,19 @@ a{
 .pt-footer__item span{
     color: red;
 }
-
+.pt1-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 12vw;
+}
+.pt1-nav__left{
+    display: flex;
+}
+.pt1-nav__right--button{
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
 .pt1-main{
     display: flex !important;
     margin: 2vh 12vw;
@@ -262,6 +303,7 @@ a{
     background-color: teal;
     border-radius: 5px;
     color: white;
+    height: 30px;
 }
 .pt1-main1__box3--footer{
     display: flex;
@@ -269,12 +311,23 @@ a{
     justify-content: space-around;
     font-size: 13px;
 }
+.pt1-main__item--file i{
+    float: right;
+}
 .pt1-main__table{
     height: 300px;
     width: 45vw;
     background-color: white;
     overflow-y: auto;
     
+}
+.pt2-col3 button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+    font-size: 13px;
 }
 table{
     border-collapse: collapse;
@@ -506,35 +559,64 @@ input[type='password']{
 .signup-footer__note{
     margin-top: 2vh;
 }
-@media only screen and (max-width: 400px){
-    
+.edit-title{
+    font-size: 25px;
+    font-weight: bold;
 }
-.pt-nav{
+.edit-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.edit-form span{
+    color: red;
+}
+.edit-form input, select{
+    border: 1px solid rgb(151, 145, 145);
+}
+.edit-form select{
+    height: 30px;
+    border-radius: 5px;
+}
+.edit-form input[type="text"], input[type="number"], input[type="date"], select {
+    width: 90%;
+}
+.edit-input--email{
+    width: 95%;
+}
+.edit-input--health{
+    width: 95%;
+}
+.edit-sextitle, .edit-emailtitle, .edit-emailbutton, .edit-healthtitle, .healthnumber{
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+.edit-footer{
     display: flex;
     justify-content: space-between;
 }
-.pt-nav__left{
-    display: flex;
-}
-.pt-main__years{
-    margin: 2vh 12vw;
-    
-}
-.pt-main__years table{
-    width: 100%;
-}
-.pt-main__years table th{
+.edit__button--create {
     background-color: #065F73;
     color: white;
-    height: 40px;
+    margin-right: 20%;
 }
-.pt-main__years table th, td{
-    border-bottom: 1px solid rgb(196, 181, 181);
-    border-right: 1px solid rgb(196, 181, 181);
-    padding: 0 20px;
-    text-align: center;
+.edit-button{
+    margin-top: 2vh;
+    display: flex;
+    margin-right: 2vw;
+    justify-content: space-between;
 }
-.pt-main__years table td{
-    background-color: white;
-    height: 70px;
+.healthnumber input{
+    width: 95% !important;
+}
+.edit__button--cancel{
+    margin-left: 1vw;
+}
+.edit-footer span{
+    color: red;
+}
+.edit-footer__note{
+    margin-top: 2vh;
+}
+@media only screen and (max-width: 400px){
+    
 }
