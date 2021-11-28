@@ -1,0 +1,8 @@
+@media only screen and (max-width: 376px){
+    body{
+        background-size: 500px 100vh;
+    }
+    .form--row>.form--button{
+        width: 96%;
+    }
+}

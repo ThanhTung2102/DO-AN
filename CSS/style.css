@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
   body{
     background-color: #DFF0F2;
@@ -105,15 +105,7 @@ a{
     font-size: 20px;
     font-weight: bold;
 }
-.pt-image--people{
-    width: 20%;
-    padding-left: 2vw;
-    
-}
-.pt-image--people img{
-    max-height: 60vh;
-    max-width: 25vw;
-}
+
 .pt-main_1{
     display: flex;
 }
@@ -125,9 +117,9 @@ a{
     max-width: 230px ;
     border: 1px solid rgba(110, 107, 102, 0.5);
     position: relative;
-    height: 12vh;
+    height: 120px;
     border-radius: 15px;
-    padding: 5% 5% 0 7%;
+    padding: 5% 20px 0 7%;
     margin: 0 0 3vh 0;
 }
 .pt-main__box span{
@@ -142,20 +134,20 @@ a{
 }
 .pt-main__box>img{
     position: absolute;
-    width:90% ;
-    height: 20%;
+    width:80% ;
+    height: 20px;
     justify-content: center;
 }
-.pt-main--img img{
-    width: 3.7vw;
-    height: 6vh;
-}
+
 .pt-main__box--result{
     border-radius: 15px;
     border: 1px solid rgba(110, 107, 102, 0.5);
     margin-right: 4vw;
     padding: 1vh 1vh 0 1vw;
-    max-width: 38%;
+    max-width: 300px;
+    overflow-y: auto;
+    height: 550px;
+
 }
 .pt-main__box--result span{
     font-weight: bold;
@@ -167,15 +159,20 @@ a{
     margin-bottom: 2vh;
     text-align: center;
 }
-.pt-main__item--img{
+.pt-main__item--end{
     display: flex;
     padding-top: 3%;
     justify-content: space-evenly;
     font-weight: bolder;
 }
+.pt-main__item--img{
+    padding-top: 3%;
+    justify-content: space-evenly;
+    font-weight: bolder;
+    text-align: center;
+}
 .pt-main__item--img img {
-   width: 30vw;
-   max-width: 300px;
+  width: 100%;
 }
 .pt-main__item--title_img{
     display: flex;
@@ -206,32 +203,46 @@ a{
 .pt-footer__item span{
     color: red;
 }
-.pt1-main__row--1{
-    display: flex;
+
+.pt1-main{
+    display: flex !important;
     margin: 2vh 12vw;
-    justify-content: space-between;
+}
+.pt1-main__column1--infor{
+    display: flex;
+    margin-bottom: 50px;
+}
+.pt1-main__column--1{
+    width: 70%;
 }
 .pt1-main1__box{
     background-color: white;
-    width: 29%;
+    width: 35%;
     padding: 2% 2% 0 2%;
+    height: 30vh;
+    overflow-x: hidden;
 }
 .pt1-main1__box1{
     text-align: center;
     padding-top: 2%;
+    margin-right: 50px;
 }
 .pt1-main1__box2{
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 1% 0 0 4%;
-    column-gap: 3%;
+    column-gap: 5%;
+    width: 23vw;
 }
 .pt1-main1__box2 span{
     color: rgb(122, 118, 118);
     font-weight: bold;
 }
 .pt1-main1__box3{
+    width: 20vw;
+    padding: 2vh 2vw 2vh 2vw;
     background-color: whitesmoke;
+    margin-bottom: 30px;
 }
 .pt1-main1__box3--title{
     display: flex;
@@ -243,11 +254,11 @@ a{
 }
 .pt1-main1__box3--note input{
     width: 100%;
-    height: 100px;
-    margin-bottom: 5%;
+    height: 150px !important;
+    margin: 3% 0 3% 0;
 }
 .pt1-main1__box3--note button{
-    margin: 1% 0 2% 70%;
+    margin: 1% 0 2% 65%;
     background-color: teal;
     border-radius: 5px;
     color: white;
@@ -256,10 +267,11 @@ a{
     display: flex;
     margin-bottom: 2%;
     justify-content: space-around;
+    font-size: 13px;
 }
 .pt1-main__table{
     height: 300px;
-    width: 64.5%;
+    width: 45vw;
     background-color: white;
     overflow-y: auto;
     
@@ -267,33 +279,65 @@ a{
 table{
     border-collapse: collapse;
 }
-.pt1-main__row--2{
-    
+.pt2-main__container{
+    width: 100%;
+    padding: 20px 15px;
+
+  }
+  .nav {
+    height: 50px;
     display: flex;
-    margin: 2vh 12vw;
     justify-content: space-between;
-}
-.pt1-main__row2--box{
+
+  }
+  .nav a{
+    color: black;
+    text-decoration: none;
+  }
+  .nav a:hover{
+    color: blue;
+  }
+  .nav a:active{
+    color: blue;
+  }
+  .tab3-row{
+    display: flex;
+    border-bottom: 1px dashed #777272;
+  }
+  .pt2-col1{
+    width: 25%;
+  }
+  .pt2-col2{
+    width: 50%;
+  }
+  .pt2-col3{
+    width: 25%;
+    text-align: right;
+  }
+  .tab1-row{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+  }
+  .tab1-row span{
+    color: rgba(14, 9, 9, 0.5);
+  }
+  .tab-pane__2 table{
+    width: 100%;
+  }
+.pt1-main__column2--file{
     background-color: white;
-    width: 29%;
-    padding: 1% 2%;
+    padding: 2vh 1vw 0px 1vw;
+    width: 20vw;
 }
+
 .pt1-main__item--file{
     border: 1px solid whitesmoke;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
     margin: 4% 4%;
-    height: 15%;
+    height: 40px;
     padding: 2% 4% 0 3%;
-    padding-top: 2%;
-}
-.pt1-main__header, .pt1-main__nav{
-    display: flex;
-    justify-content: space-between;
-}
-.pt1-main__nav{
-    background-color:#C4C4C4 ;
-    display: flex;
-    justify-content: space-between;
+    font-size: 14px;
 }
 
 .pt1-main__item--file img{
@@ -307,25 +351,14 @@ table{
     border: 1px;
     border-radius: 5px;
 }
-.pt1-main__table th:nth-child(1){
-    width: 25%;
-}
-.pt1-main__table th:nth-child(2){
-    width: 50%;
-}
-.pt1-main__table th:nth-child(3){
-    width: 25%;
-}
+
 .pt1-main__table tr:nth-child(2){
     background-color: #C4C4C4;
 }
 .pt1-main__row--2 img{
     width: 6%;
 }
-.pt1-main__iframe{
-    height: 300px;
-    width: 64.5%;
-}
+
 .login-header{
     display: flex;
     justify-content: space-between;
@@ -341,6 +374,8 @@ table{
 .pt1-main__table tr:nth-child(even) {
     background-color: #DFF0F2;
   }
+
+
 
 .login-header__title{
     font-weight: bold;
@@ -421,6 +456,9 @@ input[type='password']{
     display: grid;
     grid-template-columns: 50% 50%;
 }
+.signup-form span{
+    color: red;
+}
 .signup-form input, select{
     border: 1px solid rgb(151, 145, 145);
 }
@@ -443,7 +481,7 @@ input[type='password']{
 }
 .signup-footer{
     display: flex;
-    
+    justify-content: space-between;
 }
 .signup__button--create {
     background-color: #065F73;
@@ -453,13 +491,11 @@ input[type='password']{
 .signup-button{
     margin-top: 2vh;
     display: flex;
+    margin-right: 2vw;
     justify-content: space-between;
 }
 .healthnumber input{
     width: 95% !important;
-}
-.signup-button{
-margin-left: 16.5vw;
 }
 .signup__button--cancel{
     margin-left: 1vw;
@@ -469,4 +505,36 @@ margin-left: 16.5vw;
 }
 .signup-footer__note{
     margin-top: 2vh;
+}
+@media only screen and (max-width: 400px){
+    
+}
+.pt-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.pt-nav__left{
+    display: flex;
+}
+.pt-main__years{
+    margin: 2vh 12vw;
+    
+}
+.pt-main__years table{
+    width: 100%;
+}
+.pt-main__years table th{
+    background-color: #065F73;
+    color: white;
+    height: 40px;
+}
+.pt-main__years table th, td{
+    border-bottom: 1px solid rgb(196, 181, 181);
+    border-right: 1px solid rgb(196, 181, 181);
+    padding: 0 20px;
+    text-align: center;
+}
+.pt-main__years table td{
+    background-color: white;
+    height: 70px;
 }
