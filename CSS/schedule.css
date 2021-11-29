@@ -82,14 +82,14 @@
     width: 200px;
 }
 .regis-btn{
-    border-radius: 20px;
-    background-color: #73BCD9;
+    border-radius: 10px;
+    background-color: #dfe9ec;
     padding: 5px;
     color: black;
     font-weight: bold;
 }
 .regis-btn:hover{
-    background-color: #369ac2;
+    background-color: #70c1e0;
     color: white;
 }
 
