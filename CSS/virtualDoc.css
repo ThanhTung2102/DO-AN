@@ -37,7 +37,7 @@ body{
 /* form2 */
 .form--container2{
     background-color: rgba(209, 202, 202, 0.3);
-    width: 80%;
+    width: 50%;
     padding-bottom: 30px;
     position: relative;
 }
@@ -47,9 +47,10 @@ body{
 }
 /* label */
 label{
-    min-width: 30%;
+    min-width: 50%;
     line-height: 70px;
     margin-left: 10px;
+    font-weight: bold;
 }
 .form--row span{
     line-height: 70px;
@@ -63,8 +64,9 @@ label{
     height: 50px;
     padding: 5px;
     margin: 10px;
-    background-color: rgba(255, 255, 255, 0.034);
+    background-color: rgb(255, 255, 255);
     border: none;
+    border-radius: 10px;
 }
 
 input[type="radio"]{
