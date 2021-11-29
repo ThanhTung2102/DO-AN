@@ -146,6 +146,7 @@ a{
     padding: 1vh 1vh 0 1vw;
     max-width: 300px;
     overflow-y: auto;
+    height: 550px;
 
 }
 .pt-main__box--result span{
@@ -507,4 +508,33 @@ input[type='password']{
 }
 @media only screen and (max-width: 400px){
     
+}
+.pt-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.pt-nav__left{
+    display: flex;
+}
+.pt-main__years{
+    margin: 2vh 12vw;
+    
+}
+.pt-main__years table{
+    width: 100%;
+}
+.pt-main__years table th{
+    background-color: #065F73;
+    color: white;
+    height: 40px;
+}
+.pt-main__years table th, td{
+    border-bottom: 1px solid rgb(196, 181, 181);
+    border-right: 1px solid rgb(196, 181, 181);
+    padding: 0 20px;
+    text-align: center;
+}
+.pt-main__years table td{
+    background-color: white;
+    height: 70px;
 }

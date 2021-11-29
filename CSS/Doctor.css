@@ -174,4 +174,14 @@ hr{
         text-decoration: underline;
     }
 }
-
+@media screen and (max-width: 834px) {
+    .container--1{
+        display: none;
+    }
+    .container--2{
+        display: none;
+    }
+    .doctor__background-header{
+        height: 8vh;
+    }
+}
