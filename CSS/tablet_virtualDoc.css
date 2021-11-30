@@ -5,12 +5,13 @@
     .form--row{
         display: inherit;
     }
-    .form--container2, .form--container>div>p{
+    .form--container2, .form--container2>div>p{
         width: 96%;
     }
-    .form--container>div>h3{
+    .form--container2>div>h3{
         text-align: center;
         margin: 10px auto;
+        padding-top: 20px ;
     }
     .form--row>select, .form--row>input , input[type="date"], input[type="time"] {
         margin-top: 0px;

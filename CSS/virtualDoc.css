@@ -12,23 +12,26 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
-    
 }
-.form--container>div>h3,
+.form--container2{
+    top: 30px;
+}
+.form--container2>div>h3,
 .form--container2
 {
     margin: auto;            
 }
-.form--container>div>h3{
+.form--container2>div>h3{
     margin-top: 10px;
 }
 /* logo */
-.form--container>.form--row>h3{
+.form--container2>.form--row>h3{
     font-size: xx-large;
-    color: white;
+    color: rgb(6, 95, 115);
+    font-weight: bold;
 }
 /* sologan */
-.form--container>div>p{
+.form--container2>div>p{
     font-weight: bold;
     text-align: center;
     width: 50%;
@@ -49,11 +52,7 @@ body{
 .form--row>label:first-child{
     min-width: 50%;
 }
-/* #vd_note{
-    line-height: 20px;
-    margin-left: 10px;
-    margin-bottom: 50px;
-} */
+
 label{
     line-height: 70px;
     margin-left: 10px;
@@ -112,7 +111,7 @@ input , .form--container2{
     background-color: rgb(6, 95, 115);
 }
 hr{
-    margin: auto 10px;
+    margin: 20px 10px;
 }
 
 
