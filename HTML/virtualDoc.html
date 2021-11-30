@@ -48,23 +48,13 @@
     </div> -->
 
     <div class="form--container">
+            
+        <div class="form--container2">
             <div class="form--row">
                 <h3>Virtual Doctor</h3>
             </div>
             <div class="form--row">
                 <p>Our virtual visit (also known as telehealth) options connect you with a doctor from your phone, tablet or computer so you can stay safe and healthy.</p>
-            </div>
-        <div class="form--container2">
-            <div class="form--row">
-                <label for="">Where will the visit take place</label>
-                <select name="place" id="place" class="form--input">
-                    <option value="" hidden>Please select the state where you are currently located</option>
-                    <option value="">Hanoi</option>
-                    <option value="">Hochiminh City</option>
-                    <option value="">Danang</option>
-                    <option value="">Nhatrang</option>
-                    <option value="">Haiphong</option>
-                </select>
             </div>
             <div class="form--row">
                 <label for="">What type of visit do you need</label>
@@ -75,11 +65,22 @@
                 </select>
             </div>
             <div class="form--row">
-                <label for="" class="connect">Connecting Way</label>
-            <div class="radio--row">
+                <label for="">Connecting Way</label>
+                <div class="radio--row">
                 <input type="radio"  name="connect" value="Phone Call"><span>Phone Call</span>
                 <input type="radio"  name="connect" value="Video Call"> <span>Video Call</span>
+                </div>
             </div>
+            <div class="form--row">
+                <label for="">Where will the visit take place</label>
+                <select name="place" id="place" class="form--input">
+                    <option value="" hidden>Please select the platform where we are going to meet</option>
+                    <option value="">Google Meet</option>
+                    <option value="">Zoom</option>
+                    <option value="">Skype</option>
+                    <option value="">Amazon Chime</option>
+                    <option value="">Facetime</option>
+                </select>
             </div>
             <div class="form--row">
                 <label for="">Which pharmacy would you like to use?</label>
@@ -115,13 +116,36 @@
                 <label for="">Pick your day</label>
                 <input class="form--input" type="date"  name="date" value="date">  
             </div>
+            <div class="form--row">
+                <label for="">Pick your time</label>
+                <!-- <input class="form--input" type="time"  name="date" value="date">   -->
+                <!-- <div> -->
+                <input type="time" id="book_time2" name="booking-time2" min="08:00" max="20:00" required onchange="show2();" class="form--input">
+                <label for="" id="vd_note">Available time: 8:00 to 20:00</label>
+                <!-- </div> -->
+            </div>
             <hr>
             <div class="form--row">
                 <input type="submit" id="nexttopayment" class="form--button" name="nexttopayment" value="Next">
             </div>
         </div>
     </div>
-    
+    <script>
+        function show2() {
+        let t2 = document.getElementById("book_time2");
+        let t2Hour = t2.value.substr(0, 2);
+        let t2Minute = t2.value.substr(3, 2);
+        if (t2Hour < t2.min) {
+            alert("Earliest time is " + t2.min );
+            t2.value = t2.min;
+        } else if (t2Hour > t2.max){
+            alert("Latest time is " + t2.max);
+            t2.value = t2.max;
+        } else {
+            console.log(t2.value);
+        }
+        }
+    </script>
  <!-- <div class="footer">
         <div class="footer-bar">
             <div class="footer-mar footer-logo">
