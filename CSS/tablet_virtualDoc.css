@@ -12,27 +12,23 @@
         text-align: center;
         margin: 10px auto;
     }
-    .form--row>select, .form--row>input {
+    .form--row>select, .form--row>input , input[type="date"] {
         margin-top: 0px;
         padding-top: 0px;
     }
     .form--row>label{
         margin-top: 10px;
     }
-    .form--input{
+    .form--input {
         width: 96%;
+    }
+    input[type="date"]{
+        width: 933px;
     }
     #nexttopayment{
         margin: 10px auto;
     }
     .form--row:last-child{
         text-align: center;
-    }
-    
-    .radio--row{
-        display: flex;
-    }
-    .connect{
-        height: 20px;
     }
 }

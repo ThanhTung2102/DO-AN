@@ -42,7 +42,7 @@ body{
     position: relative;
 }
 
-.form--row{
+.form--row , .radio--row{
     display: flex;
 }
 /* label */
@@ -73,7 +73,9 @@ input[type="radio"]{
     height: 40px;
     line-height: 70px;
     margin-top: 15px;
-    
+}
+input[type="date"]{
+    height: 40px;
 }
 
 /* Radius input */
@@ -94,8 +96,10 @@ input , .form--container2{
 }
 
 #nexttopayment{
-    background-color: rgba(6, 95, 115, 0.5);
+    background-color: rgb(6, 95, 115);
 }
 hr{
     margin: auto 10px;
 }
+
+
