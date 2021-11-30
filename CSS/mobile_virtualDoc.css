@@ -5,4 +5,7 @@
     .form--row>.form--button{
         width: 96%;
     }
+    input[type="date"]{
+        width: 335px;
+    }
 }
