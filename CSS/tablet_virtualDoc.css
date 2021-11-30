@@ -12,7 +12,7 @@
         text-align: center;
         margin: 10px auto;
     }
-    .form--row>select, .form--row>input , input[type="date"] {
+    .form--row>select, .form--row>input , input[type="date"], input[type="time"] {
         margin-top: 0px;
         padding-top: 0px;
     }

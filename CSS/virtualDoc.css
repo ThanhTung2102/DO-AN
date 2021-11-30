@@ -46,8 +46,15 @@ body{
     display: flex;
 }
 /* label */
-label{
+.form--row>label:first-child{
     min-width: 50%;
+}
+/* #vd_note{
+    line-height: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+} */
+label{
     line-height: 70px;
     margin-left: 10px;
     font-weight: bold;
@@ -70,13 +77,19 @@ label{
 }
 
 input[type="radio"]{
-    height: 40px;
     line-height: 70px;
     margin-top: 15px;
 }
-input[type="date"]{
+input[type="date"] ,input[type="time"],input[type="radio"] {
     height: 40px;
 }
+input[type="time"]{
+    width: 20%;
+}
+#vd_note{
+    font-size: x-small;
+}
+
 
 /* Radius input */
 input , .form--container2{

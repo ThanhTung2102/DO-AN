@@ -5,7 +5,17 @@
     .form--row>.form--button{
         width: 96%;
     }
-    input[type="date"]{
+    input[type="date"], input[type="time"]{
         width: 335px;
+    }
+    #vd_note{
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    #book_time2{
+        margin-bottom: 8px;
+    }
+    hr{
+        margin-top: 20px;
     }
 }
