@@ -214,26 +214,34 @@
                             <td>23/09/2021</td>
                             <td>23/09/2021</td>
                             <td>Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia</td>
-                            <td><i class="fa fa-eye"></i></td>
+                            <td><a onclick="xemchitiet()" href="#detail"><i class="fa fa-eye"></a></i></td>
                         </tr>
                         <tr>
                           <td>23/09/2021</td>
                           <td>23/09/2021</td>
                           <td>Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia</td>
-                          <td><i class="fa fa-eye"></i></td>
+                          <td><a href="#detail"><i class="fa fa-eye"></i></a></td>
                       </tr>
                       <tr>
                         <td>23/09/2021</td>
                         <td>23/09/2021</td>
                         <td>Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia</td>
-                        <td><i class="fa fa-eye"></i></td>
+                        <td><a href="#detail"><i class="fa fa-eye"></i></a></td>
                     </tr>
                     </table>
                 </div>
-            
             </div>
-        
-    </div>
+        </div>
+        <div style="display: none;" id="detail" class="pt-tab__detail">
+            Tôi không biết <br>
+            Tôi thích <br>
+            Nguyễn Minh Nhật
+        </div>
+    <script>
+        function xemchitiet(){
+            document.getElementById("detail").style.display="block"
+        }
+    </script>
     
     
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" type=text/javascript></script>

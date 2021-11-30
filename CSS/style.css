@@ -350,9 +350,7 @@ table{
   .nav a:hover{
     color: blue;
   }
-  .nav a:active{
-    color: blue;
-  }
+
   .tab3-row{
     display: flex;
     border-bottom: 1px dashed #777272;
@@ -559,7 +557,19 @@ input[type='password']{
 .signup-footer__note{
     margin-top: 2vh;
 }
-.edit-title{
+.edit-main{
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    padding: 2vh 1vw 2vh 2vw;
+    margin-top: 2%;
+}
+.edit-title i{
+    font-size: 30px;
+    color: rgb(173, 171, 171);
+    font-weight: normal;
+}
+.edit-title span{
     font-size: 25px;
     font-weight: bold;
 }
@@ -591,8 +601,18 @@ input[type='password']{
     grid-column-end: 3; 
 }
 .edit-footer{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.edit-footer input{
+    width: 90%;
+} 
+.input__close{
+    background-color: white;
+}
+.input__confirm{
+    background-color: #065F73;
+    color: white;
 }
 .edit__button--create {
     background-color: #065F73;
@@ -608,15 +628,8 @@ input[type='password']{
 .healthnumber input{
     width: 95% !important;
 }
-.edit__button--cancel{
-    margin-left: 1vw;
-}
-.edit-footer span{
-    color: red;
-}
-.edit-footer__note{
-    margin-top: 2vh;
-}
+
+
 @media only screen and (max-width: 400px){
     
 }
