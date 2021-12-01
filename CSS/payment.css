@@ -49,13 +49,16 @@
     padding: 10px;
 }
 .main{
-    background-color: #DFF0F2;
     padding: 20px;
+}
+.form-label{
+    font-weight: bold;
 }
 .form{
     margin: 20px;
     border-radius: 20px;
     padding: 42px;
+    background-color: rgb(255, 255, 255, 0.18);
 }
 .form-title{
     font-size: 30px;
@@ -75,6 +78,68 @@
 }
 .btn-sm:hover{
     background-color: #52a0be;
+}
+.regis-btn{
+    border-radius: 10px;
+}
+.regis-btn:hover{
+    background-color:#73BCD9 ;
+}
+.padding {
+    padding: 5px;
+    margin: 10px;
+}
+
+.form-control:focus {
+    box-shadow: 10px 0px 0px 0px #ffffff !important;
+    border-color: #4ca746;
+}
+.form-group{
+    margin: 10px;
+    padding: 5px;
+}
+.form-btn{
+    text-align: center;
+}
+#btn-payment{
+    background-color: #73BCD9;
+    border: 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#btn-payment:hover{
+    background-color: #5cb5d8;
+}
+
+.products{
+	background-color: #f7fbff;
+    padding: 10px;
+}
+.products .item{
+	margin-bottom:1em;
+}
+.products .item-name{
+	font-weight:600;
+	font-size: 0.9em;
+}
+.products .item-description{
+	font-size:0.8em;
+	opacity:0.6;
+}
+.products .item p{
+	margin-bottom:0.2em;
+}
+.products .price{
+	float: right;
+	font-weight: 600;
+	font-size: 0.9em;
+}
+.products .total{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 10px;
+	padding-top: 19px;
+	font-weight: 600;
+	line-height: 1;
 }
 /*-------- footer--------*/
 .bg-footer{
