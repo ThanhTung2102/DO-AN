@@ -1,0 +1,16 @@
+.otp-btn{
+    border-radius: 10px;
+}
+.otp-btn:hover{
+    background-color:#71c9ec ;
+}
+#resend{
+    text-align: center;
+    margin-top: 10px;
+}
+.card-infor{
+    padding: 10px;
+}
+.note{
+    padding: 10px;
+}
