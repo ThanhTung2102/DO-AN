@@ -94,7 +94,6 @@ body,html{
     max-height: 550px;
 }
 .home__content-3{
-    background-image: url(../IMAGES/Homepage\ 2.png);
     background-size: 100% auto;
 }
 .home__container--item-1{
@@ -180,7 +179,7 @@ height: 95%;
 .vision--container--textbox{
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 100%;
    margin: auto;
 }
 .vision--tittle{
@@ -192,7 +191,7 @@ width: 100%;
 .vision-describe{
 font-style: italic;
 font-size: 25px;
-width: 80%;
+width: 100%;
 }
 
 .image-slide>img{
@@ -297,7 +296,7 @@ background-color:#065F73 ;
     font-size: 18px;
     line-height: 30px;
 }
-@media screen and (max-width:1025px) {
+@media screen and (max-width:1030px) {
     #home__header-mobile{
         display: none;
     }
@@ -327,25 +326,70 @@ background-color:#065F73 ;
     }
     .home__container--item-1{
         height: 50vh;
+       
     }
     .detail--1{
         width: 250px;
-        margin-top: 5%;
+        margin-top: 10%;
         margin-left: 5%;
     }
     .detail--2{
         width: 250px;
-        margin-top: 11%;
+        margin-top: 10%;
         margin-left: 9%;
     }
     .detail--3{
         width: 250px;
-        margin-top: 16%;
+        margin-top: 10%;
         margin-left: 9%;
     }
     #home__header-1{
         font-size: 35px;
     }
+    .vision--container--text{
+        text-align: center;
+    }
+    .vision--container--text>div{
+        margin: 10px 8px;
+    }
+    .vision--tittle{
+        font-size: 27px;
+        height: 60px;
+    }
+    .vision-describe{
+        font-size: 20px;   
+    }
+    .specialist--container--header{
+        margin: 35px 0px 20px;
+        font-size: 45px;
+    }
+    .image-slide>img{
+        width: 25%;
+        height: 80%;
+    }
+    .review__section{
+        font-size: 45px;
+    }
+    .review--container{
+        margin: 20px 0px;
+        padding: 10px;
+    }
+    .review-picture{
+        height: 200px;
+        width: 300px;
+        margin: 0px 20px;
+    }
+    .news--img>img{
+        height: 120px;}
+        .part5{
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .newsContainer{
+            width: 45%;
+            margin: 5px 5px;
+        }
+        
 }
 @media screen and (max-width: 429px) {
     #home__img--1{
@@ -441,9 +485,71 @@ background-color:#065F73 ;
         flex-direction: column;
     }
     #home__header-2{
-        font-size: 30px;
+        font-size: 20px;
         margin-top: 10px;
         margin-left: auto;
         text-align: center;
     }
+    #slideShow--image{
+        border-radius: 50%;
+        height: 250px;
+    }
+    .vision--container{
+        margin: 90px 0px 50px;
+    }
+    .vision--container--textbox{
+        flex-direction: column;
+    }
+    .vision--container--text{
+        text-align: center;
+    }
+    .vision--container--text{
+  
+    }
+    .vision--container--text>div{
+        margin: 5px 3px;
+    }
+    .vision--tittle{
+        font-size: 15px;
+        height: 30px;
+    }
+    .vision-describe{
+        font-size: 12px;   
+    }
+    .specialist--container--header{
+        font-size: 20px;
+        margin: 15px 0px 10px;
+    }
+    .part4{
+        margin: 10px;
+    }
+    .review--container{
+        margin: 8px 0px;
+        padding: 5px;
+    }
+    .review__section{
+        font-size: 20px;
+        margin: 15px 5px;
+    }
+    .review-textbox{
+        margin: 5px 0px;
+    }
+     .review-picture{
+        height: 100px;
+        width: 150px;
+        margin: 0px 15px;
+    }
+    .review--tittle{
+        font-size: 13px;
+    }
+    .review--content{
+        font-size: 12px;
+    }
+    .review--more{
+        font-size: 12px;
+    }
+    .news--content{
+        font-size: 12px;
+    }
+    
 }
