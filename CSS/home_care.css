@@ -1,17 +1,16 @@
 body{
     background-color: white;
+  
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .product__page{
-    /* background-image: url(/image/homecare.png);
+    background-image: url(../Images/homecare.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; */
-    height: 900px;
-    width: 100%;
+    background-attachment: fixed;
     padding: 50px 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -162,4 +161,64 @@ body{
     font-size: 18px;
     padding: 10px;
     text-align: center;
+}
+@media screen and (max-width:380px) {
+    .product__form-container{
+        padding: 5px 8px;
+    }
+    .product__form-title{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .product__form-content .product__user-details{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+    }
+    .product__user-details .product__input-box .product__form-input{
+        height: 25px;
+        font-size: 13px;
+        border-radius: 5px;
+        padding-left: 5px;
+        border-bottom-width: 2px;
+
+
+    }
+    .product__user-details{
+        width: 100%;
+    }
+    .product__choose-doctor{
+        font-size: 13px;
+        margin: 5px;
+    }
+    .product__choose-doctor>select{
+        font-size: 13px;
+        margin-top: 5px;
+        height: 20px;
+     width: 100%;
+    }
+    .product__form-button input{
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+        font-size: 13px;
+        border-radius: 10px;
+        
+     }
+     .product__form-button{
+         margin: 5px;
+     }
+     .product__form-button{
+font-size: 13px;
+     }
+     .product__form-button>button{
+        margin:  0px 5px;
+        height: 25px;
+        width: 50px;
+        border-radius: 8px;
+        font-size: 13px;
+     }
 }

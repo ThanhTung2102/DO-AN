@@ -1,0 +1,88 @@
+.container{
+    padding-top: 40px;
+    background-color: #DFF0F2;
+}
+.title{
+    color: rgba(6, 95, 115, 1);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.box{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+.require{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.term__button{
+    text-align: center;
+    margin-top: 10px;
+}
+.term__button--item button{
+    background-color: rgba(6, 95, 115, 1);
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+}
+.topic{
+    padding: 10px;
+}
+.topic p{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+.topic span{
+    background-color: #73BCD9;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.row{
+    text-align: center;
+}
+.topic1 img{
+    width: 400px;
+}
+.topic2 img{
+    width: 400px;
+}
+.topic3 img{
+    width: 400px;
+}
+@media screen and (max-width:1025px){
+    .title{
+        font-size: 25px;
+    }
+    .require{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:429px) {
+    .title{
+        font-size: 25px;
+    }
+    .require{
+        font-size: 15px;
+    }
+    .topic1 img{
+        width: 350px;
+        border-radius: 10px;
+    }
+    .topic2 img{
+        width: 350px;
+        border-radius: 10px;
+    }
+    .topic3 img{
+        width: 350px;
+        border-radius: 10px;
+    }
+}
+

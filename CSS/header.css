@@ -10,7 +10,7 @@ html, body{
   height: 50px;
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   top: 0;
   transition: top 0.3s;
 }
