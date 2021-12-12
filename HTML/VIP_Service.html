@@ -61,23 +61,24 @@
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Full Name</label>
-                      <input type="text" class="form-control" placeholder="Full name" aria-label="Full name">
+                      <input id="fullname" name="fullname" type="text" class="form-control" placeholder="Full name" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Address</label>
-                      <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+                      <input id="address" name="address" type="text" class="form-control" placeholder="Address" required>
                     </div>
                     <div class="col">
                         <label class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number">
+                        <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone number" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Choose available doctor</label>
-                      <select name="" id="" class="form-control">
+                      <select  name="doctor" id="doctor" class="form-control" required>
+                          <option value="" hidden>Please select doctor you want to take a test</option>
                           <option value="Dr. Usman Larson">Dr. Usman Larson</option>
                           <option value="Dr. Usman Larson">Dr. Mika Green</option>
                           <option value="Dr. Usman Larson">Dr. Sebashtian Milor</option>
@@ -88,11 +89,11 @@
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Select time</label>
-                      <input type="time" id="book_time2" class="form-control" min="08:00" max="20:00" required onchange="show2();" required>
+                      <input type="time" name="time" id="book_time2" class="form-control" min="08:00" max="20:00" required onchange="show2();" required>
                     </div>
                     <div class="col">
                         <label class="form-label">Date you want to test</label>
-                        <input type="date" class="form-control" required>
+                        <input id="date" name="date" type="date" class="form-control" required>
                     </div>
                 </div>
                 <div class="col-12">
