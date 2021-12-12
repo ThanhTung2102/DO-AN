@@ -88,11 +88,11 @@
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Select time</label>
-                      <input type="time" class="form-control">
+                      <input type="time" id="book_time2" class="form-control" min="08:00" max="20:00" required onchange="show2();" required>
                     </div>
                     <div class="col">
                         <label class="form-label">Date you want to test</label>
-                        <input type="date" class="form-control">
+                        <input type="date" class="form-control" required>
                     </div>
                 </div>
                 <div class="col-12">
@@ -159,5 +159,21 @@
         </footer>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script>
+     function show2() {
+        let t2 = document.getElementById("book_time2");
+        let t2Hour = t2.value.substr(0, 2);
+        let t2Minute = t2.value.substr(3, 2);
+        if (t2Hour < t2.min) {
+            alert("Earliest time is " + t2.min );
+            t2.value = t2.min;
+        } else if (t2Hour > t2.max){
+            alert("Latest time is " + t2.max);
+            t2.value = t2.max;
+        } else {
+            console.log(t2.value);
+        }
+    }
+   </script>
 </body>
 </html>
