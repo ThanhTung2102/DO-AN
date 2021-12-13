@@ -57,59 +57,29 @@
         </div>
         </div>
         <div class="main" style="background-image: url(../Images/Schedule.png);">
-            <form action="#" method="get" class="form">
+            <form action="./VIPService-confirm.html" method="get" class="form">
                 <span class="form-title">Register for VIP Service</span>
                 <div class="row">
                     <div class="col">
-                      <label class="form-label">First Name</label>
-                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                    </div>
-                    <div class="col">
-                      <label class="form-label">Last Name</label>
-                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                      <label class="form-label">Email</label>
-                      <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-                    </div>
-                    <div class="col">
-                        <label class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number">
+                      <label class="form-label">Full Name</label>
+                      <input id="fullname" name="fullname" type="text" class="form-control" placeholder="Full name" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Address</label>
-                      <input type="text" class="form-control" placeholder="Your Address" aria-label="Your Address">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                      <label class="form-label">Gender</label>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="Radios1" value="option1" checked>
-                        <label class="form-check-label" for="">Male</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="Radios2" value="option2">
-                        <label class="form-check-label" for="">Female</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="Radios3" value="option2">
-                        <label class="form-check-label" for="">Prefer not to say</label>
-                    </div>
+                      <input id="address" name="address" type="text" class="form-control" placeholder="Address" required>
                     </div>
                     <div class="col">
-                        <label class="form-label">Date of birth</label>
-                        <input type="date" class="form-control">
+                        <label class="form-label">Phone Number</label>
+                        <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone number" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Choose available doctor</label>
-                      <select name="" id="" class="form-control">
+                      <select  name="doctor" id="doctor" class="form-control" required>
+                          <option value="" hidden>Please select doctor you want to take a test</option>
                           <option value="Dr. Usman Larson">Dr. Usman Larson</option>
                           <option value="Dr. Usman Larson">Dr. Mika Green</option>
                           <option value="Dr. Usman Larson">Dr. Sebashtian Milor</option>
@@ -120,11 +90,11 @@
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Select time</label>
-                      <input type="time" class="form-control">
+                      <input type="time" name="time" id="book_time2" class="form-control" min="08:00" max="20:00" required onchange="show2();" required>
                     </div>
                     <div class="col">
                         <label class="form-label">Date you want to test</label>
-                        <input type="date" class="form-control">
+                        <input id="date" name="date" type="date" class="form-control" required>
                     </div>
                 </div>
                 <div class="col-12">
@@ -191,5 +161,21 @@
         </footer>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script>
+     function show2() {
+        let t2 = document.getElementById("book_time2");
+        let t2Hour = t2.value.substr(0, 2);
+        let t2Minute = t2.value.substr(3, 2);
+        if (t2Hour < t2.min) {
+            alert("Earliest time is " + t2.min );
+            t2.value = t2.min;
+        } else if (t2Hour > t2.max){
+            alert("Latest time is " + t2.max);
+            t2.value = t2.max;
+        } else {
+            console.log(t2.value);
+        }
+    }
+   </script>
 </body>
 </html>
