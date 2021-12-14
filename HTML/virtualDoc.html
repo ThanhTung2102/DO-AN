@@ -122,9 +122,9 @@
                     <option value="Cần Giờ District">Cần Giờ District</option>
                 </select>
             </div>
-            <div class="form--row">
+            <div class="form--row" >
                 <label for="">Pick your day</label>
-                <input class="form--input" type="date"  name="date" required>  
+                <input id="datetimepicker" class="form--input" type="date" data-format="DD/MM/YYYY" name="date" required >
             </div>
             <div class="form--row">
                 <label for="">Pick your time</label>
@@ -159,6 +159,27 @@
         }
         
 
+        // $(document).ready(function () {
+        //     $("#datetimepicker").datepicker({
+        //         minDate: 0
+        //     });
+        // });
+
+        $(function(){
+            var dtToday = new Date();
+            
+            var month = dtToday.getMonth() + 1;
+            var day = dtToday.getDate();
+            var year = dtToday.getFullYear();
+            if(month < 10)
+                month = '0' + month.toString();
+            if(day < 10)
+                day = '0' + day.toString();
+            
+            var maxDate = year + '-' + month + '-' + day;
+            alert(maxDate);
+            $('#datetimepicker').attr('min', maxDate);
+        });
         // async function getSrc() {
         //     const res = await fetch("./header.html", {
         //         method: 'GET',
@@ -171,24 +192,7 @@
         //     document.querySelector('iframe').setAttribute("src", urlObject)
         // }
         //     getSrc();
-        var xhr = new XMLHttpRequest();
 
-// xhr.open('GET', './header.html');
-// xhr.onreadystatechange = handler;
-// xhr.responseType = 'blob';
-// xhr.setRequestHeader('Authorization', 'Bearer ' + token);
-// xhr.send();
-
-// function handler() {
-//   if (this.readyState === this.DONE) {
-//     if (this.status === 200) {
-//       // this.response is a Blob, because we set responseType above
-//       var data_url = URL.createObjectURL(this.response);
-//       document.querySelector('#xxx').src = data_url;
-//     } else {
-//       console.error('no pdf :(');
-//     }
-//   }
 
   
 // }
