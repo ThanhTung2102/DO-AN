@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/responsivePT2.css">
 </head>
-<body>
+<body onload="document.form1.userr.focus()">
     <div class="container--1">
         <div class="box__icon">
             <a href="#"><img class="icon__phone" src="../images/—Pngtree—white call icon png_3562069.png" alt=""></a>
@@ -46,10 +46,10 @@
 
     <div class="login-main">
         <div class="login-main__form">
-            <form action="">
+            <form action="" name="form1">
                 <h3><span>TK </span> Hospital Online Login</h3>
                 <div>Email or Phone number</div>
-                <div><input class="" type="number" and type="email"></div>
+                <input name="userr" class="email phonenumb" type="text" id="ephone">
                 <div>Password</div>
                 <div class="input-password">
                     <input type="password" name="password" id="password">
@@ -58,7 +58,7 @@
                 <div class="forgot-pw">
                     <a href="Forgot password?"></a>
                 </div>
-                <div ><input class="button--login" type="button" value="Login"></div><br>
+                <div ><input class="button--login" type="submit" value="Login" onclick="validateEmailandPhoneNum()"></div><br>
                 <hr><br>
                 <div class="input-button--create">
                     <input class="button--create" type="button" value="Create new account">
@@ -95,5 +95,36 @@
         </div>
     </div>
     
+
+    <script>
+        // Validate email
+        // function ValidateEmail(input) {
+        //     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        //     if (input.value.match(validRegex)) {
+        //     alert("Valid email address!");
+        //     document.form1.userr.focus();
+        //     return true;
+        //     } else {
+        //     alert("Invalid email address!");
+        //     document.form1.userr.focus();
+        //     return false;
+        //     }
+        // }
+
+        function validateEmailandPhoneNum() {
+            var email = document.getElementById('ephone');
+            var mailFormat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})|((09|03|07|08|05)+([0-9]{8})\b)+$/;
+            if (email.value == "") {
+                alert( "Please enter your Email or Phone Number  ");
+            }
+            else if (!mailFormat.test(email.value)) {
+                alert( "Email Address / Phone number is not valid, Please provide a valid Email or phone number ");
+                return false;
+            }
+            else {
+                alert(" Success ");
+            }
+        }
+    </script>
 </body>
 </html>
