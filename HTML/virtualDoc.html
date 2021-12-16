@@ -14,11 +14,12 @@
         @import url(../CSS/mobile_virtualDoc.css);
         iframe{
             margin: 0;
+            top: 100px;
         }
     </style>
 </head>
 <body>
-    <iframe id="xxx" src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
+    
     <!-- <a href="./header.html"></a> -->
     <!-- <div class="container--1">
         <div class="box__icon">
@@ -52,7 +53,8 @@
         <input class="button-function function--3" type="submit" value="Schedule Appointment">
         </div>
     </div> -->
-    <iframe src="" name="contnt" frameborder="0" height="100%" width="100%" style="margin: 0%;"> </iframe>
+    <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
+    <!-- <iframe src="" name="content" frameborder="0" height="100%" width="100%" style="margin: 0%;"> </iframe> -->
 <form action="./Confirm_virtual.html" method="get" target="test">
     
     <div class="form--container">
@@ -120,9 +122,9 @@
                     <option value="Cần Giờ District">Cần Giờ District</option>
                 </select>
             </div>
-            <div class="form--row">
+            <div class="form--row" >
                 <label for="">Pick your day</label>
-                <input class="form--input" type="date"  name="date" required>  
+                <input id="datetimepicker" class="form--input" type="date" data-format="DD/MM/YYYY" name="date" required >
             </div>
             <div class="form--row">
                 <label for="">Pick your time</label>
@@ -157,6 +159,27 @@
         }
         
 
+        // $(document).ready(function () {
+        //     $("#datetimepicker").datepicker({
+        //         minDate: 0
+        //     });
+        // });
+
+        $(function(){
+            var dtToday = new Date();
+            
+            var month = dtToday.getMonth() + 1;
+            var day = dtToday.getDate();
+            var year = dtToday.getFullYear();
+            if(month < 10)
+                month = '0' + month.toString();
+            if(day < 10)
+                day = '0' + day.toString();
+            
+            var maxDate = year + '-' + month + '-' + day;
+            alert(maxDate);
+            $('#datetimepicker').attr('min', maxDate);
+        });
         // async function getSrc() {
         //     const res = await fetch("./header.html", {
         //         method: 'GET',
@@ -169,42 +192,20 @@
         //     document.querySelector('iframe').setAttribute("src", urlObject)
         // }
         //     getSrc();
-        var xhr = new XMLHttpRequest();
 
-xhr.open('GET', './header.html');
-xhr.onreadystatechange = handler;
-xhr.responseType = 'blob';
-xhr.setRequestHeader('Authorization', 'Bearer ' + token);
-xhr.send();
-
-function handler() {
-  if (this.readyState === this.DONE) {
-    if (this.status === 200) {
-      // this.response is a Blob, because we set responseType above
-      var data_url = URL.createObjectURL(this.response);
-      document.querySelector('#xxx').src = data_url;
-    } else {
-      console.error('no pdf :(');
-    }
-  }
 
   
-}
-$.ajax({
-    type: 'POST',
-    url: './header.html',
-    headers: {
-        "My-First-Header":"first value",
-        "My-Second-Header":"second value"
-    }
-    //OR
-    //beforeSend: function(xhr) { 
-    //  xhr.setRequestHeader("My-First-Header", "first value"); 
-    //  xhr.setRequestHeader("My-Second-Header", "second value"); 
-    //}
-}).done(function(data) { 
-    alert(data);
-});
+// }
+// $.ajax({
+//         type: 'POST',
+//         url: './header.html',
+//         headers: {
+//             "My-First-Header":"first value",
+//             "My-Second-Header":"second value"
+//         }
+//     }).done(function(data) { 
+//         alert(data);
+//     });
     
     </script>
  <!-- <div class="footer">

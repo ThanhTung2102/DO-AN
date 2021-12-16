@@ -1,0 +1,77 @@
+[
+    {
+        "DoctorID":"01",
+        "DoctorName":"Nguyễn Cao Thăng",
+        "WorkingHour":[
+            {
+                "WorkingDay":2,
+                "Shift":"Morning"
+
+            },
+            {
+                "WorkingDay":4,
+                "Shift":"Noon"
+                
+            },
+            {
+                "WorkingDay":6,
+                "Shift":"Morning"
+                
+            }
+        ]
+    },
+    {
+        "DoctorID":"02",
+        "DoctorName":"Nguyễn Thanh Tùng",
+        "WorkingHour":[
+            {
+                "WorkingDay":3,
+                "Shift":"Morning"
+
+            },
+            {
+                "WorkingDay":5,
+                "Shift":"Noon"
+                
+            },
+            {
+                "WorkingDay":7,
+                "Shift":"Morning"
+                
+            }
+        ]
+    },
+    {
+        "DoctorID":"03",
+        "DoctorName":"Nguyễn Thị Thu",
+        "WorkingHour":[
+            {
+                "WorkingDay":7,
+                "Shift":"Morning"
+
+            },
+            {
+                "WorkingDay":8,
+                "Shift":"Noon"
+                
+            }
+        ]
+    },
+    {
+        "DoctorID":"04",
+        "DoctorName":"Nguyễn Thị Hương",
+        "WorkingHour":[
+            {
+                "WorkingDay":7,
+                "Shift":"Noon"
+
+            },
+            {
+                "WorkingDay":8,
+                "Shift":"Morning"
+                
+            }
+        ]
+    }
+
+]
