@@ -1,0 +1,19 @@
+.note-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#ok-btn{
+    background-color: white;
+    border: black solid 1px;
+    width: 80px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#ok-btn:hover{
+    background-color: #91d1eb;
+}
+#btn-note{
+    color: white;
+}
