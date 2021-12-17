@@ -28,3 +28,23 @@
   padding: 10px;
   text-align: center;
 }
+/*-------- footer--------*/
+.bg-footer{
+  background-color: #065F73;
+  color: white;
+}
+.cpr-bg{
+  background-color: white;
+}
+.cpr-bg a{
+  color: black;
+  text-decoration: black;
+}
+.ft-link{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.ft-link:hover{
+  color: #73BCD9;
+}

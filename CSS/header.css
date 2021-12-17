@@ -111,3 +111,68 @@ a{
 .div--row a:hover{
   color: #005669;
 }
+
+/* css cho header mobile */
+.nav-mobile{
+  display: inline-flex;
+  font-size: 25px;
+  background-color: #065F73 ;
+  color: white;
+  display: none;
+  margin-bottom: 20px;
+}
+.nav-dropdown{
+  position: relative;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  padding: 20px;
+  font-size: 15px;
+  width: 200px;
+}
+.nav-dropdown:hover .dropdown-content{
+  display: block;
+}
+.nav-dropdown:active .dropdown-content{
+  display: block;
+  
+}
+.nav-mobile a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  
+}
+.nav-name span{
+  color: red;
+}
+.menu-main{
+  background-color: white;
+}
+.menu-top{
+  background-color:#065F73 ;
+  height: 80px;
+  line-height: 80px;
+  color: white;
+}
+@media screen and (max-width:400px) {
+  .nav-desktop{
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
+  }
+}
+@media screen and (max-width:780px) {
+  .nav-desktop{
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
+  }
+  .nav-mobile{
+    display: flex;
+  }
+}

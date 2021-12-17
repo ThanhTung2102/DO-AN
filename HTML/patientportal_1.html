@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/header.css">
@@ -15,39 +15,69 @@
 <body>
     <div class="pt">
         
-        <div class="container--1">
-            <div class="box__icon">
-                <a href="#"><img class="icon__phone" src="./images/—Pngtree—white call icon png_3562069.png" alt=""></a>
-                <a id="contact" href=""><p>Contact Us</p></a>
-            </div>
-            <div class="option">
-                <div class="id">
-                <a class="link" href="Homepage.html">Homepage</a>
-                <a class="link" href="Aboutusver2.html">About us</a>
-                <a class="link" href="Service.html">Services</a>
-                <div class="search">
-                    <input type="text" placeholder="Search">
-                    <a href=""><img src="./images/search-icon-png-9986.png" alt=""></a>
-                </div>
-                <input id="button-login" type="submit"value="Log in">
-            </div>
-            </div>
-        </div>
-        <div class="container--2">
-            <div class="name__menu">
-                <a href=""><img id="menu" class="img" src="./images/Menu.png" alt=""></a>
-                <div class="name">
-                    <a href=""><img class="img" src="./images/250234479_248400560664121_3333180774864611749_n.png" alt=""></a>
-                    <a href="#"><img  src="./images/TK Hospital.png" alt=""></a>
-                </div>
-            </div>
-            <div class="function">
-            <input class="button-function" type="submit" value="Virtual Doctor">
-            <input class="button-function" type="submit" value="Homecare">
-            <input class="button-function function--3" type="submit" value="Schedule Appointment">
-            </div>
-        </div>
-    
+        <!-- navigation bar of desktop -->
+  <div class="nav-desktop">
+    <div class="container--1">
+      <div class="box__icon">
+          <a href="#"><img class="icon__phone" src="../images/—Pngtree—white call icon png_3562069.png" alt=""></a>
+          <a id="contact" href=""><p>Contact Us</p></a>
+      </div>
+      <div class="option">
+          <div class="id">
+          <a class="link" href="Homepage.html">Home</a>
+          <a class="link" href="Aboutusver2.html">About Us</a>
+          <a class="link" href="Services.html">Services</a>
+          <div class="search">
+              <input type="text" placeholder="Search">
+              <a href=""><img src="../Images/search-icon-png-9986.png" alt=""></a>
+          </div>
+          <input id="button-login" type="submit"value="Log in">
+      </div>
+      </div>
+  </div>
+  <div class="container--2">
+      <div class="name__menu">
+          <a href=""><img id="menu" class="img" src="../images/Menu.png" alt=""></a>
+          <div class="name">
+              <a href=""><img class="img" src="../images/250234479_248400560664121_3333180774864611749_n.png" alt=""></a>
+              <a href="#"><img  src="../images/TK Hospital.png" alt=""></a>
+          </div>
+      </div>
+      <div class="function">
+      <input class="button-function" type="submit" value="Virtual Doctor">
+      <input class="button-function" type="submit" value="Homecare">
+      <input class="button-function function--3" type="submit" value="Schedule Appointment">
+      </div>
+  </div> 
+</div>
+<!-- navagation bar of ipad and phone -->
+<div class="nav-mobile">
+  <div class="nav-dropdown">
+      <div class="dropdown__button">
+          <a href=""><i class="fa fa-bars"></i></a>
+      </div>
+      <div class="dropdown-content">
+          <div class="menu-top">
+              <div>
+                  <i class="fa fa-user-circle"></i>Account
+              </div>
+          </div>
+          <div class="menu-main">
+              <a href="Homepage.html"><i class="fa fa-home">   </i>Home</a>
+              <a href="Aboutusver2.html"><i class="fa fa-book">   </i>About us</a>
+              <a href="Services.html"><i class="fa fa-cogs">   </i>Service</a>
+              <a href=""><i class="fa fa-search">   </i>Search</a>
+              <a href="patientportal_1.html"><i class="fa fa-user-shield">   </i>Account Information</a>
+              <a href=""><i class="fa fa-envelope">   </i>Contact</a>
+          </div>
+      </div>
+  </div>
+  <div class="nav-name">
+      <img src="" alt="">
+      <span>TK </span>Hospital
+  </div>
+</div>
+
         <div class="pt-nav">
             <div class="pt-nav__left">
                 <div class="pt-navbar_1"><a href="Homepage.html">Homepage</a></div>
@@ -55,103 +85,14 @@
                 <div class="pt-navbar_2"><a href="#">Medical Record</a></div>
             </div>
             <div class="pt-main__right">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#2019" aria-controls="tab1" role="tab" data-toggle="tab">2019</a></li>|
-                    <li role="presentation"><a href="#2020" aria-controls="tab2" role="tab" data-toggle="tab">2020</a></li>|
-                    <li role="presentation"><a href="#2021" aria-controls="tab3" role="tab" data-toggle="tab">2021</a></li>
-                    
-                </ul>
+                <a target="frame-medicalrecord" href="health_diagnose.html">2019</a>|
+                <a target="frame-medicalrecord" href="health_diagnose.html">2020</a>|
+                <a target="frame-medicalrecord" href="health_diagnose.html">2021</a>
             </div>
         </div>
-        <div class="pt-main">
-            <div class="pt-main__title">Health Diagnose</div>
-            <div class="pt-main_1">
-            <div class="pt-main__column pt-main__box--result">
-                    <div class="pt-main__result--title">Health check results</div>
-                    <div><span>Liver: </span>not large in size, even parenchyma, deeply hypoechoic</div>
-                    <div><span>Portal and suprahepatic veins: </span>No dilatation, no thrombosis</div>
-                    <div><span> Biliary tract:</span>no dilation inside and outside, no stones</div>
-                    <div><span>Pancreas: </span>not large in size, even parenchyma</div>
-                    <div><span>Stomach: </span> Clear gastric juice</div>
-                    <div><span>Duodenal bulb: </span>normal mucosa</div>
-                    <div><span>Abdominal aorta: </span>no aneurysm</div>
-                    <div><span>Bladder: </span>no stones, thin wall</div>
-                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente libero quas nostrum corporis minima aut, id voluptates eaque animi sed nam quasi enim repellendus esse alias! Tenetur mollitia voluptatibus adipisci.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, unde! Consectetur commodi necessitatibus ut nesciunt eum voluptates, ad odio facilis laboriosam corrupti est. Sapiente officiis temporibus, ratione quaerat porro deserunt?</div>
-            </div>
-            <div class="pt-main__column pt-main__column--2">
-                <div class="pt-main__box">
-                    <div class="pt-main--item">
-                    <div class="pt-main--img"><img src="../Images/heart.png" alt=""></div>
-                    <div><span> Heart </span><br> <br> 75%</div>
-                    </div>
-                    <img src="../IMAGES/thanh1.png" alt="">
-                </div>
-                <div class="pt-main__box">
-                    <div class="pt-main--item">
-                    <div class="pt-main--img"><img src="../IMAGES/Lungs.png" alt="Lungs"></div>
-                    <div><span> Lungs </span> <br><br> 80%</div>
-                    </div>
-                    <img src="../IMAGES/thanh2.png" alt="">
-                </div>
-                <div class="pt-main__box">
-                    <div class="pt-main--item">
-                    <div class="pt-main--img"><img src="../IMAGES/stomach.png" alt="Stomach"></div>
-                    <div><span> Stomach </span><br> <br> 30%</div>
-                    </div>
-                    <img src="../IMAGES/thanh3.png" alt="">
-                </div>
-                <div class="pt-main__box">
-                    <div class="pt-main--item">
-                    <div class="pt-main--img"><img src="../IMAGES/liver.png" alt="Gan"></div>
-                    <div><span> Liver </span><br> <br> 65%</div>
-                    </div>
-                    <img src="../IMAGES/thanh4.png" alt="">
-                </div>
-            </div>
-            <div class="pt-main__column pt-main__column--3">
-                <div class="pt-main__box pt-main__box-2">
-                    <div class="pt-main--item">
-                    <div class="pt-main--img"><img src="../IMAGES/Chiều cao.png" alt="Chiều cao"></div>
-                    <div><span> Height </span><br> <br> 170cm</div>
-                    </div>
-                </div>
-                <div class="pt-main__box pt-main__box-2">
-                    <div class="pt-main--item">
-                    <div class="pt-main--img"><img src="../IMAGES/Cân nặng.png" alt="Cân nặng"></div>
-                    <div><span> Weight </span> <br><br> 60kg</div>
-                    </div>
-                </div>
-                <div class="pt-main__box pt-main__box-2">
-                    <div class="pt-main--item">
-                    <div class="pt-main--img"><img src="../IMAGES/Nhóm máu.png" alt="Nhóm máu"></div>
-                    <div><span> Blood group </span> <br><br> A</div>
-                    </div>
-                </div>
-                <div class="pt-main__box pt-main__box-2">
-                    <div class="pt-main--item">
-                    <div class="pt-main--img"><img src="../IMAGES/Huyết áp.png" alt="Huyết áp"></div>
-                    <div><span> Blood Pressure </span> <br><br> 134</div>
-                </div>
-                </div> 
-            </div>
-            </div>
-            <div class="pt-main__item--end">
-                <div class="pt-main__item--img">
-                    <div><img src="../IMAGES/BP1.png" alt="Biểu đồ huyết áp"></div>
-                    <div class="pt-main__item--title">Blood pressure diagram</div>
-                </div>
-                <div class="pt-main__item--img">
-                    <div><img src="../IMAGES/HR2.png" alt="Nhịp tim"></div>
-                    <div class="pt-main__item--title ">Heart rate</div>
-                </div>
-                <div class="pt-main__item--img">
-                   <div> <img src="../IMAGES/SPO2_1.png" alt="SPO2"></div>
-                   <div class="pt.main__item--title">SPO2</div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-content">
+        <iframe name="frame-medicalrecord" src="" frameborder="0" height="900px" margin="2vh 12vw"  width="100%"></iframe>
+        
+        <!-- <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="2019">
               <div class="pt-main__years">
                 <table>
@@ -165,13 +106,13 @@
                         <td>26/03/2019</td>
                         <td>26/03/2019</td>
                         <td>Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia</td>
-                        <td><i class="fa fa-eye"></i></td>
+                        <td><a href="#detail"><i class="fa fa-eye"></i></a></td>
                     </tr>
                     <tr>
                       <td>02/06/2019</td>
                       <td>02/06/2019</td>
                       <td>Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia</td>
-                      <td><i class="fa fa-eye"></i></td>
+                      <td><a href="#detail"><i class="fa fa-eye"></i></a></td>
                   </tr>
                 </table>
               </div>
@@ -190,13 +131,13 @@
                             <td>23/09/2020</td>
                             <td>23/09/2020</td>
                             <td>Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia</td>
-                            <td><i class="fa fa-eye"></i></td>
+                            <td><a href="#detail"><i class="fa fa-eye"></i></a></td>
                         </tr>
                         <tr>
                           <td>23/09/2020</td>
                           <td>23/09/2020</td>
                           <td>Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia</td>
-                          <td><i class="fa fa-eye"></i></td>
+                          <td><a href="#detail"><i class="fa fa-eye"></i></a></td>
                       </tr>
                     </table>
                   </div>
@@ -214,7 +155,7 @@
                             <td>23/09/2021</td>
                             <td>23/09/2021</td>
                             <td>Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia</td>
-                            <td><a onclick="xemchitiet()" href="#detail"><i class="fa fa-eye"></a></i></td>
+                            <td><a href="#detail"><i class="fa fa-eye"></i></a></td>
                         </tr>
                         <tr>
                           <td>23/09/2021</td>
@@ -232,15 +173,80 @@
                 </div>
             </div>
         </div>
-        <div style="display: none;" id="detail" class="pt-tab__detail">
-            Tôi không biết <br>
-            Tôi thích <br>
-            Nguyễn Minh Nhật
-        </div>
+        <div class="popup-container" id="detail">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup--date">
+                        <div class="date">
+                            Date in: <br>
+                            28/01/2020 8:00
+                        </div>
+                        <div class="date">
+                            Date out: <br>
+                            10/02/2020 16:00
+                        </div>
+                    </div>
+                    <div class="popup-info">
+                        <div class="info--content">
+                            <label for="">Health center:</label> <span id="healthCenter"></span> <br>
+                            <label for="">Name of disease:</label> <span id="disease"></span> <br>
+                            <label for="">Disease Code:</label> <span id="diseaseCode"></span> <br>
+                            <label for="">Department:</label> <span id="department"></span> <br>
+                            <label for="">Department Code:</label> <span id="departmentCode"></span> <br>
+                            <label for="">Status:</label> <span id="status"></span> <br>
+                        </div>
+                        <div class="info--content">
+                            <label for="">Total payment:</label> <span id="payment"></span> <br>
+                            <label for="">Payment Status</label> <span id="paymentStatus"></span> <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-table">
+                    <table>
+                        <tr>
+                            <th>Name of service</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Total</th>
+                            
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>15</td>
+                            <td>300</td>
+                            <td>4500</td>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>15</td>
+                            <td>300</td>
+                            <td>4500</td>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>15</td>
+                            <td>300</td>
+                            <td>4500</td>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>15</td>
+                            <td>300</td>
+                            <td>4500</td>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>15</td>
+                            <td>300</td>
+                            <td>4500</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="close">x</a>
+            </div>
+        </div> -->
     <script>
-        function xemchitiet(){
-            document.getElementById("detail").style.display="block"
-        }
+       
     </script>
     
     
@@ -248,34 +254,64 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type=text/javascript></script>
     <script src="../js/custom.js" type=text/javascript></script>    
 
-        <div class="footer">
-            <div class="footer-bar">
-                <div class="footer-mar footer-logo">
-                    <a><img src="./images/TK Hospital.png" alt="" class="logo"></a>
-                </div>
-                <div class=" footer-mar diachi">
-                    <a href="#" class="title-inf">Adress</a>
-                    <p>669 QL1A Khu phố 3, P.Linh Xuân, TP. Thủ Đức, TP.HCM</p>
-                </div>
-                <div class=" footer-mar lienhe">
-                    <a href="#" class="title-inf">Contact us</a>
-                    <p>
-                        <span>Tel: (028) 54 11 33 33</span> <br>
-                        <span>Fax: (028) 54 11 33 34</span> <br>
-                        <span>Emergency: (028) 54 11 35 00</span>
-                    </p>
-                </div>
-                <div class=" footer-mar">
-                    <a href="#" class="title-inf">Services conditon</a>
-                </div>
-                <div class=" footer-mar baomat">
-                    <a href="#" class="title-inf">Privacy Policy</a>
-                </div>
+         <!--footer  -->
+         <footer class="bg-footer text-center text-lg-start">
+            <!-- Grid container -->
+            <div class="container p-4">
+              <!--Grid row-->
+              <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5>Address</h5>
+            
+                <ul class="list-unstyled mb-0">
+                <li>
+                  <p>669 QL1A Khu phố 3, P.Linh Xuân, TP. Thủ Đức, TP.HCM</p>
+                </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5>Contact Us</h5>
+            
+                <ul class="list-unstyled">
+                <li>
+                  <p>Tel: (028) 54 11 33 33</p>
+                </li>
+                <li>
+                  <p>Fax: (028) 54 11 33 34</p>
+                </li>
+                <li>
+                  <p>Emergency: (028) 54 11 35 00</p>
+                </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="ft-link" href="#">Terms of Service</a>
+              </div>
+              <!--Grid column-->
+            
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="ft-link" href="#">Privacy Policies</a>
+              </div>
+              <!--Grid column-->
+              </div>
+              <!--Grid row-->
             </div>
-            <div class="copyright">
-                <span>Copyright &copy; 2021 by TK Hospital. All Rights Reserved</span>
+            <!-- Grid container -->
+            
+            <!-- Copyright -->
+            <div class="text-center cpr-bg">
+              <a class="text-dark" href="#">Copyright © 2021 by TK Hospital. All Rights Reserved.</a>
             </div>
-        </div>    
+            <!-- Copyright -->
+          </footer>
 
     </div>
 </body>
