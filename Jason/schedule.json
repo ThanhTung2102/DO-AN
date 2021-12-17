@@ -1,0 +1,22 @@
+{
+    "schedule":[
+        {
+            "fullname": "Nguyen Thi Thu",
+            "address": "Thu Duc City, HCM City",
+            "phone": "0983799383",
+            "date": "2022-01-06"
+        },
+        {
+            "fullname": "Nguyen Quoc Cong Thanh",
+            "address": "Di An city, Binh Duong",
+            "phone": "0288737383",
+            "date": "2021-12-23"
+        },
+        {
+            "fullname": "Bui An Tam",
+            "address": "Bien Hoa city, Dong Nai",
+            "phone": "0277738329",
+            "date": "2022-02-14"
+        }
+    ]
+}

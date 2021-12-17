@@ -1,0 +1,38 @@
+﻿{"virtualDoc":[{
+            "Name:": "Cao Thăng",
+            "UserID": "01",
+            "Age": "46",
+            "Schedule": "01",
+            "Type": "Adult General Medicine",
+            "ConnectWay": "Phone Call",
+            "Platform": "Zoom",
+            "District": "Tân Phú District",
+            "Date": "2022-01-06",
+            "BookingTime": "9:30"
+        },
+        {
+            "Name:": "John",
+            "UserID": "02",
+            "Age": "17",
+            "Schedule": "01",
+            "Type": "Covid-19 Response",
+            "ConnectWay": "Video Call",
+            "Platform": "Google Meet",
+            "District": "District 3",
+            "Date": "2021-12-31",
+            "BookingTime": "11:30"
+        },
+        {
+            "Name:": "Micheal",
+            "UserID": "03",
+            "Age": "9",
+            "Schedule": "01",
+            "Type": "Pediatrics General Medicine",
+            "ConnectWay": "Video Call",
+            "Platform": "Skype",
+            "District": "Gò Vấp District",
+            "Date": "2021-12-15",
+            "BookingTime": "15:00"
+        }
+    ]
+}
