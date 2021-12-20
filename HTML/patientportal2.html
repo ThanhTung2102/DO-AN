@@ -6,16 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-  
+  <script src="../js/angular.js"></script>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/responsivePT2.css">
     
+    <script>
+      let app= angular.module("angularApp",[]);
+      app.controller("inforController", function($scope, $http){
+        $http({
+          method:"GET",
+          url:"../Jason/PatientInfor.json"
+        }).then(function success(response){
+          $scope.patientInfor= response.data;
+          $scope.Address=function($scope){
+            return patientInfor[0].Street + " "+patientInfor[0].Ward+" "+patientInfor[0].Province
+          }
+        },
+        function error(response){
+          $scope.error=response.statusText;
+        }
+        )
+      })
+
+      app.controller("paymentController", function($scope, $http){
+        $http({
+          method:"GET",
+          url:"../Jason/payment.json"
+        }).then(function success(response){
+          $scope.patientInfor= response.data;
+        },
+        function error(response){
+          $scope.error=response.statusText;
+        }
+        )
+      })
+      app.controller("scheduleController", function($scope, $http){
+        $http({
+          method:"GET",
+          url:"../Jason/schedule.json"
+        }).then(function success(response){
+          $scope.schedule= response.data;
+        },
+        function error(response){
+          $scope.error=response.statusText;
+        }
+        )
+      })
+      app.controller("eventController", function($scope, $http){
+        $http({
+          method:"GET",
+          url:"../Jason/event.json"
+        }).then(function success(response){
+          $scope.event= response.data;
+        },
+        function error(response){
+          $scope.error=response.statusText;
+        }
+        )
+      })
+    </script>
     <title>Patient Information</title>
-    
+
 </head>
-<body>
+<body ng-app="angularApp" >
+  
   <!-- navigation bar of desktop -->
   <div class="nav-desktop">
       <div class="container--1">
@@ -80,16 +136,16 @@
   </div>
 
   <!-- header cho patient-portal  -->
-    <div class="pt-header-3">
+    <div class="pt-header-3" >
         <div class="pt-header-3__image">
             <img src="../IMAGES/avatar1.png" alt="Không thể tải hình">
         </div>
-        <div class="pt-header-3__content">
-            <div>Hello, Minh Nhật</div>
+        <div class="pt-header-3__content" ng-controller="inforController">
+            <div>Hello, {{patientInfor[0].Name}} </div>
             <hr>
-            <div>143 đường Lê lợi, quận 1, TP.Hồ Chí Minh</div>
-            <div><span>Phone number:</span>034556785</div>
-            <div><span>Email: </span>tthunt19406@st.uel.edu.vn</div>
+            <div>{{patientInfor[0].Street}}, {{patientInfor[0].Ward}}, {{patientInfor[0].Province}}</div>
+            <div><span>Phone number:</span>{{patientInfor[0].PhoneNumer}}</div>
+            <div><span>Email: {{patientInfor[0].Email}} </span></div>
         </div>
     </div>
     <div class="pt1-nav">
@@ -105,21 +161,21 @@
     
     <div class="pt1-main">
         <div class="pt1-main__column pt1-main__column--1 ">
-           <div class="pt1-main__column1--infor">
+           <div class="pt1-main__column1--infor" ng-controller="inforController">
             <div class="pt1-main1__box pt1-main1__box1">
                 <div><img src="../IMAGES/avatar1.png" alt="Avatar"></div>
-                <div>Nguyễn Minh Nhật</div>
-                <div>25/1/2001</div>
-                <div>tungnt19406@st.uel.edu.vn</div>
+                <div>{{patientInfor[0].Name}}</div>
+                <div>{{patientInfor[0].DateOfBirth}}</div>
+                <div>{{patientInfor[0].Email}}</div>
             </div>
             <div class="pt1-main1__box pt1-main1__box2">
                 <div><span> Adress </span><br>
-                   Số 121, đường Nam Hà, quận 6</div>
-                <div><span>City</span><br> Ho Chi Minh</div>
-                <div><span>Nation</span><br> Kinh</div>
-                <div><span>Job</span><br>Student</div>
-                <div><span>Register date</span><br>24/10/2021</div>
-                <div><span>ID number</span><br>344456576</div>
+                  {{patientInfor[0].Street}}, {{patientInfor[0].Ward}}, {{patientInfor[0].Province}}</div>
+                <div><span>City</span><br>{{patientInfor[0].Province}} </div>
+                <div><span>Nation</span><br>{{patientInfor[0].Nation}} </div>
+                <div><span>Job</span><br>{{patientInfor[0].Job}}</div>
+                <div><span>Health Insuarance Number</span><br>{{patientInfor[0].HealthInsuaranceCardNumber}}</div>
+                <div><span>ID number</span><br>{{patientInfor[0].IDnumber}}</div>
             </div>
            </div> 
             <div class="pt1-main__table">
@@ -142,31 +198,31 @@
                         </ul>
                   
                         <!-- Tab panes -->
-                        <div class="tab-content">
+                        <div class="tab-content" ng-controller="scheduleController">
                           <div role="tabpanel" class="tab-pane active" id="tab1">
                             <div class="pt-main__tab1">
                               <div class="tab1-row">
                                 <div class="tab1-row__item">
-                                  <div>26 Nov'21</div>
-                                  <div> <span> 09:00-10:00</span></div>
+                                  <div><span>Time</span></div>
+                                  <div> {{schedule[0].Time}}</div>
                                 </div>
                                 <div class="tab1-row__item">
                                   <div><span>Treatment</span></div>
-                                  <div>Open Access</div>
+                                  <div>{{schedule[0].Treatment}}</div>
                                 </div>
                                 <div class="tab1-row__item">
                                   <div><span>Dentist</span></div>
-                                  <div>Dr. Thu Nguyen</div>
+                                  <div>{{schedule[0].Dentist}}</div>
                                 </div>
                                 <div class="tab1-row__item">
                                   <div><span>Patient number</span></div>
-                                  <div>68845</div>
+                                  <div>{{schedule[0].Patientnumber}}</div>
                                 </div>
                               </div>
                             </div>
                   
                           </div>
-                          <div role="tabpanel" class="tab-pane tab-pane__2" id="tab2">
+                          <div role="tabpanel" class="tab-pane tab-pane__2" id="tab2" ng-controller="paymentController">
                             <table>
                               <tr>
                                   <th>Patient Name</th>
@@ -177,75 +233,25 @@
                                   <th>Money</th>
                                   <th>Status</th>
                               </tr>
-                              <tr>
-                                  <td>Nguyễn Thị Thu</td>
-                                  <td>23/10/2020</td>
-                                  <td>General examination</td>
-                                  <td>12456</td>
-                                  <td>00934</td>
-                                  <td>800.000đ</td>
-                                  <td>Paid</td>
+                              <tr ng-repeat="p in patientInfor">
+                                  <td>{{p.PatientName}}</td>
+                                  <td>{{p.Date}}</td>
+                                  <td>{{p.Content}}</td>
+                                  <td>{{p.PatientCode}}</td>
+                                  <td>{{p.RecieptNumber}}</td>
+                                  <td>{{p.Money}}</td>
+                                  <td>{{p.Status}}</td>
                               </tr>
-                              <tr>
-                                  <td>Nguyễn Thị Thu</td>
-                                  <td>23/10/2020</td>
-                                  <td>General examination</td>
-                                  <td>12456</td>
-                                  <td>00934</td>
-                                  <td>800.000đ</td>
-                                  <td>Paid</td>
-                              </tr>
-                              <tr>
-                                  <td>Nguyễn Thị Thu</td>
-                                  <td>23/10/2020</td>
-                                  <td>General examination</td>
-                                  <td>12456</td>
-                                  <td>00934</td>
-                                  <td>800.000đ</td>
-                                  <td>Paid</td>
-                              </tr>
-                              <tr>
-                                  <td>Nguyễn Thị Thu</td>
-                                  <td>23/10/2020</td>
-                                  <td>General examination</td>
-                                  <td>12456</td>
-                                  <td>00934</td>
-                                  <td>800.000đ</td>
-                                  <td>Paid</td>
-                              </tr>
+                              
                           </table>
                           </div>
-                          <div role="tabpanel" class="tab-pane" id="tab3">
-                            <div class="tab3-row">
-                              <div class="pt2-col1">Monday - 18/11/2021</div>
-                              <div class="pt2-col2">Counseling program: Manage blood sugar at home with continuous glucose monitoring device</div>
+                          <div role="tabpanel" class="tab-pane" id="tab3" ng-controller="eventController">
+                            <div class="tab3-row" ng-repeat="e in event">
+                              <div class="pt2-col1">{{e.Time}}</div>
+                              <div class="pt2-col2">{{e.Content}}</div>
                               <div class="pt2-col3"><button>New</button></div>
                             </div>
-                            <div class="tab3-row">
-                              <div class="pt2-col1">Monday - 18/11/2021</div>
-                              <div class="pt2-col2">Counseling program: Manage blood sugar at home with continuous glucose monitoring device</div>
-                              <div class="pt2-col3"><button>New</button></div>
-                            </div>
-                            <div class="tab3-row">
-                              <div class="pt2-col1">Monday - 18/11/2021</div>
-                              <div class="pt2-col2">Counseling program: Manage blood sugar at home with continuous glucose monitoring device</div>
-                              <div class="pt2-col3"><button>New</button></div>
-                            </div>
-                            <div class="tab3-row">
-                              <div class="pt2-col1">Monday - 18/11/2021</div>
-                              <div class="pt2-col2">Counseling program: Manage blood sugar at home with continuous glucose monitoring device</div>
-                              <div class="pt2-col3"><button>New</button></div>
-                            </div>
-                            <div class="tab3-row">
-                              <div class="pt2-col1">Monday - 18/11/2021</div>
-                              <div class="pt2-col2">Counseling program: Manage blood sugar at home with continuous glucose monitoring device</div>
-                              <div class="pt2-col3"><button>New</button></div>
-                            </div>
-                            <div class="tab3-row">
-                              <div class="pt2-col1">Monday - 18/11/2021</div>
-                              <div class="pt2-col2">Counseling program: Manage blood sugar at home with continuous glucose monitoring device</div>
-                              <div class="pt2-col3"><button>New</button></div>
-                            </div>
+                            
                       
                           </div>
                           

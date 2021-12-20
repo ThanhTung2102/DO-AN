@@ -102,6 +102,9 @@ a{
     margin: 2vh 12vw;
     
 }
+.pt-main__right a:active .pt-main__years{
+    display: block;
+}
 .pt-main__years table{
     width: 100%;
 }

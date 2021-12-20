@@ -1,0 +1,58 @@
+
+[
+    {
+        "nam":[{
+            "year":"2019",
+            "dateIn":"26/03/2019",
+            "dateOut":"26/03/2019",
+            "diseaseName":"Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia"
+        },
+        {
+            "year":"2019",
+            "dateIn":"2/07/2019",
+            "dateOut":"26/07/2019",
+            "diseaseName":"Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia"
+        }
+            
+        ]
+    },
+    {
+        "nam":[{
+            "year":"2020",
+            "dateIn":"20/05/2020",
+            "dateOut":"20/05/2020",
+            "diseaseName":"Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia"
+        },
+        {
+            "year":"2020",
+            "dateIn":"20/08/2020",
+            "dateOut":"1/09/2020",
+            "diseaseName":"Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia"
+        },
+        {
+            "year":"2020",
+            "dateIn":"20/11/2020",
+            "dateOut":"20/11/2020",
+            "diseaseName":"Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia"
+        }
+            
+        ]
+    },
+    {
+        "nam":[{
+            "year":"2021",
+            "dateIn":"14/09/2021",
+            "dateOut":"23/09/2021",
+            "diseaseName":"Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia"
+        },
+        {
+            "year":"2021",
+            "dateIn":"11/12/2021",
+            "dateOut":"11/12/2021",
+            "diseaseName":"Acute sinusitis, digestive disorders, lipoproteins and hyperlipidemia"
+        }    
+            
+        ]
+    }
+]
+
