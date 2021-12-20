@@ -35,6 +35,9 @@
 .option{
     display: none;
 }
+.pt-main__years{
+    margin:1vh 5vw; 
+}
 .pt-main_1{
     display: flex;
     flex-wrap: wrap !important;
