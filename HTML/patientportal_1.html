@@ -19,14 +19,19 @@
           method:"GET",
           url:"../Jason/patientRecord.json"
         }).then(function success(response){
-          $scope.selectYear= response.data;
+          $scope.patientRecord= response.data;
           } 
         ,
         function error(response){
           $scope.error=response.statusText;
         }
         )
-        
+        $scope.selectYear=function(year){
+            $scope.prYear=year;
+        }
+        $scope.selectDetail=function(detail){
+            $scope.prDetail=detail;
+        }
       })
       
     </script>
@@ -103,9 +108,10 @@
                 <span> > </span>
                 <div class="pt-navbar_2"><a href="#">Medical Record</a></div>
             </div>
-            <div class="pt-main__right" ng-repeat="n in selectYear" >
-                <a href="#">{{n.nam[0].year}}</a>
-                
+            <div class="pt-nav__right">
+                <div ng-repeat="n in patientRecord" >
+                    <div><a href="#" ng-click="selectYear(n)">{{n.nam[0].year}}</a> <span> | </span></div> 
+                </div>
             </div>
         </div>
 
@@ -206,11 +212,11 @@
                     <th>Disease name</th>
                     <th>Detail</th>
                 </tr>
-                <tr >
+                <tr ng-repeat="y in prYear.nam">
                     <td>{{y.dateIn}}</td>
                     <td>{{y.dateOut}}</td>
                     <td>{{y.diseaseName}}</td>
-                    <td><a href="#detail"><i class="fa fa-eye"></i></a></td>
+                    <td><a href="#detail" ng-click="selectDetail(y)"><i class="fa fa-eye"></i></a></td>
                 </tr>
                 
             </table>
@@ -252,36 +258,13 @@
                             <th>Total</th>
                             
                         </tr>
-                        <tr>
-                            <td>Paracetamol</td>
-                            <td>15</td>
-                            <td>300</td>
-                            <td>4500</td>
+                        <tr ng-repeat="d in prDetail.detail">
+                            <td>{{d.nameService}}</td>
+                            <td>{{d.quantity}}</td>
+                            <td>{{d.unitPrice}}</td>
+                            <td>{{d.total}}</td>
                         </tr>
-                        <tr>
-                            <td>Paracetamol</td>
-                            <td>15</td>
-                            <td>300</td>
-                            <td>4500</td>
-                        </tr>
-                        <tr>
-                            <td>Paracetamol</td>
-                            <td>15</td>
-                            <td>300</td>
-                            <td>4500</td>
-                        </tr>
-                        <tr>
-                            <td>Paracetamol</td>
-                            <td>15</td>
-                            <td>300</td>
-                            <td>4500</td>
-                        </tr>
-                        <tr>
-                            <td>Paracetamol</td>
-                            <td>15</td>
-                            <td>300</td>
-                            <td>4500</td>
-                        </tr>
+                        
                     </table>
                 </div>
                 <a href="#" class="close">x</a>

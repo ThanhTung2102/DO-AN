@@ -98,11 +98,15 @@ a{
 .pt-nav__left{
     display: flex;
 }
+
 .pt-main__years{
     margin: 2vh 12vw;
     
 }
-.pt-main__right a:active .pt-main__years{
+.pt-nav__right {
+    display: flex;
+}
+.pt-nav__right a:active .pt-main__years{
     display: block;
 }
 .pt-main__years table{
