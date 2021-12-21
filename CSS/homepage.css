@@ -291,12 +291,10 @@ background-color:#065F73 ;
 .news--footer{
     height: 30px;
     background-color: black;
+    color: white;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
-}
-.news--footer>a{
-    color: white;
 }
 @media screen and (max-width:1030px) {
     #home__header-mobile{

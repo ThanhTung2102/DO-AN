@@ -75,14 +75,14 @@ font-weight: 700;
 margin-top: 10px;
 }
 .detail--related--option{
-    display: inline-block;
-   text-align: center;
+    display: flex;
+    justify-content: space-around;
     margin: 50px 0px 0px;
+
 }
 .related--option--box{
-    width: 100%;
-    max-width: 300px;
-    margin: 0px 30px;
+    width: 20%;
+    max-width: 200px;
 }
 .option--box--img{
     width: 100%;
