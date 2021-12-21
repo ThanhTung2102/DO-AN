@@ -1,0 +1,27 @@
+[
+    {
+        "newsImage":"news1.jpg",
+        "newsTitle":"New Research 1",
+        "newsContent":"Lorem ipsum dolor sit amet, consectetuadipiscing elit. Adipiscing purus vivamus in quam nulla velit enim a nunc",
+        "newsLink":"blog.html"
+    },
+    {
+        "newsImage":"news2.jpg",
+        "newsTitle":"New Research 2",
+        "newsContent":"Lorem ipsum dolor sit amet, consectetuadipiscing elit. Adipiscing purus vivamus in quam nulla velit enim a nunc",
+        "newsLink":"blog.html"
+    },
+    {
+        "newsImage":"news3.jpg",
+        "newsTitle":"New Research 3",
+        "newsContent":"Lorem ipsum dolor sit amet, consectetuadipiscing elit. Adipiscing purus vivamus in quam nulla velit enim a nunc",
+        "newsLink":"blog.html"
+    },
+    {
+        "newsImage":"news4.jpg",
+        "newsTitle":"New Research 4",
+        "newsContent":"Lorem ipsum dolor sit amet, consectetuadipiscing elit. Adipiscing purus vivamus in quam nulla velit enim a nunc",
+        "newsLink":"blog.html"
+    }
+
+]

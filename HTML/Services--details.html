@@ -15,47 +15,12 @@
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-
+    <script src="../Script/angularjs.js"></script>
+    <script src="../Script/Service_details.js"></script>
 </head>
 
 <body>
-    <!-- header -->
-   <!-- <div class="container--1">
-        <div class="box__icon">
-            <a href="#"><img class="icon__phone" src="../images/—Pngtree—white call icon png_3562069.png" alt=""></a>
-            <a id="contact" href=""><p>Contact Us</p></a>
-        </div>
-        <div class="option">
-            <div class="id">
-            <a class="link" href="Homepage.html">Home</a>
-            <a class="link" href="Aboutusver2.html">About Us</a>
-            <a class="link" href="Services.html">Services</a>
-            <div class="search">
-                <input type="text" placeholder="Tìm kiếm">
-                <a href=""><img src="../Images/search-icon-png-9986.png" alt=""></a>
-            </div>
-            <input id="button-login" type="submit"value="Log in">
-        </div>
-        </div>
-    </div>
-    <div class="container--2">
-        <div class="name__menu">
-            <a href=""><img id="menu" class="img" src="../images/Menu.png" alt=""></a>
-            <div class="name">
-                <a href=""><img class="img" src="../images/250234479_248400560664121_3333180774864611749_n.png" alt=""></a>
-                <a href="#"><img  src="../images/TK Hospital.png" alt=""></a>
-            </div>
-        </div>
-        <div class="function">
-        <input class="button-function" type="submit" value="Virtual Doctor">
-        <input class="button-function" type="submit" value="Homecare">
-        <input class="button-function function--3" type="submit" value="Schedule Appointment">
-        </div>
-    </div> -->
-    <!-- navigation bar -->
-    <div class="service-navigation">
-        Homepage>>Services>> Details
-    </div>
+    <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
     <div class="service--optionbar">
         <div class="service--optionbar--links">
             <a href="Services-package.html">Package Services</a>
@@ -66,30 +31,25 @@
         <div class="service--optionbar--links">
             <a href="Services-after-hours.html">After Hours Services</a>
         </div>
-        <div class="service--optionbar--search">Search for services
-        </div>
-        <div class="service--optionbar--search__box">
-            <input type="text" class="search--box">
-        </div>
     </div>
     
-    <div class="detail--container">
+    <div class="detail--container" ng-app="ServiceApp" ng-controller="ServiceController">
         <div class="detail--column-one">
             <div class="column--one--header">
                 Specialization
             </div>
             <div class="column--one--specializaion">
-               Dentistry
+
             </div>
         </div>
         <div class="detail--column-two">
-            <div class="detail--description">
+            <div class="detail--description" ng-model="default" ng-if="ServiceDetail">
                 <div class="description--image">
                     <img src="../Images/dentist 3.jpg" alt="">
                 </div>
                 <div class="services--description">
                     <div class="description--title">
-                        Extractions
+                        ServiceDetail.Name
                     </div>
                     <div class="description--price">
                         200.000VNĐ - 500.000VNĐ
@@ -99,46 +59,20 @@
                     </div>
                     <div class="description--content">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, harum. Vero modi sit at error, deleniti veniam culpa ratione. Minima, reprehenderit eligendi quia sint quidem dolores! Suscipit veritatis blanditiis nobis.
-
                     </div>
-                    <input type="button" value="Book now">
                 </div>
             </div>
-            <div class="detail--related">
-                <div class="detail--related--caption">
+            <div class="detail--related"> 
+                <div class="detail--related--caption" >
                     Related Services
                 </div>
-                <div class="detail--related--option">
+                <div class="detail--related--option" ng-repeat="s in serviceList[0].List| limitTo:4 ">
                     <div class="related--option--box">
                         <div class="option--box--img">
-                            <img src="../Images/dentist 2.jpg" alt="">
+                            <img src="{{'../Images/'+s.Image}}" alt="">
                         </div>
-                        <div class="option--box--caption">
-                            Orthodontics
-                        </div>
-                    </div>
-                    <div class="related--option--box">
-                        <div class="option--box--img">
-                            <img src="../Images/dentist 3.jpg" alt="">
-                        </div>
-                        <div class="option--box--caption">
-                            Implants
-                        </div>
-                    </div>
-                    <div class="related--option--box">
-                        <div class="option--box--img">
-                            <img src="../Images/dentist 4.jpg" alt="">
-                        </div>
-                        <div class="option--box--caption">
-                            Dental Cleaning
-                        </div>
-                    </div>
-                    <div class="related--option--box">
-                        <div class="option--box--img">
-                            <img src="../Images/dentist 0.jpg" alt="">
-                        </div>
-                        <div class="option--box--caption">
-                            Partial Dentures
+                        <div class="option--box--caption" ng-click="selectService(s)">
+                           {{s.Name}}
                         </div>
                     </div>
                 </div>
@@ -146,38 +80,6 @@
 
         </div>
     </div>
-   
-
-    <!-- Footer -->
-     <!-- <div class="footer">
-        <div class="footer-bar">
-            <div class="footer-mar footer-logo">
-                <a href="Homepage.html"><img src="../images/TK Hospital.png" alt="" class="logo"></a>
-            </div>
-            <div class=" footer-mar diachi">
-                <a href="#" class="title-inf">Address</a>
-                <p>669 QL1A Khu phố 3, P.Linh Xuân, TP. Thủ Đức, TP.HCM</p>
-            </div>
-            <div class=" footer-mar lienhe">
-                <a href="#" class="title-inf">Contact Us</a>
-                <p>
-                    <span>Tel: (028) 54 11 33 33</span> <br>
-                    <span>Fax: (028) 54 11 33 34</span> <br>
-                    <span>Emergency: (028) 54 11 35 00</span>
-                </p>
-            </div>
-            <div class=" footer-mar">
-                <a href="#" class="title-inf">Terms of Service</a>
-            </div>
-            <div class=" footer-mar baomat">
-                <a href="#" class="title-inf">Privacy Policies</a>
-            </div>
-        </div>
-        <div class="copyright">
-            <span>Copyright &copy; 2021 by TK Hospital. All Rights Reserved</span>
-        </div>
-    </div> -->
-
 </body>
 
 </html>
