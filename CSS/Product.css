@@ -50,6 +50,11 @@
     padding-top: 40px;
     background-color: #DFF0F2;
 }
+#product-title{
+    color: #065F73;
+    font-size: 50px;
+    font-weight: bold;
+}
 .col img{
     margin-top: 10px;
     margin-left: 10px;
