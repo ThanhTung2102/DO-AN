@@ -30,6 +30,10 @@
         width: 35vw;
         padding-bottom: -5px !important;
     }
+    .login-main{
+        padding: 10px;
+        width: 32%;
+    }
 }
 @media only screen and (max-width: 400px){
    .pt1-main__column1--infor{
