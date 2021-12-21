@@ -1,36 +1,19 @@
-{
-    "VIP":[
-        {
-            "fullname": "Nguyễn Cao Thắng",
-            "address": "Huyện Lăk, Tỉnh Đăk Lăk",
-            "phone": "08286262782",
-            "doctor": "Dr. Mika Green",
-            "time": "9:00",
-            "date": "2022-01-06"
-        },
-        {
-            "fullname": "Đào Yên Thanh",
-            "address": "Đông Hoà, Dĩ An, Bình Dương",
-            "phone": "0335626277",
-            "doctor": "Dr. Usman Larson",
-            "time": "11:00",
-            "date": "2021-12-23"
-        },
-        {
-            "fullname": "Bùi Thanh Mộng",
-            "address": "P.1, Thành phố Vũng Tàu",
-            "phone": "0277738422",
-            "doctor": "Dr. Austin Geller",
-            "time": "10:00",
-            "date": "2022-02-14"
-        },
-        {
-            "fullname": "Võ Huỳnh Mỹ Anh",
-            "address": "xã An Hoà, Huyện Tân Châu, Tỉnh Tây Ninh",
-            "phone": "02777727626",
-            "doctor": "Dr. Austin Geller",
-            "time": "8:00",
-            "date": "2022-02-14"
-        }
-    ]
-}
+[
+    {
+        "DoctorID":"01",
+        "DoctorName":"Dr. Usman Larson"
+    },
+    {
+        "DoctorID":"02",
+        "DoctorName":"Dr. Mika Green"
+    },
+    {
+        "DoctorID":"03",
+        "DoctorName":"Dr. Sebashtian Milor"
+    },
+    {
+        "DoctorID":"04",
+        "DoctorName":"Dr. Austin Geller"
+    }
+
+]
