@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-  <script src="../js/angular.js"></script>
-    <link rel="stylesheet" href="../CSS/style.css">
+  <script src="../Script/angularjs.js"></script>
+    <link rel="stylesheet" href="../CSS/Patient_Portal_Medical.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/responsivePT2.css">
@@ -17,7 +17,7 @@
       app.controller("inforController", function($scope, $http){
         $http({
           method:"GET",
-          url:"../Jason/PatientInfor.json"
+          url:"../Jason/User_Account.json"
         }).then(function success(response){
           $scope.patientInfor= response.data;
           $scope.Address=function($scope){
@@ -141,11 +141,11 @@
             <img src="../IMAGES/avatar1.png" alt="Không thể tải hình">
         </div>
         <div class="pt-header-3__content" ng-controller="inforController">
-            <div>Hello, {{patientInfor[0].Name}} </div>
+            <div>Hello, {{patientInfor.user[0].Name}} </div>
             <hr>
-            <div>{{patientInfor[0].Street}}, {{patientInfor[0].Ward}}, {{patientInfor[0].Province}}</div>
-            <div><span>Phone number:</span>{{patientInfor[0].PhoneNumer}}</div>
-            <div><span>Email: {{patientInfor[0].Email}} </span></div>
+            <div>{{patientInfor.user[0].Street}}, {{patientInfor.user[0].Ward}}, {{patientInfor.user[0].City}}</div>
+            <div><span>Phone number:</span>{{patientInfor.user[0].Phone}}</div>
+            <div><span>Email: {{patientInfor.user[0].Email}} </span></div>
         </div>
     </div>
     <div class="pt1-nav">
@@ -164,18 +164,18 @@
            <div class="pt1-main__column1--infor" ng-controller="inforController">
             <div class="pt1-main1__box pt1-main1__box1">
                 <div><img src="../IMAGES/avatar1.png" alt="Avatar"></div>
-                <div>{{patientInfor[0].Name}}</div>
-                <div>{{patientInfor[0].DateOfBirth}}</div>
-                <div>{{patientInfor[0].Email}}</div>
+                <div>{{patientInfor.user[0].Name}}</div>
+                <div>{{patientInfor.user[0].DateOfBirth}}</div>
+                <div>{{patientInfor.user[0].Email}}</div>
             </div>
             <div class="pt1-main1__box pt1-main1__box2">
                 <div><span> Adress </span><br>
-                  {{patientInfor[0].Street}}, {{patientInfor[0].Ward}}, {{patientInfor[0].Province}}</div>
-                <div><span>City</span><br>{{patientInfor[0].Province}} </div>
-                <div><span>Nation</span><br>{{patientInfor[0].Nation}} </div>
-                <div><span>Job</span><br>{{patientInfor[0].Job}}</div>
-                <div><span>Health Insuarance Number</span><br>{{patientInfor[0].HealthInsuaranceCardNumber}}</div>
-                <div><span>ID number</span><br>{{patientInfor[0].IDnumber}}</div>
+                  {{patientInfor.user[0].Street}}, {{patientInfor.user[0].Ward}}, {{patientInfor.user[0].City}}</div>
+                <div><span>City</span><br>{{patientInfor.user[0].City}} </div>
+                <div><span>Nation</span><br>{{patientInfor.user[0].Nationality}} </div>
+                <div><span>Job</span><br>{{patientInfor.user[0].Job}}</div>
+                <div><span>Health Insuarance Number</span><br>{{patientInfor.user[0].HealthInsuaranceCardNumber}}</div>
+                <div><span>ID number</span><br>{{patientInfor.user[0].IDNumber}}</div>
             </div>
            </div> 
             <div class="pt1-main__table">

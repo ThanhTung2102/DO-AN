@@ -13,7 +13,9 @@
             "Street":"Ha Huy Tap",
             "Job":"Student",
             "Height":165,
-            "Weight":50
+            "Weight":50,
+            "DateOfBirth":"23/11/2001",
+            "HealthInsuaranceCardNumber":"6272828299"
         }
         ,{
             "Name":"Nguyễn Quốc Công Thành",
@@ -28,7 +30,9 @@
             "Street":"Nguyen Van Troi",
             "Job":"Student",
             "Height":165,
-            "Weight":51
+            "Weight":51,
+            "DateOfBirth":"23/11/2001",
+            "HealthInsuaranceCardNumber":"6272828299"
         }
         ,{
             "Name":"Nguyễn Thị Thu",
@@ -43,7 +47,9 @@
             "Street":"Nguyen Dinh Chieu",
             "Job":"Student",
             "Height":160,
-            "Weight":52
+            "Weight":52,
+            "DateOfBirth":"23/11/2001",
+            "HealthInsuaranceCardNumber":"6272828299"
         }
         ,{
             "Name":"Nguyễn Cao Thăng",
@@ -58,7 +64,9 @@
             "Street":"Tran Hung Dao",
             "Job":"Student",
             "Height":165,
-            "Weight":53
+            "Weight":53,
+            "DateOfBirth":"23/11/2001",
+            "HealthInsuaranceCardNumber":"6272828299"
         }
         ,{
             "Name":"Lưu Thị Thúy",
@@ -73,7 +81,9 @@
             "Street":"Nguyen Quang Hoa",
             "Job":"Student",
             "Height":165,
-            "Weight":54
+            "Weight":54,
+            "DateOfBirth":"23/11/2001",
+            "HealthInsuaranceCardNumber":"6272828299"
         }
     ]
 }
