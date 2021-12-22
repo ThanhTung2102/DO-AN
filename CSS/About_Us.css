@@ -125,101 +125,6 @@
     transform: scale(1.1);
     transition: all ease-in-out 0.5s;
 }
-@media screen and (max-width: 428px){
-    body{
-        margin: 0px;
-        padding: 0px;
-    }
-    .about--container--1{
-        display: none;
-    }
-    .about--container--2{
-        flex-direction:column;
-    }
-    .img-overview{
-        max-width: 400px;
-        max-height: 200px;
-        margin-left: 14px;
-        position: relative;
-        z-index: 1;
-    }
-    .about--content--mobile{
-        display: inline;
-        position: absolute;
-        z-index: 2;
-        font-family: arial;
-        font-size: 30px;
-        font-weight:bold;
-        color: rgba(78, 84, 87, 1);
-        margin-top: 30%;
-        margin-left: 30%;
-    }
-    .about--content--1{
-        
-        display: none;
-    }
-    .about--question{
-        color: rgba(141, 146, 192, 1);
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .about--reason{
-        color: rgba(132, 140, 217, 1);
-        font-size: 20px;
-        margin-top: -20px;
-    }
-    .about--container--4{
-        flex-direction: column-reverse;
-    }
-    .img-mission{
-        max-width: 400px;
-        max-height: 200px;
-        margin: 0px 14px;
-        position: relative;
-        z-index: 1;
-    }
-    .about--content__item--3{
-    margin-left: 30%;
-    margin-top:-30% ;
-    font-size: 30px;
-    position: absolute;
-    z-index: 2;
-    }
-    .about--content__item--4{
-    text-align: center;
-    font-size: 25px;
-    font-family: arial;
-    padding:0px 10px 0px 0px;
-    margin-top: 0px;
-    }
-    .about--container--5{
-        flex-direction: column;
-    }
-    .img-vision{
-        max-width: 400px;
-        max-height: 200px;
-        margin-left: 14px;
-        margin-top: -30px;
-        position: relative;
-        z-index: 1;
-    }
-    .about--position--1{
-        margin-top: -33%;
-        z-index: 2;
-    }
-    .about--position--2{
-        margin-top: 30px;
-        margin-left: 14px;
-    }
-    .about--container--6{
-        text-align: center;
-        margin-top: 10px;
-    }
-    .about--container--6 > a{
-        font-size: 30px;
-        text-decoration: none;
-    }
-}
 @media screen and (max-width:834px) {
     .about--container--1{
         display: none;
@@ -293,5 +198,112 @@
     }
     .img-doctor{
         max-width: 150px;
+    }
+}
+@media screen and (max-width: 428px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .about--container--1{
+        display: none;
+    }
+    .about--container--2{
+        flex-direction:column;
+    }
+    .img-overview{
+        max-width: 400px;
+        max-height: 200px;
+        margin-left: 14px;
+        position: relative;
+        z-index: 1;
+    }
+    .about--content--mobile{
+        display: inline;
+        position: absolute;
+        z-index: 2;
+        font-family: arial;
+        font-size: 30px;
+        font-weight:bold;
+        color: rgba(78, 84, 87, 1);
+        margin-top: 30%;
+        margin-left: 30%;
+    }
+    .about--content--1{
+        
+        display: none;
+    }
+    .about--content--2{
+        
+        max-width: 90%;
+    }
+    .about--question{
+        color: rgba(141, 146, 192, 1);
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .about--reason{
+        color: rgba(132, 140, 217, 1);
+        font-size: 20px;
+        margin-top: -20px;
+    }
+    .about--container--4{
+        flex-direction: column-reverse;
+    }
+    .img-mission{
+        max-width: 400px;
+        max-height: 200px;
+        margin: 0px 14px;
+        position: relative;
+        z-index: 1;
+    }
+    .about--content__item--3{
+    margin-left: 30%;
+    margin-top:-30% ;
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+    }
+    .about--content__item--4{
+    /* max-width: 380px; */
+    text-align: center;
+    font-size: 25px;
+    font-family: arial;
+    padding:0px 10px 0px 0px;
+    margin-top: 0px;
+    }
+    .about--container--5{
+        flex-direction: column;
+    }
+    .img-vision{
+        max-width: 400px;
+        max-height: 200px;
+        margin-left: 14px;
+        margin-top: -30px;
+        position: relative;
+        z-index: 1;
+    }
+    .about--position-1{
+        margin-top: -27%;
+        margin-left: 35%;
+        z-index: 2;
+    }
+    .about--position--2{
+        margin-top: 30px;
+        margin-left: 14px;
+    }
+    .about--container--6{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .about--container--6 > a{
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .img-doctor{
+    max-width: 100px;
+    }
+    .img-doctor-4{
+        display: none;
     }
 }
