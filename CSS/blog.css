@@ -250,6 +250,9 @@ a{
   .div__row--2 > div{
       line-height: 70px;
   }
+  .div__row--2{
+    height: 50px;
+  }
   /* .hotpick, */
   .live{
       float: none;
@@ -261,6 +264,9 @@ a{
   .div__row--3{
       width: 100%;
       text-align: center;
+  }
+  .live{
+    display: none;
   }
 }
 @media only screen and (max-width: 376px){
