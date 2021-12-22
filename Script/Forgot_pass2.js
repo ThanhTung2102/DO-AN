@@ -4,7 +4,7 @@ function verifyCode(){
         alert("Không đúng code")
     }
     else{
-        alert("thành công")
-        location.href= "Forgot_password_3.html"
+        alert("thành công");
+       window.location= "../Forgot_password_3.html"
     }
 }
