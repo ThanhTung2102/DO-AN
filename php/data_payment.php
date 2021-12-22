@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-     
+    Card Number: <?php echo $_GET["cardnumber"]; ?><br>
+    Card Expiry: <?php echo $_GET["cardexpiry"];?>
+    Card CVC: <?php echo $_GET["cardcvc"];?>
+    Card Holder Name: <?php echo $_GET["cardname"];?>
 </body>
 </html>
