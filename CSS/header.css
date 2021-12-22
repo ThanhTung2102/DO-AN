@@ -162,14 +162,7 @@ line-height: 1;
 .ft-link:hover{
   color: #73BCD9;
 }
-@media screen and (max-width:980px) {
-  .nav-desktop{
-    display: none;
-  }
-  .nav-mobile{
-    display: block;
-  }
-}
+
 @media only screen and (max-width: 1024px){
   .container-fluid{
     height: 100%;
@@ -180,3 +173,83 @@ line-height: 1;
     height: 240px;
   }
 }
+/* css cho header cua desktop */
+.header a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  margin-right: 20px;
+}
+.container--1{
+  display: flex;
+  background-color: #065F73;
+  justify-content: space-between;
+}
+.box__icon{
+  display: flex;
+}
+.box__icon img{
+  width: 60%;
+  margin-left: 10px;
+}
+.option{
+  display: flex;
+}
+.option img{
+  width: 10%;
+}
+.name span{
+  color: red;
+}
+.container--2{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 0 50px;
+  height: 50px !important;
+}
+.name img{
+  width: 25%;
+}
+.name{
+  font-size: 30px;
+}
+.function{
+  padding-top: 10px;
+}
+.function input{
+  background-color:#73BCD9 ;
+  border: none;
+  border-radius: 5px;
+}
+.nav-mobile{
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.logo span{
+  color: red;
+}
+@media screen and (max-width:980px) {
+  .nav-desktop{
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
+  }
+  .nav-mobile{
+    display: flex;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .nav-mobile button{
+    background-color:whitesmoke;
+    color: black;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 376px){
+  .nav-mobile{
+    font-size: 30px !important;
+  }
+} 
