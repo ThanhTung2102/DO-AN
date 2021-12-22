@@ -91,11 +91,8 @@
             </div>
             <div class="form--row">
                 <label for="">Pick your time</label>
-                <!-- <input class="form--input" type="time"  name="date" value="date">   -->
-                <!-- <div> -->
                 <input type="time" id="book_time2" name="booking-time" min="08:00" max="20:00" required onchange="show2();" class="form--input" required>
                 <label for="" id="vd_note">Available time: 8:00 to 20:00</label>
-                <!-- </div> -->
             </div>
             <hr>
             <div class="form--row">
@@ -103,8 +100,6 @@
             </div>
         </div>
     </div>
-
-
     <script>
         function show2() {
         let t2 = document.getElementById("book_time2");
@@ -120,14 +115,6 @@
             console.log(t2.value);
         }
         };
-        
-
-        // $(document).ready(function () {
-        //     $("#datetimepicker").datepicker({
-        //         minDate: 0
-        //     });
-        // });
-
         $(function(){
             var dtToday = new Date();
             
@@ -143,33 +130,6 @@
             
             $('#datetimepicker').attr('min', minDate);
         });
-        // async function getSrc() {
-        //     const res = await fetch("./header.html", {
-        //         method: 'GET',
-        //         headers: {
-        //         // Here you can set any headers you want
-        //         }
-        //     });
-        //     const blob = await res.blob();
-        //     const urlObject = URL.createObjectURL(blob);
-        //     document.querySelector('iframe').setAttribute("src", urlObject)
-        // }
-        //     getSrc();
-
-
-  
-// }
-// $.ajax({
-//         type: 'POST',
-//         url: './header.html',
-//         headers: {
-//             "My-First-Header":"first value",
-//             "My-Second-Header":"second value"
-//         }
-//     }).done(function(data) { 
-//         alert(data);
-//     });
-    
     </script>
 </form>
 <iframe src="./footer.html" frameborder="0" style="width: 100%" height="242px" name="footer" ></iframe>
