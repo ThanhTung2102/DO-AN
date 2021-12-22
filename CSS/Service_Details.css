@@ -14,7 +14,7 @@ font-family: Lato;
 }
 
 .detail--column-two{
-    width: 85%;
+    width: 110%;
     padding: 50px;
     background-color: #DFF0F2;
 }
@@ -26,6 +26,7 @@ font-family: Lato;
 .column--one--header>a{
     color:#545859 ;
     font-weight: 500;
+    text-decoration: none;
 }
 .column--one--specializaion{
     transform: rotate();
@@ -33,7 +34,6 @@ font-family: Lato;
 }
 .detail--description{
     display: flex;
-    
 }
 .detail--description{
     display: flex;
@@ -140,16 +140,16 @@ body {
     margin: 50px 20px;
   }
   
-  .row:after {
+  /* .row:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
   
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 18%;
   }
   
   /* Add a transparency effect for thumnbail images */
@@ -228,7 +228,6 @@ body {
     .option--box--caption{
         font-size: 20px;
     }
-    
 }
 
 @media screen and (max-width: 380px) {
@@ -283,4 +282,5 @@ body {
     .option--box--caption{
         font-size: 12px;
     }
+   
 }
