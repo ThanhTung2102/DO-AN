@@ -1,0 +1,41 @@
+[
+    {
+        "heart":{
+            "scale":"75%",
+            "range":"../Images/thanh1.png"
+        },
+        "lungs":{
+            "scale":"80%",
+            "range":"../Images/thanh2.png"
+        },
+        "stomach":{
+            "scale":"30%",
+            "range":"../Images/thanh3.png"
+        },
+        "liver":{
+            "scale":"65%",
+            "range":"../Images/thanh4.png"
+        },
+        "height":"170cm",
+        "weight":"60kg",
+        "bloodGroup":"A",
+        "bloodPressure":"134",
+        "bloodPressureDiagram":"../Images/BP1.png",
+        "heartRate":"../Images/HR2.png",
+        "spo2":"../Images/SPO2_1.png",
+        "checkResults":[
+            "Liver: not large in size, even parenchyma, deeply hypoechoic",
+            "Portal And Suprahepatic veins: No dilatation, no thrombosis",
+            "Biliary Tract: no dilation inside and outside, no stones",
+            "Pancreas: not large in size, even parenchyma",
+            "Stomach: Clear gastric juice",
+            "Duodenal Bulb: normal mucosa",
+            "Abdominal Aorta: no aneurysm",
+            "Bladder: no stones, thin wall",
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente libero quas nostrum corporis minima aut, id voluptates eaque animi sed nam quasi enim repellendus esse alias! Tenetur mollitia voluptatibus adipisci",
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente libero quas nostrum corporis minima aut, id voluptates eaque animi sed nam quasi enim repellendus esse alias! Tenetur mollitia voluptatibus adipisci"
+            
+        ]
+
+    }
+]
