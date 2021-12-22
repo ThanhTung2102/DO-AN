@@ -1,5 +1,6 @@
 [
     {   "Department":"Dentistry",
+        "DepartId":"01",
         "List": [
             {
                 "Name": "Extraction",
@@ -24,48 +25,101 @@
                 "Price": "100.000 - 200.000VNĐ",
                 "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, usantium. Atque eos exercitationem enim illo obcaecati ipsam!",
                 "Image": "dentist 0.jpg"
-            },
-            {
-                "Name": "Partial Dentures",
-                "Price": "2.00.000 - 3.000.000VNĐ",
-                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, usantium. Atque eos exercitationem enim illo obcaecati ipsam!",
-                "Image": "dentist 0.jpg"
             }
+        
         ]
     },
     {
         "Department":"Neurology",
+        "DepartId":"02",
          "List": [
             {
-                "Name": "Extraction",
-                "Price": "200.000 - 500.000VNĐ",
+                "Name": "Epilepsy/seizure disorders",
+                "Price": "100.000VNĐ",
                 "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
                 "Image": "dentist 3.jpg"
             },
             {
-                "Name": "Orthodontics",
-                "Price": "500.000 - 600.000VNĐ",
+                "Name": "Dementia",
+                "Price": "1.500.000 - 6.000.000VNĐ",
                 "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
-                "Image": "dentist 2.jpg"
+                "Image": "dentist 3.jpg"
             },
             {
-                "Name": "Implants",
-                "Price": "1.000.000 - 1.500.000VNĐ",
+                "Name": "Pain disorders",
+                "Price": "50.000 - 150.000VNĐ",
                 "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
-                "Image": "dentist 4.jpg"
+                "Image": "dentist 1.jpg"
             },
             {
-                "Name": "Dental Cleaning",
+                "Name": "Sleep disorders",
                 "Price": "100.000 - 200.000VNĐ",
                 "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, usantium. Atque eos exercitationem enim illo obcaecati ipsam!",
-                "Image": "dentist 0.jpg"
-            },
-            {
-                "Name": "Partial Dentures",
-                "Price": "2.00.000 - 3.000.000VNĐ",
-                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, usantium. Atque eos exercitationem enim illo obcaecati ipsam!",
-                "Image": "dentist 0.jpg"
+                "Image": "dentist 2.jpg"
             }
         ]
     }
+    ,
+    {
+        "Department":"Paediatrics",
+        "DepartId":"03",
+         "List": [
+            {
+                "Name": "Allergies",
+                "Price": "100.000VNĐ",
+                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
+                "Image": "dentist 3.jpg"
+            },
+            {
+                "Name": "School Nurses",
+                "Price": "1.500.000 - 7.000.000VNĐ",
+                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
+                "Image": "dentist 3.jpg"
+            },
+            {
+                "Name": "Clinical Psychologists",
+                "Price": "1.250.000 - 1.500.000VNĐ",
+                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
+                "Image": "dentist 1.jpg"
+            },
+            {
+                "Name": "Clinical Psychologists",
+                "Price": "1.000.000 - 2.000.000VNĐ",
+                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, usantium. Atque eos exercitationem enim illo obcaecati ipsam!",
+                "Image": "dentist 2.jpg"
+            }
+        ]
+    }
+    ,
+    {
+        "Department":"Cardiology",
+        "DepartId":"04",
+         "List": [
+            {
+                "Name": "Cardiac rehabilitation",
+                "Price": "10.000.000VNĐ",
+                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
+                "Image": "dentist 3.jpg"
+            },
+            {
+                "Name": "Echocardiography",
+                "Price": "100.000 - 300.000VNĐ",
+                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
+                "Image": "dentist 3.jpg"
+            },
+            {
+                "Name": "Stenting",
+                "Price": "150.000 - 200.000VNĐ",
+                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, aut minus tempora laborum officia, quae eaque accusantium. Atque eos exercitationem enim illo obcaecati ipsam!",
+                "Image": "dentist 1.jpg"
+            },
+            {
+                "Name": "Cardiac Catheterization",
+                "Price": "1.100.000 - 1.500.000VNĐ",
+                "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt beatae quisquam amet veritatis esse, usantium. Atque eos exercitationem enim illo obcaecati ipsam!",
+                "Image": "dentist 2.jpg"
+            }
+        ]
+    }
+    
 ]

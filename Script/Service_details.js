@@ -1,20 +1,68 @@
-let service=angular.module("ServiceApp",[])
-service.controller("ServiceController",($scope,$http)=>{
-    $http({
-        method:"GET",
-        url:"../Jason/Services-list.json"
-    }).then (
-        function success (response){
-         $scope.serviceList=response.data;
-         $scope.default=$scope.serviceList[0].List;
-        },  
-        function fail (response){
-            console.log("heelo")
-        }
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    );
-    $scope.selectServices= function (productObject){
-        $scope.ServiceDetail=productObject; 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    
-})
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  };
+  
+
+
+let service=angular.module("ServiceApp",[])
+    service.controller("ServiceController",($scope,$http)=>{
+          $http({
+              method:"GET",
+              url:"../Jason/Services-list.json"
+          }).then (
+              function success (response){
+               $scope.serviceList=response.data;
+               
+              },  
+              function fail (response){
+                $scope.error=response.statusText;
+              }
+      
+          );
+         $scope.currentSlideByAn=  function(n) {
+            showSlides(slideIndex = n+1);
+          }
+         
+        
+      });
+
+      service.controller("ServiceDetailController",($scope,$http)=>{
+          $http({
+              method:"GET",
+              url:"../Jason/Services-list.json"
+          }).then(
+              function success (response){
+                      $scope.selectedDepart=response.data.find(
+                        value=> value.DepartId==id
+                      )
+              },
+              function failed (response){
+                  $scope.error=response.statusText;
+              }
+          )
+          $scope.currentSlideByAn=  function(n) {
+            showSlides(slideIndex = n+1);
+          }
+
+      })
