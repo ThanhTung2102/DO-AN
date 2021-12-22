@@ -162,7 +162,14 @@ line-height: 1;
 .ft-link:hover{
   color: #73BCD9;
 }
-
+@media screen and (max-width:980px) {
+  .nav-desktop{
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
+  }
+}
 @media only screen and (max-width: 1024px){
   .container-fluid{
     height: 100%;

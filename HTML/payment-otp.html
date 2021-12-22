@@ -70,10 +70,14 @@
                                     <div class="card-infor">
                                         <h2>OTP CODE VERIFICATION</h2>
                                         <input type="text" class="form-control">
-                                        <p id="resend"><a href="#">Resend OTP</a></p>
+                                        <div class="row">
+                                          <div class="col-12">
+                                              <button class="resend" type="submit">Resend OTP</button>
+                                          </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-12">
-                                                <button class="otp-btn" type="submit">Confirm OTP Code</button>
+                                                <button onclick="myFunction()" class="otp-btn" type="submit">Confirm OTP Code</button>
                                             </div>
                                           </div>
                                     </div>
@@ -89,6 +93,11 @@
         </div>
         <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
     </div>
+    <script>
+      function myFunction(){
+        window.open("/HTML/Homepage.html", '_self')
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
         "Name":"Nguyễn Minh Nhật",
         "DateOfBirth":"25/01/2001",
         "Sex":"Nam",
-        "PhoneNumer":"034556785",
+        "PhoneNumber":"034556785",
         "IDnumber":"344456576",
         "Email": "tungnt19406@st.uel.edu.vn",
         "Nationality":"VietNam",
@@ -13,7 +13,7 @@
         "Ward":"quận 6",
         "Street":"Số 121, đường Nam Hà",
         "Job":"Student",
-        "Health insuarance card number":"3567678687",
+        "HealthInsuaranceCardNumber":"3567678687",
         "Height":"176 cm",
         "Weight":"62 kg"
         

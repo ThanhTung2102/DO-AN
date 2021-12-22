@@ -4,9 +4,13 @@
 .otp-btn:hover{
     background-color:#71c9ec ;
 }
-#resend{
+.resend{
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: transparent;
+    color: blue;
 }
 .card-infor{
     padding: 10px;

@@ -15,6 +15,56 @@
 </head>
 <body>
     <iframe src="./header.html" frameborder="0" name="header" ></iframe>
+    <script src="../js/angular.js"></script>
+    <script>
+        let app= angular.module("angularApp",[]);
+        app.controller("inforController", function($scope, $http){
+          $http({
+            method:"GET",
+            url:"../Jason/PatientInfor.json"
+          }).then(function success(response){
+            $scope.patientInfor= response.data;
+          },
+          function error(response){
+            $scope.error=response.statusText;
+          }
+          )
+        })
+      </script>
+</head>
+<body ng-app="angularApp" ng-controller="inforController">
+    <div class="container--1">
+        <div class="box__icon">
+            <a href="#"><img class="icon__phone" src="../images/—Pngtree—white call icon png_3562069.png" alt=""></a>
+            <a id="contact" href=""><p>Contact Us</p></a>
+        </div>
+        <div class="option">
+            <div class="id">
+            <a class="link" href="Homepage.html">Home</a>
+            <a class="link" href="Aboutusver2.html">About Us</a>
+            <a class="link" href="Services.html">Services</a>
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm">
+                <a href=""><img src="../Images/search-icon-png-9986.png" alt=""></a>
+            </div>
+            <input id="button-login" type="submit"value="Log in">
+        </div>
+        </div>
+    </div>
+    <div class="container--2">
+        <div class="name__menu">
+            <a href=""><img id="menu" class="img" src="../images/Menu.png" alt=""></a>
+            <div class="name">
+                <a href=""><img class="img" src="../images/250234479_248400560664121_3333180774864611749_n.png" alt=""></a>
+                <a href="#"><img  src="../images/TK Hospital.png" alt=""></a>
+            </div>
+        </div>
+        <div class="function">
+        <input class="button-function" type="submit" value="Virtual Doctor">
+        <input class="button-function" type="submit" value="Homecare">
+        <input class="button-function function--3" type="submit" value="Schedule Appointment">
+        </div>
+    </div>
     <div class="edit-main">
         <form action="">
             <div class="edit-title">
@@ -25,25 +75,25 @@
             <div class="edit-form">
                 <div>Name <span>*</span></div>
                 <div>Date of Birth <span>*</span></div>
-                <div><input type="text" placeholder="type your name here"></div>
-                <div><input type="date" name="date" id="date" placeholder="type your date of birth here"></div>
+                <div><input ng-model="patientInfor[0].Name" type="text" placeholder="type your name here"></div>
+                <div><input ng-model="patientInfor[0].DateOfBirth" type="date" name="date" id="date" placeholder="type your date of birth here"></div>
                 <div class="edit-sextitle">Sex <span>*</span></div>
                 <div><input type="radio" name="sex" id="sex">
                 <label for="">Female</label> 
                 </div>
-                <div><input type="radio" name="sex" id="sex">
+                <div><input type="radio" ng-model="patientInfor[0].Sex" name="sex" id="sex">
                 <label for="">Male</label>
                 </div>
                 <div>Phone number <span>*</span></div>
                 <div>ID number <span>*</span></div>
-                <div><input type="number" name="number" id="number"></div>
-                <div><input type="text"></div>
+                <div><input ng-model="patientInfor[0].PhoneNumber" type="text" name="number" id="number"></div>
+                <div><input type="text" ng-model="patientInfor[0].IDnumber"></div>
                 <div class="edit-emailtitle">Email <span>*</span></div>
-                <div class="edit-emailbutton"><input class="edit-input--email" type="email"></div>
+                <div class="edit-emailbutton"><input  class="edit-input--email" ng-model="patientInfor[0].Email" type="email"></div>
                 <div>Nationality <span>*</span></div>
                 <div>religion <span>*</span></div>
                 <div>
-                    <select name="nationality" id="nationality">
+                    <select name="nationality" id="nationality" ng-model="patientInfor[0].Nationality"> 
                         <option value="vietnam">Viet Nam</option>
                         <option value="china">china</option>
                         <option value="Korea">Korea</option>
@@ -52,12 +102,12 @@
                     </select>
                 </div>
                 <div>
-                    <input type="text">
+                    <input type="text" ng-model="patientInfor[0].Religion">
                 </div>
                 <div>Province/City <span>*</span></div>
                 <div>Ward/Commune <span>*</span></div>
                 <div>
-                    <select name="province" id="province">
+                    <select name="province" id="province" ng-model="patientInfor[0].Province">
                         <option value="hatinh">Hà Tĩnh</option>
                         <option value="hanoi">Hà Nội</option>
                         <option value="saigon">Sài Gòn</option>
@@ -65,7 +115,7 @@
                     </select>
                 </div>
                 <div>
-                    <select name="commune" id="commune">
+                    <select name="commune" id="commune" ng-model="patientInfor[0].">Ward
                         <option value="tanloc">Tân Lộc</option>
                         <option value="hongloc">Hồng Lộc</option>
                         <option value="anloc">An Lộc</option>
@@ -73,14 +123,14 @@
                 </div>
                 <div>Street <span>*</span></div>
                 <div>Job</div>
-                <div><input type="text"></div>
-                <div><input type="text"></div>
+                <div><input ng-model="patientInfor[0].Street" type="text"></div>
+                <div><input type="text" ng-model="patientInfor[0].Job"></div>
                 <div class="edit-healthtitle">Health insuarance card number <span>*</span></div>
-                <div class="healthnumber"><input class="edit-input--health" type="text"></div>
+                <div class="healthnumber"><input class="edit-input--health" ng-model="patientInfor[0].HealthInsuaranceCardNumber" type="text"></div>
                 <div>Height</div>
                 <div>Weight</div>
-                <div><input type="text"></div>
-                <div><input type="text"></div>
+                <div><input type="text" ng-model="patientInfor[0].Height"></div>
+                <div><input ng-model="patientInfor[0].Weight" type="text" ></div>
             </div><br>
             <div class="edit-footer">
                 <!-- <div><button>Close</button></div>
