@@ -166,7 +166,7 @@ a{
     display: block;
   }
 }
-@media screen and (max-width:780px) {
+@media screen and (max-width:980px) {
   .nav-desktop{
     display: none;
   }
