@@ -1,0 +1,37 @@
+[{
+    "PatientName":"Nguyễn Thị Thu",
+    "Date":"23/10/2020",
+    "Content":"General Examination",
+    "PatientCode":"25454",
+    "RecieptNumber":"09586",
+    "Money":"800.000đ",
+    "Status":"Paid"
+},
+{
+    "PatientName":"Nguyễn Thị Thu",
+    "Date":"23/10/2020",
+    "Content":"General Examination",
+    "PatientCode":"25454",
+    "RecieptNumber":"09586",
+    "Money":"800.000đ",
+    "Status":"Paid"
+},
+{
+    "PatientName":"Nguyễn Thị Thu",
+    "Date":"23/10/2020",
+    "Content":"General Examination",
+    "PatientCode":"25454",
+    "RecieptNumber":"09586",
+    "Money":"800.000đ",
+    "Status":"Paid"
+},
+{
+    "PatientName":"Nguyễn Thị Thu",
+    "Date":"23/10/2020",
+    "Content":"General Examination",
+    "PatientCode":"25454",
+    "RecieptNumber":"09586",
+    "Money":"800.000đ",
+    "Status":"Paid"
+}
+]
