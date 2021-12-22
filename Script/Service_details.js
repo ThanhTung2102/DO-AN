@@ -29,7 +29,7 @@ let service=angular.module("ServiceApp",[])
     service.controller("ServiceController",($scope,$http)=>{
           $http({
               method:"GET",
-              url:"../Jason/Services-list.json"
+              url:"../Jason/Services_List.json"
           }).then (
               function success (response){
                $scope.serviceList=response.data;
@@ -50,7 +50,7 @@ let service=angular.module("ServiceApp",[])
       service.controller("ServiceDetailController",($scope,$http)=>{
           $http({
               method:"GET",
-              url:"../Jason/Services-list.json"
+              url:"../Jason/Services_List.json"
           }).then(
               function success (response){
                       $scope.selectedDepart=response.data.find(
