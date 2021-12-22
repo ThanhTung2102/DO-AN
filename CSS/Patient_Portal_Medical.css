@@ -873,6 +873,9 @@ body{
 .login-main{
     width: 90%;
 }
+.edit-main{
+    width: 90% !important;
+}
 
 }
 
