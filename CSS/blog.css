@@ -227,3 +227,98 @@ a{
   margin: 10px 5px;
   color: #9ed7ec;
 }
+@media only screen and (max-width: 1024px){
+  body, html  {
+      padding: 0px; 
+  }
+  .img--trending>img{
+      width: 100%;
+      position: absolute;
+      top: 110px;
+  }
+  .div--information>.p--note{
+      margin-top: 450px;
+      width: 100%;
+  }
+  .div--row{
+      display: inherit;
+  }
+  #container{
+      position: relative;
+      padding: 0 5px;
+  }
+  .div__row--2 > div{
+      line-height: 70px;
+  }
+  /* .hotpick, */
+  .live{
+      float: none;
+  }
+  .sieu_manh{
+      display: flex;
+      overflow-x: scroll;
+  }
+  .div__row--3{
+      width: 100%;
+      text-align: center;
+  }
+}
+@media only screen and (max-width: 376px){
+  body, html{
+      padding: 0px;
+      margin: 0px;
+  }
+  .img--trending>img{
+      width: 100%;
+      position: absolute;
+      top: 170px;
+  }
+  .live{
+      width: 100%;
+      margin: auto;
+      position: inherit;
+      bottom: 0;
+      right: 0;
+  }
+  /* .div--row1{
+      display: flex;
+      width: 100%;
+  } */
+  .blog{
+      width: 200px;
+      height: 270px;
+  }
+  .blog p{
+      font-size: 9px;
+      line-height: 12px;
+  }
+  .blog .large{
+      font-size: 13px;
+      font-weight: 600;
+  }
+  .blog img{
+      width: 200px;
+      height: 96px;
+  }
+  .div--row {
+      display: inherit;
+  }
+  .hotpick{
+      float: none;
+  }
+  .blog--mini{
+      width: 100%;
+      margin-top: 5px;
+  }
+  .blog--mini img{
+      width: 150px;
+      height: 100px;
+  }
+  .div__row--2{
+      height: 50px;
+  }
+  .div__row--315{
+      display: flex;
+      overflow-x: scroll;
+  }
+}

@@ -3,66 +3,53 @@
 <head>
     
     <link rel="stylesheet" href="../CSS/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="header">
-      <!-- navigation bar of desktop -->
-    <div class="nav-desktop">
-      <div class="container--1">
-        <div class="box__icon">
-            <a href="#"><img class="icon__phone" src="../Images/Phone.png" alt=""></a>
-            <a id="contact" href=""><p>Contact Us</p></a>
-        </div>
-        <div class="option">
-            
-            <a class="link" href="Homepage.html">Home</a>
-            <a class="link" href="Aboutusver2.html">About Us</a>
-            <a class="link" href="Services.html">Services</a>
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <a href=""><img src="../Images/search-icon.png" alt=""></a>
+  <div class="container-fluid">
+    <div class="product-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <i class="material-icons">call</i>
+              <a class="nav-brand__color" href="#">Contact Us</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-item__detail" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__detail" href="#">Homepage</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__detail" href="#">Service</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <i class="material-icons">search</i>
+                  <button class="login-btn" type="submit">Log In</button>
+                </form>
+              </div>
             </div>
-          
-        </div>
-      </div>
-      <div class="container--2">
-        <div class="name__menu">
-            
-            <div class="name">
-              <img src="../Images/ngoinha-icon.png" alt="">
-                <span>TK</span> Hospital
-            </div>
-        </div>
-        <div class="function">
-        <input class="button-function" type="submit" value="Virtual Doctor">
-        <input class="button-function" type="submit" value="Homecare">
-        <input class="button-function function--3" type="submit" value="Schedule Appointment">
-        </div>
-      </div> 
+        </nav>
     </div>
-    <!-- navagation bar of ipad and phone -->
-    <div class="nav-mobile">
-      <div class="logo">
-        <img src="../Images/ngoinha-icon.png" alt="">
-          <span>TK</span> Hospital
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-bars"></i>
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-right ">
-          <li><a href="Homepage.html"><i class="fa fa-home">   </i>Home</a></li>
-          <li><a href="Aboutusver2.html"><i class="fa fa-book">   </i>About us</a></li>
-          <li><a href="Services.html"><i class="fa fa-cogs">   </i>Service</a></li>
-          <li><a href="patientportal_1.html"><i class="fa fa-user-shield"></i>Account Information</a></li>
-          <li><a href=""><i class="fa fa-envelope">   </i>Contact</a></li>
-        </ul>
-      </div>
+    <div class="mid-nav">
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="#"><img src="../Images/TK Hospital.png" alt=""></a>
+            </div>
+            <div id="3button" class="col-sm-6">
+                <button type="submit">Virtual Doctor</button>
+                <button type="submit">Homecare</button>
+                <button type="submit">Appointment</button>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
 </body>
 </html>
