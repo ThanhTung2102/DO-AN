@@ -11,6 +11,9 @@ body{
     background-attachment: fixed;
     background-repeat:no-repeat;
 }
+form{
+    height: 50em;
+}
 .form--container{
     height: 100vh;
     width: 100%;
@@ -156,6 +159,9 @@ hr{
     .form--row:last-child{
         text-align: center;
     }
+    form{
+        height: 65em;
+    }
 }
 @media only screen and (max-width: 376px){
     body{
@@ -176,6 +182,9 @@ hr{
     }
     hr{
         margin-top: 20px;
+    }
+    form{
+        height: 75em;
     }
 }
 
