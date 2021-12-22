@@ -1,0 +1,24 @@
+{
+    "account":[
+        {
+            "UserName":"Khang@gmail.com",
+            "Password":"khang123"
+        }
+        ,{
+            "UserName":"thang@gmail.com",
+            "Password":"thang123"
+        }
+        ,{
+            "UserName":"thanh@gmail.com",
+            "Password":"thanh123"
+        }
+        ,{
+            "UserName":"thu@gmail.com",
+            "Password":"thu123"
+        }
+        ,{
+            "UserName":"thuy@gmail.com",
+            "Password":"thuy123"
+        }
+    ]
+}

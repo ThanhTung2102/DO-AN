@@ -1,0 +1,79 @@
+{
+    "user":[
+        {
+            "Name":"Thái Vĩnh Khang",
+            "Gender":"Nam",
+            "Phone": "03333666555",
+            "IDNumber":24152845,
+            "Email":"khang@gamil.com",
+            "Nationality":"Vietnam",
+            "Religion":"none",
+            "City":"TP HCM",
+            "Ward":"Phuong A",
+            "Street":"Ha Huy Tap",
+            "Job":"Student",
+            "Height":165,
+            "Weight":50
+        }
+        ,{
+            "Name":"Nguyễn Quốc Công Thành",
+            "Gender":"Nam",
+            "Phone": "0333324445",
+            "IDNumber":241583512,
+            "Email":"thanh@gamil.com",
+            "Nationality":"Vietnam",
+            "Religion":"none",
+            "City":"TP HCM",
+            "Ward":"Phuong B",
+            "Street":"Nguyen Van Troi",
+            "Job":"Student",
+            "Height":165,
+            "Weight":51
+        }
+        ,{
+            "Name":"Nguyễn Thị Thu",
+            "Gender":"Nữ",
+            "Phone": "03333555412",
+            "IDNumber":25552115,
+            "Email":"thu@gamil.com",
+            "Nationality":"Vietnam",
+            "Religion":"none",
+            "City":"TP HCM",
+            "Ward":"Phuong C",
+            "Street":"Nguyen Dinh Chieu",
+            "Job":"Student",
+            "Height":160,
+            "Weight":52
+        }
+        ,{
+            "Name":"Nguyễn Cao Thăng",
+            "Gender":"Nam",
+            "Phone": "02145466555",
+            "IDNumber":24821555,
+            "Email":"thang@gamil.com",
+            "Nationality":"Vietnam",
+            "Religion":"none",
+            "City":"TP HCM",
+            "Ward":"Phuong D",
+            "Street":"Tran Hung Dao",
+            "Job":"Student",
+            "Height":165,
+            "Weight":53
+        }
+        ,{
+            "Name":"Lưu Thị Thúy",
+            "Gender":"Nữ",
+            "Phone": "03242648",
+            "IDNumber":1276429,
+            "Email":"thuy@gamil.com",
+            "Nationality":"Vietnam",
+            "Religion":"none",
+            "City":"TP HCM",
+            "Ward":"Phuong E",
+            "Street":"Nguyen Quang Hoa",
+            "Job":"Student",
+            "Height":165,
+            "Weight":54
+        }
+    ]
+}
