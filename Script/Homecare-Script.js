@@ -9,9 +9,7 @@ doctor.controller("DoctorController",($scope,$http)=>{
          $scope.chosenDoctor=$scope.doctors[0];
         },  
         function fail (response){
-
         }
-
     );
     
 })

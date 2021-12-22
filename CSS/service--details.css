@@ -17,14 +17,15 @@ font-family: Lato;
     width: 85%;
     padding: 50px;
     background-color: #DFF0F2;
-
-   
 }
 .column--one--header{
-    font-size: 28px;
+    font-size: 28px !important;
     font-weight: 900;
     margin: 5px 5px;
-    
+}
+.column--one--header>a{
+    color:#545859 ;
+    font-weight: 500;
 }
 .column--one--specializaion{
     transform: rotate();
@@ -32,7 +33,10 @@ font-family: Lato;
 }
 .detail--description{
     display: flex;
-    flex-direction: row;
+    
+}
+.detail--description{
+    display: flex;
 }
 .description--image>img{
     width: 100%;
@@ -75,7 +79,7 @@ font-weight: 700;
 margin-top: 10px;
 }
 .detail--related--option{
-    display: inline-block;
+    display: block;
    text-align: center;
     margin: 50px 0px 0px;
 }
@@ -98,6 +102,65 @@ margin-top: 10px;
     text-align: center;
     font-weight: 600;
 }
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides{
+    display: none
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #065f73;
+    padding: 2px 16px;
+    color: white;
+    margin: 50px 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 @media screen and (max-width: 1048px) {
     .detail--container{
         flex-direction: column;

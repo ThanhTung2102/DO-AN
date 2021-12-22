@@ -1,0 +1,29 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+iframe:first-child{
+    height: 100%;
+    width: 100%;
+}
+#footer{
+    width: 100%;
+    height: 242px;
+}
+
+@media only screen and (max-width: 1025px){
+    iframe:first-child{
+        height: 134px;
+    }
+    #footer{
+        height: 224px;
+    }
+}
+@media only screen and (max-width: 376px){
+    iframe:first-child{
+        height: 240px;
+    }
+    #footer{
+        height: 500px;
+    }
+}

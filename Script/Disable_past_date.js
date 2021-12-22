@@ -9,7 +9,7 @@ $(function(){
     if(day < 10)
         day = '0' + day.toString();
     
-    var maxDate = year + '-' + month + '-' + day;
-    alert(maxDate);
-    $('#datetimepicker').attr('min', maxDate);
+    var minDate= year + '-' + month + '-' + day;
+    
+    $('#datetimepicker').attr('min', minDate);
 });

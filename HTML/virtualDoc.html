@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Doctor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <style>
-        /* @import url(../CSS/header.css);
-        @import url(../CSS/footer.css); */
+        /* @import url(../CSS/header.css); */
+        /* @import url(../CSS/footer.css); */ 
         
         @import url(../CSS/virtualDoc.css);
         @import url(../CSS/tablet_virtualDoc.css);
         @import url(../CSS/mobile_virtualDoc.css);
+        
     </style>
 </head>
 <body>
@@ -49,8 +51,8 @@
         <input class="button-function function--3" type="submit" value="Schedule Appointment">
         </div>
     </div> -->
+    
     <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
-    <!-- <iframe src="" name="content" frameborder="0" height="100%" width="100%" style="margin: 0%;"> </iframe> -->
 <form action="./Confirm_virtual.html" method="get" target="test">
     
     <div class="form--container">
@@ -120,7 +122,7 @@
             </div>
             <div class="form--row" >
                 <label for="">Pick your day</label>
-                <input id="datetimepicker" class="form--input" type="date" data-format="DD/MM/YYYY" name="date" required >
+                <input id="datetimepicker" class="form--input" type="date" name="date" required >
             </div>
             <div class="form--row">
                 <label for="">Pick your time</label>
@@ -152,7 +154,7 @@
         } else {
             console.log(t2.value);
         }
-        }
+        };
         
 
         // $(document).ready(function () {
@@ -172,9 +174,9 @@
             if(day < 10)
                 day = '0' + day.toString();
             
-            var maxDate = year + '-' + month + '-' + day;
-            alert(maxDate);
-            $('#datetimepicker').attr('min', maxDate);
+            var minDate= year + '-' + month + '-' + day;
+            
+            $('#datetimepicker').attr('min', minDate);
         });
         // async function getSrc() {
         //     const res = await fetch("./header.html", {
@@ -205,7 +207,7 @@
     
     </script>
 
-    <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
+    
  <!-- <div class="footer">
         <div class="footer-bar">
             <div class="footer-mar footer-logo">
@@ -235,5 +237,6 @@
         </div>
     </div> -->
 </form>
+<iframe src="./footer.html" frameborder="0" style="width: 100%" height="242px" name="footer" ></iframe>
 </body>
 </html>
