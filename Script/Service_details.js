@@ -18,7 +18,7 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "flex";
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   };
@@ -29,7 +29,7 @@ let service=angular.module("ServiceApp",[])
     service.controller("ServiceController",($scope,$http)=>{
           $http({
               method:"GET",
-              url:"../Jason/Services-list.json"
+              url:"../Jason/Services_List.json"
           }).then (
               function success (response){
                $scope.serviceList=response.data;
@@ -50,7 +50,7 @@ let service=angular.module("ServiceApp",[])
       service.controller("ServiceDetailController",($scope,$http)=>{
           $http({
               method:"GET",
-              url:"../Jason/Services-list.json"
+              url:"../Jason/Services_List.json"
           }).then(
               function success (response){
                       $scope.selectedDepart=response.data.find(
