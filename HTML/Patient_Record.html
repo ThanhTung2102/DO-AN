@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../CSS/Patient_Portal_Medical.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/header.css">
 
     <title>Document</title>
-    <script src="../js/angular.js"></script>
+    <script src="../Script/angularjs.js"></script>
     <script>
         let app= angular.module("angularApp",[]);
       app.controller("yearController", function($scope, $http){
         $http({
           method:"GET",
-          url:"../Jason/patientRecord.json"
+          url:"../Jason/Medical_Record.json"
         }).then(function success(response){
           $scope.patientRecord= response.data;
           } 
@@ -38,11 +40,60 @@
 </head>
 <body ng-app="angularApp" ng-controller="yearController">
     <div class="pt">
-        <iframe src="./header.html" width="100%" height="100px" frameborder="0" name="header" ></iframe>
-  <div class="nav-name">
-      <img src="" alt="">
-      <span>TK </span>Hospital
-  </div>
+        <div class="header">
+            <!-- navigation bar of desktop -->
+          <div class="nav-desktop">
+            <div class="container--1">
+              <div class="box__icon">
+                  <a href="#"><img class="icon__phone" src="../Images/Phone.png" alt=""></a>
+                  <a id="contact" href=""><p>Contact Us</p></a>
+              </div>
+              <div class="option">
+                  
+                  <a class="link" href="Homepage.html">Home</a>
+                  <a class="link" href="Aboutusver2.html">About Us</a>
+                  <a class="link" href="Services.html">Services</a>
+                  <div class="search">
+                      <input type="text" placeholder="Search">
+                      <a href=""><img src="../Images/search-icon.png" alt=""></a>
+                  </div>
+                
+              </div>
+            </div>
+            <div class="container--2">
+              <div class="name__menu">
+                  
+                  <div class="name">
+                    <img src="../Images/ngoinha-icon.png" alt="">
+                      <span>TK</span> Hospital
+                  </div>
+              </div>
+              <div class="function">
+              <input class="button-function" type="submit" value="Virtual Doctor">
+              <input class="button-function" type="submit" value="Homecare">
+              <input class="button-function function--3" type="submit" value="Schedule Appointment">
+              </div>
+            </div> 
+          </div>
+          <!-- navagation bar of ipad and phone -->
+          <div class="nav-mobile">
+            <div class="logo">
+              <img src="../Images/ngoinha-icon.png" alt="">
+                <span>TK</span> Hospital
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-bars"></i>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu dropdown-menu-right ">
+                <li><a href="Homepage.html"><i class="fa fa-home">   </i>Home</a></li>
+                <li><a href="Aboutusver2.html"><i class="fa fa-book">   </i>About us</a></li>
+                <li><a href="Services.html"><i class="fa fa-cogs">   </i>Service</a></li>
+                <li><a href="patientportal_1.html"><i class="fa fa-user-shield"></i>Account Information</a></li>
+                <li><a href=""><i class="fa fa-envelope">   </i>Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 </div>
 
         <div class="pt-nav">
@@ -58,7 +109,67 @@
             </div>
         </div>
 
-        <!-- <iframe name="frame-medicalrecord" src="" frameborder="0" height="900px" margin="2vh 12vw"  width="100%"></iframe> -->
+        <div class="pt-main__years" >
+            <table>
+                <tr>
+                    <th>Date in</th>
+                    <th>Date out</th>
+                    <th>Disease name</th>
+                    <th>Detail</th>
+                </tr>
+                <tr ng-repeat="y in prYear.nam">
+                    <td>{{y.dateIn}}</td>
+                    <td>{{y.dateOut}}</td>
+                    <td>{{y.diseaseName}}</td>
+                    <td><a href="#detail" ng-click="selectDetail(y)"><i class="fa fa-eye"></i></a></td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="popup-container" id="detail">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup--date">
+                        <div class="date">
+                            Date in: <br>
+                            {{prDetail.dateIn}}
+                        </div>
+                        <div class="date">
+                            Date out: <br>
+                            {{prDetail.dateOut}}
+                        </div>
+                    </div>
+                    <div class="popup-info">
+                        <div class="info--content">
+                           <div><span>Disease code: </span>{{prDetail.inforKhamBenh.diseaseCode}}</div>
+                           <div><span>Department: </span>{{prDetail.inforKhamBenh.department}}</div>
+                           <div><span>Payment total: </span>{{prDetail.detail[0].total+prDetail.detail[1].total+prDetail.detail[2].total}}</div>
+                           <div><span>Payment status: </span>{{prDetail.inforKhamBenh.paymentStatus}}</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-table">
+                    <table>
+                        <tr>
+                            <th>Name of service</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Total</th>
+                            
+                        </tr>
+                        <tr ng-repeat="d in prDetail.detail">
+                            <td>{{d.nameService}}</td>
+                            <td>{{d.quantity}}</td>
+                            <td>{{d.unitPrice}}</td>
+                            <td>{{d.total}}</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <a href="#" class="close">x</a>
+            </div>
+        </div> 
         <div class="pt-main">
             <div class="pt-main__title">Health Diagnose</div>
             <div class="pt-main_1">
@@ -147,72 +258,7 @@
                 </div>
             </div>
         </div> 
-        <div class="pt-main__years" >
-            <table>
-                <tr>
-                    <th>Date in</th>
-                    <th>Date out</th>
-                    <th>Disease name</th>
-                    <th>Detail</th>
-                </tr>
-                <tr ng-repeat="y in prYear.nam">
-                    <td>{{y.dateIn}}</td>
-                    <td>{{y.dateOut}}</td>
-                    <td>{{y.diseaseName}}</td>
-                    <td><a href="#detail" ng-click="selectDetail(y)"><i class="fa fa-eye"></i></a></td>
-                </tr>
-                
-            </table>
-        </div>
-        <div class="popup-container" id="detail">
-            <div class="popup-content">
-                <div class="popup-header">
-                    <div class="popup--date">
-                        <div class="date">
-                            Date in: <br>
-                            28/01/2020 8:00
-                        </div>
-                        <div class="date">
-                            Date out: <br>
-                            10/02/2020 16:00
-                        </div>
-                    </div>
-                    <div class="popup-info">
-                        <div class="info--content">
-                            <label for="">Health center:</label> <span id="healthCenter"></span> <br>
-                            <label for="">Name of disease:</label> <span id="disease"></span> <br>
-                            <label for="">Disease Code:</label> <span id="diseaseCode"></span> <br>
-                            <label for="">Department:</label> <span id="department"></span> <br>
-                            <label for="">Department Code:</label> <span id="departmentCode"></span> <br>
-                            <label for="">Status:</label> <span id="status"></span> <br>
-                        </div>
-                        <div class="info--content">
-                            <label for="">Total payment:</label> <span id="payment"></span> <br>
-                            <label for="">Payment Status</label> <span id="paymentStatus"></span> <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="popup-table">
-                    <table>
-                        <tr>
-                            <th>Name of service</th>
-                            <th>Quantity</th>
-                            <th>Unit Price</th>
-                            <th>Total</th>
-                            
-                        </tr>
-                        <tr ng-repeat="d in prDetail.detail">
-                            <td>{{d.nameService}}</td>
-                            <td>{{d.quantity}}</td>
-                            <td>{{d.unitPrice}}</td>
-                            <td>{{d.total}}</td>
-                        </tr>
-                        
-                    </table>
-                </div>
-                <a href="#" class="close">x</a>
-            </div>
-        </div> 
+        
         
     
     

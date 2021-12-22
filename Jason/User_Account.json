@@ -1,6 +1,7 @@
 {
     "user":[
         {
+            "userID":"01",
             "Name":"Thái Vĩnh Khang",
             "Gender":"Nam",
             "Phone": "03333666555",
@@ -18,6 +19,7 @@
             "HealthInsuaranceCardNumber":"6272828299"
         }
         ,{
+            "userID":"02",
             "Name":"Nguyễn Quốc Công Thành",
             "Gender":"Nam",
             "Phone": "0333324445",
@@ -35,6 +37,7 @@
             "HealthInsuaranceCardNumber":"6272828299"
         }
         ,{
+            "userID":"03",
             "Name":"Nguyễn Thị Thu",
             "Gender":"Nữ",
             "Phone": "03333555412",
@@ -52,6 +55,7 @@
             "HealthInsuaranceCardNumber":"6272828299"
         }
         ,{
+            "userID":"04",
             "Name":"Nguyễn Cao Thăng",
             "Gender":"Nam",
             "Phone": "02145466555",
@@ -69,6 +73,7 @@
             "HealthInsuaranceCardNumber":"6272828299"
         }
         ,{
+            "userID":"05",
             "Name":"Lưu Thị Thúy",
             "Gender":"Nữ",
             "Phone": "03242648",
