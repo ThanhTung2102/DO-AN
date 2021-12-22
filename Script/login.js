@@ -55,7 +55,7 @@ function validateForm()
                     if(p.UserName==u && p.Password==w )
                     {
                         alert("thành công")
-                        location.replace("homepageUser.html")
+                        location.replace("Homepage_User.html?userID=p.userID")
                         return ;
                     }
                 }

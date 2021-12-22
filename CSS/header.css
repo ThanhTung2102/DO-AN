@@ -192,6 +192,15 @@ line-height: 1;
   width: 60%;
   margin-left: 10px;
 }
+.login{
+  background-color:#73BCD9 ;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
 .option{
   display: flex;
 }
@@ -228,12 +237,25 @@ line-height: 1;
   display: none;
   background-color: white;
 }
+.search{
+  width: 210px !important;
+}
 .logo span{
   color: red;
 }
 .logo img{
   width: 30%;
 }
+ .login_user {
+  margin-right: 50px;
+}
+.login_user button{
+  background-color: #065F73;
+  border: none;
+  font-size: 25px;
+}
+
+
 @media screen and (max-width:980px) {
   .nav-desktop{
     display: none;
