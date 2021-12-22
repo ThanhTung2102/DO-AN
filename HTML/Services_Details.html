@@ -13,26 +13,24 @@
     <style>
         @import url(../CSS/footer.css);
         @import url(../CSS/header.css);
-        @import url(../CSS/services.css);
-        @import url(../CSS/service--details.css);
+        @import url(../CSS/Services.css);
+        @import url(../CSS/Service_Details.css);
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-
-
 </head>
 
 <body>
     <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header"></iframe>
     <div class="service--optionbar">
         <div class="service--optionbar--links">
-            <a href="Services-package.html">Package Services</a>
+            <a href="Services_Package.html">Package Services</a>
         </div>
         <div class="service--optionbar--links">
-            <a href="Services-specialist.html">Specialization</a>
+            <a href="Services_Specialist.html">Specialization</a>
         </div>
         <div class="service--optionbar--links">
-            <a href="Services-after-hours.html">After Hours Services</a>
+            <a href="Services_After_Hours.html">After Hours Services</a>
         </div>
     </div>
 
@@ -42,7 +40,7 @@
                 Specialization
             </div>
             <div ng-repeat="d in serviceList" class="column--one--header">
-                <a href="./Services--details.html?ID={{d.DepartId}}">
+                <a href="./Services_Details.html?ID={{d.DepartId}}">
                     {{d.Department}}
                 </a>
             </div>
@@ -97,6 +95,6 @@
     var urlparams = new URLSearchParams(location.search);
     var id = urlparams.get("ID");
 </script>
-<script src="../Script/Service_details.js"></script>
+<script src="../Script/Service_Details.js"></script>
 
 </html>
