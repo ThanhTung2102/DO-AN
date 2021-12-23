@@ -1,37 +1,87 @@
-[{
-    "PatientName":"Nguyễn Thị Thu",
-    "Date":"23/10/2020",
-    "Content":"General Examination",
-    "PatientCode":"25454",
-    "RecieptNumber":"09586",
-    "Money":"800.000đ",
-    "Status":"Paid"
-},
-{
-    "PatientName":"Nguyễn Thị Thu",
-    "Date":"23/10/2020",
-    "Content":"General Examination",
-    "PatientCode":"25454",
-    "RecieptNumber":"09586",
-    "Money":"800.000đ",
-    "Status":"Paid"
-},
-{
-    "PatientName":"Nguyễn Thị Thu",
-    "Date":"23/10/2020",
-    "Content":"General Examination",
-    "PatientCode":"25454",
-    "RecieptNumber":"09586",
-    "Money":"800.000đ",
-    "Status":"Paid"
-},
-{
-    "PatientName":"Nguyễn Thị Thu",
-    "Date":"23/10/2020",
-    "Content":"General Examination",
-    "PatientCode":"25454",
-    "RecieptNumber":"09586",
-    "Money":"800.000đ",
-    "Status":"Paid"
-}
+
+[
+    {
+        "userID":"01",
+        "payment":[ {
+            "PatientName":"Thái Vĩnh Khang",
+            "Date":"23/10/2020",
+            "Content":"General Examination",
+            "PatientCode":"25454",
+            "RecieptNumber":"09586",
+            "Money":"800.000đ",
+            "Status":"Paid"
+        },
+        {
+            "PatientName":"Thái Vĩnh Khang",
+            "Date":"23/10/2020",
+            "Content":"General Examination",
+            "PatientCode":"25454",
+            "RecieptNumber":"09586",
+            "Money":"800.000đ",
+            "Status":"Paid"
+        },
+        {
+            "PatientName":"Thái Vĩnh Khang",
+            "Date":"23/10/2020",
+            "Content":"General Examination",
+            "PatientCode":"25454",
+            "RecieptNumber":"09586",
+            "Money":"800.000đ",
+            "Status":"Paid"
+        },
+        {
+            "PatientName":"Thái Vĩnh Khang",
+            "Date":"23/10/2020",
+            "Content":"General Examination",
+            "PatientCode":"25454",
+            "RecieptNumber":"09586",
+            "Money":"800.000đ",
+            "Status":"Paid"
+        }
+
+        ]
+    },
+    {
+        
+        "userID":"02",
+        "payment":[ {
+            "PatientName":"Nguyễn Quốc Công Thành",
+            "Date":"23/10/2020",
+            "Content":"General Examination",
+            "PatientCode":"25454",
+            "RecieptNumber":"09586",
+            "Money":"800.000đ",
+            "Status":"Paid"
+        },
+        {
+            "PatientName":"Nguyễn Quốc Công Thành",
+            "Date":"23/10/2020",
+            "Content":"General Examination",
+            "PatientCode":"25454",
+            "RecieptNumber":"09586",
+            "Money":"800.000đ",
+            "Status":"Paid"
+        },
+        {
+            "PatientName":"Nguyễn Quốc Công Thành",
+            "Date":"23/10/2020",
+            "Content":"General Examination",
+            "PatientCode":"25454",
+            "RecieptNumber":"09586",
+            "Money":"800.000đ",
+            "Status":"Paid"
+        },
+        {
+            "PatientName":"Nguyễn Quốc Công Thành",
+            "Date":"23/10/2020",
+            "Content":"General Examination",
+            "PatientCode":"25454",
+            "RecieptNumber":"09586",
+            "Money":"800.000đ",
+            "Status":"Paid"
+        }
+
+        ]
+    }
+
 ]

@@ -787,7 +787,7 @@ form input{
     width: 32%;
 }
 .edit-main{
-    width: 60% !important;
+    width: 70% !important;
 }
 }
 @media only screen and (max-width: 400px){
@@ -835,9 +835,13 @@ body{
 }
 .popup-container{
     font-size: 10px;
+    width: 90% !important;
 }
 .popup-table{
     margin: 10px 0px 0px;
+}
+.popup-content{
+    width: 90%;
 }
 .pt1-main__column1--infor{
     display: flex;
