@@ -81,8 +81,8 @@ body,html{
     font-weight: bold;
     position: absolute;
     z-index:2 ;
-    margin-top: -38px;
-    margin-left: 22%;
+    margin-top: 5px;
+    margin-left: -80px;
 }
 #home--circle{
     float: right;
@@ -315,8 +315,9 @@ background-color:#065F73 ;
         max-height: 250px;
     }
     #home__background-1{
-        height: 80vh;
+        height: 90vh;
         width: 80%;
+        position: 0;
     }
     #home--circle{
         margin-top: 40%;
@@ -332,10 +333,10 @@ background-color:#065F73 ;
         font-size: 30px;
     }
     #home__button--go{
-        margin-left: 25%;
+        /* margin-left: 25%; */
     }
     .home__container--item-1{
-        height: 80vh;
+        height: 90vh;
        padding-top: 0px;
     }
     
@@ -433,9 +434,12 @@ background-color:#065F73 ;
         font-size: 15px;
     }
     #home__button--go{
-        margin-left: 25%;
         height: 20px;
-        margin-top: -26px;
+        font-size: 10px;
+        width: 40px;
+        line-height: 15px;
+        margin-top: 5px;
+        margin-left: -50px;
     }
     .home__container--item-1{
         height: 50vh;
@@ -485,7 +489,7 @@ background-color:#065F73 ;
         margin-left: 5%;
     }
     #home__button--writemail{
-        height: 25px;
+        height: 30px;
         font-size: 10px;
     }
     #home__header-mobile{

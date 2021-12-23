@@ -34,13 +34,13 @@
         </div>
     </div>
 
-    <div ng-app="ServiceApp" class="detail--container">
-        <div ng-controller="ServiceController" class="detail--column-one">
-            <div class="container column--one--header">
+    <div ng-app="ServiceApp" class="detail--container ">
+        <div ng-controller="ServiceController" class="detail--column-one dropdown">
+            <div class="column--one--header ">
                 Specialization
             </div>
-            <div ng-repeat="d in serviceList" class="column--one--header">
-                <a href="./Services_Details.html?ID={{d.DepartId}}">
+            <div  class="dropdown-content column--one--header">
+                <a ng-repeat="d in serviceList" href="./Services_Details.html?ID={{d.DepartId}}">
                     {{d.Department}}
                 </a>
             </div>
@@ -95,6 +95,6 @@
     var urlparams = new URLSearchParams(location.search);
     var id = urlparams.get("ID");
 </script>
-<script src="../Script/Service_Details.js"></script>
+<script src="../Script/Service_Details.js" defer></script>
 
 </html>
