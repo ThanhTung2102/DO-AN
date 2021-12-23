@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/homepage.css">
+    <link rel="stylesheet" href="../CSS/Homepage_User.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../CSS/header.css">
@@ -22,47 +22,7 @@
     </script>
 </head>
 <body>
-    <!-- <div class="container--1">
-        <div class="box__icon">
-            <a href="#"><img class="icon__phone" src="../Images/—Pngtree—white call icon png_3562069.png" alt=""></a>
-            <a id="contact" href=""><p>Contact Us</p></a>
-        </div>
-        <div class="option">
-            <div class="id">
-            <a class="link" target="content" target="_self" href="Homepage.html">Home</a>
-            <a class="link" target="content" target="_self" href="Aboutusver2.html">About Us</a>
-            <a class="link" target="content" target="_self" href="Services.html">Services</a>
-            <div class="search">
-                <input type="text" placeholder="Tìm kiếm">
-                <a href=""><img src="../Images/search-icon-png-9986.png" alt=""></a>
-            </div>
-                <ul >
-                    <li class="box-li">
-                        <img id="userImage" src="../Images/user-removebg-preview.png" alt="">
-                        <ul>
-                            <li class="box-item-user"><a class="item-user" href="edit-infor.html">Profile</a></li>
-                            <li class="box-item-user"><a class="item-user" href="patientportal2.html">Medical record</a></li>
-                            <li><a href="Homepage.html">Log out</a></li>
-                        </ul>
-                    </li>
-                </ul>
-        </div>
-        </div>
-    </div> -->
-    <!-- <div class="container--2">
-        <div class="name__menu">
-            <a href=""><img id="menu" class="img" src="../Images/Menu.png" alt=""></a>
-            <div class="name">
-                <a href=""><img class="img" src="../Images/250234479_248400560664121_3333180774864611749_n.png" alt=""></a>
-                <a href="#"><img  src="../Images/TK Hospital.png" alt=""></a>
-            </div>
-        </div>
-        <div class="function">
-        <input class="button-function" type="submit" value="Virtual Doctor">
-        <input class="button-function" type="submit" value="Homecare">
-        <input class="button-function function--3" type="submit" value="Schedule Appointment">
-        </div>
-    </div> -->
+    
     <div class="header">
         <!-- navigation bar of desktop -->
       <div class="nav-desktop">
@@ -72,20 +32,27 @@
               <a id="contact" href=""><p>Contact Us</p></a>
           </div>
           <div class="option">
-              <a class="link" href="Homepage.html">Home</a>
-              <a class="link" href="Aboutusver2.html">About Us</a>
-              <a class="link" href="Services.html">Services</a>
+            <a class="link" target="_parent" href="Homepage.html">Home</a>
+            <a class="link" target="_parent" href="About_Us.html">About Us</a>
+            <a class="link" target="_parent" href="Service.html">Services</a>
+            <a class="link" target="_parent" href="Our_Doctors.html">Our Doctor</a>
+            <a class="link" target="_parent" href="blog.html">Blog</a>
               <div class="search">
                   <input type="text" placeholder="Search">
                   <a href=""><img src="../Images/search-icon.png" alt=""></a>
               </div>
-              <div class="login_user">
+            <div class="login_user" ng-controller="UserController" >
                 <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user-circle"></i>
                     <span class="caret" style="display: none;"></span></button>
                     <ul class="dropdown-menu dropdown-menu-right ">
+<<<<<<< HEAD
                         <li class="box-item-user"><a class="item-user" href="Patient_Portal.html?userID="+id>Patient Portal</a></li>
                         <li class="box-item-user"><a class="item-user" href="Patient_Record.html">Medical record</a></li>
+=======
+                        <li class="box-item-user"><a class="item-user" href="Patient_Portal.html?ID={{selectedAccount.ID}}">Patient Portal</a></li>
+                        <li class="box-item-user"><a class="item-user" href="Patient_Record.html?ID={{selectedAccount.ID}}">Medical record</a></li>
+>>>>>>> 061e6c32726c043afe339b203461bff7176890d9
                         <li><a href="Homepage.html">Log out</a></li>
                     </ul>
                 </div>
@@ -126,60 +93,62 @@
         </div>
     </div>
   </div>
-    <div id="home__background-1">
-        <div id="home--circle">
-            <img id="home__img--1" src="../IMAGES/unsplash_DK--4VWK1tw.png" alt="">
-        </div>
-        <div class="home__title">WELCOME TO <SPan class="tk">TK</SPan> <br>
-            HOSPITAL
-        </div>
-        <div class="home__content-1">
-            Top 10 most excellent hospital in Vietnam
-        </div>
-        <div class="home__content-2" >
-            Safely get to know your <br> body by our service
-        </div>
-        <div class="home__content-3">
-            Anytime, Anywhere, Any curcumstances
-        </div>
-        <div class="home__content-4">
-            Subcribe for our latest information
-        </div>
-        <div id="home--search">
-            <input id="home__button--writemail" type="text" placeholder="Write your email here">
-        <input id="home__button--go" type="submit" value="Go">
-        </div>
+  <div id="home__background-1">
+    <div id="home--circle">
+        <img id="home__img--1" src="../IMAGES/unsplash_DK--4VWK1tw.png" alt="">
     </div>
-    <div class="container--3">
-        <div id="home__header-1">
-            
-                HERE WE PROVIDE SUCH <br>QUALITY SERVICES
-            
-        </div>
-        <div id="home__header-mobile">
-            HERE, WE PROVIDE
-        </div>
+    <div class="home__title">WELCOME TO <SPan class="tk">TK</SPan> <br>
+        HOSPITAL
+    </div>
+    <div class="home__content-1">
+        Top 10 most excellent hospital in Vietnam
+    </div>
+    <div class="home__content-2" >
+        Safely get to know your <br> body by our service
+    </div>
+    <div class="home__content-3">
+        Anytime, Anywhere, Any curcumstances
+    </div>
+    <div class="home__content-4">
+        Subcribe for our latest information
+    </div>
+    <div id="home--search">
+        <input id="home__button--writemail" type="text" placeholder="Write your email here">
+    <input id="home__button--go" type="submit" value="Go">
+    </div>
+</div>
+<div class="container--3">
+    <div id="home__header-1">
         
-        <div class="home__container--item-1">
-            <div class="home__container--detail">
-                <a class="detail--1" href="homecare.html">
-                    <div class="home--titlebutton">Homecare</div>
-                </a>
-            
-                <a href="schedule.html" class="detail--2">
-                    <div class="home--titlebutton-2">Schedule Appointment</div>
-                </a>
-            
-                <a href="virtualDoc.html" class="detail--3">
-                    <div class="home--titlebutton">Virtual Doctor</div>
-                </a>
-            </div>
-            <div id="home__header-2">
-                <a href="./Product.html">GET STARTED NOW</a>
-            </div> 
-        </div>  
+            HERE WE PROVIDE SUCH <br>QUALITY SERVICES
         
     </div>
+    <div id="home__header-mobile">
+        HERE, WE PROVIDE
+    </div>
+    
+    <div class="home__container--item-1">
+        <div class="home__container--detail">
+            <a class="detail--1" href="../HTML/term_of_service.html">
+                <div class="home--titlebutton">Homecare</div>
+                <img src="../Images/Tư vấn online.png" alt="">
+            </a>
+        
+            <a href="../HTML/term_of_service.html" class="detail--2">
+                <div class="home--titlebutton home--titlebutton-2">Schedule Appointment</div>
+                <img src="../Images/Bác sĩ gia đình.png" alt="">
+            </a>
+        
+            <a href="../HTML/term_of_service.html" class="detail--3">
+                <div class="home--titlebutton">Virtual Doctor</div><img src="../Images/Khám tại bệnh viện.png" alt="">
+            </a>
+        </div>
+        <div id="home__header-2">
+            <a href="./Product.html">GET STARTED NOW</a>
+        </div> 
+    </div>  
+    
+</div>
     <!-- body part 3 -->
     <div class="bodyContainer part3">
         <div class="vision--container">
@@ -263,6 +232,8 @@
             </div>
         </div>
     </div>
+    
+    </script>
     <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
 </body>
 </html>

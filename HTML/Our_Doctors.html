@@ -6,126 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Doctors</title>
     <link rel="stylesheet" href="../CSS/Doctor.css">
+    <script src="/Script/Our_Doctor.js"></script>
 </head>
 <body>
     <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
+    <div class="container-fluid">
     <div class="doctor__background-header">
-        <div class="doctor__title">
-           <div>OUT DOCTORS</div> 
+        <div class="doctor-title">
+           <div>OUR DOCTORS</div>
         </div>
     </div>
-    <div class="doctor__container-1">
-            <div class="doctor__list">
-                <div class="doctor__box">
-                    <div class="doctor__list--item">
-                        <img class="doctor__img" src="../IMAGES/Usman.png" alt="">
-                        <div class="doctor--information">
-                            <p class="doctor__name">Dr. Nguyen Cao Thang</p>
-                        <p><img src="../IMAGES/professor.png">&nbsp; &nbsp;Professor</p>
-                        <p><img src="../IMAGES/maki_doctor.png" >&nbsp;&nbsp;Anesthesiologist</p>
-                        <p><img src="../IMAGES/place.png" >&nbsp;&nbsp;Department of Pediatrics - TK Hospital</p>
-                        </div> 
-                        <div class="doctor--information--bonus">
-                            <p>
-                                Dr. Nguyen Cao Thang has devoted more than 30 years in the field of Anesthesia - pain treatment, is an expert with strengths in: Anesthesia
-                                <input onclick="myFunction()" id="doctor--appointment" type="submit" value="Make an appointment now">
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="doctor__list--item">
-                        <img class="doctor__img" src="../IMAGES/Mika.png" alt="">
-                        <div class="doctor--information">
-                            <p class="doctor__name">Dr. Nguyen Thi Thu</p>
-                        <p><img src="../IMAGES/professor.png">&nbsp; &nbsp;Professor</p>
-                        <p><img src="../IMAGES/maki_doctor.png" >&nbsp;&nbsp;Anesthesiologist</p>
-                        <p><img src="../IMAGES/place.png" >&nbsp;&nbsp;Department of Pediatrics - TK Hospital</p>
-                        </div> 
-                        <div class="doctor--information--bonus">
-                            <p>
-                                Dr. Nguyen Thi Thu has devoted more than 30 years in the field of Anesthesia - pain treatment, is an expert with strengths in: Anesthesia
-                                <input onclick="myFunction()" id="doctor--appointment" type="submit" value="Make an appointment now">
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="doctor__list--item">
-                        <img class="doctor__img" src="../IMAGES/Sebashtian.png" alt="">
-                        <div class="doctor--information">
-                            <p class="doctor__name">Dr. Nguyen Thi Huong</p>
-                        <p><img src="../IMAGES/professor.png">&nbsp; &nbsp;Professor</p>
-                        <p><img src="../IMAGES/maki_doctor.png" >&nbsp;&nbsp;Anesthesiologist</p>
-                        <p><img src="../IMAGES/place.png" >&nbsp;&nbsp;Department of Pediatrics - TK Hospital</p>
-                        </div> 
-                        <div class="doctor--information--bonus">
-                            <p>
-                                Dr. Nguyen Thi Huong has devoted more than 30 years in the field of Anesthesia - pain treatment, is an expert with strengths in: Anesthesia
-                                <input onclick="myFunction()" id="doctor--appointment" type="submit" value="Make an appointment now">
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="doctor__list--item">
-                        <img class="doctor__img" src="../IMAGES/Austin.png" alt="">
-                        <div class="doctor--information">
-                            <p class="doctor__name">Dr. Nguyen Thanh Tung</p>
-                        <p><img src="../IMAGES/professor.png">&nbsp; &nbsp;Professor</p>
-                        <p><img src="../IMAGES/maki_doctor.png" >&nbsp;&nbsp;Anesthesiologist</p>
-                        <p><img src="../IMAGES/place.png" >&nbsp;&nbsp;Department of Pediatrics - TK Hospital</p>
-                        </div> 
-                        <div class="doctor--information--bonus">
-                            <p>
-                                Dr. Nguyen Thanh Tung has devoted more than 30 years in the field of Anesthesia - pain treatment, is an expert with strengths in: Anesthesia
-                                <input onclick="myFunction()" id="doctor--appointment" type="submit" value="Make an appointment now">
-                            </p>
-                        </div>
-                    </div>
-    
-                    <hr>
-                </div>
-                <div class="doctor--role">
-                    <div>
-                        <span id="an">Virtual Doctor</span> <span><img src="../IMAGES/human.png">&nbsp; 28</span>
-                    </div>
-                    <div>
-                        Home Doctor <span><img src="../IMAGES/human.png">&nbsp;17</span>
-                    </div>
-                    <div>
-                        Specialization <span><img src="../IMAGES/human.png">&nbsp; 300</span>
-                    </div>
-                    <div>
-                        Pediatrics <span><img src="../IMAGES/human.png">&nbsp; 30</span>
-                    </div>
-                    <div>
-                        Radiology <span><img src="../IMAGES/human.png">&nbsp; 50</span>
-                    </div>
-                    <div>
-                        Oncology <span><img src="../IMAGES/human.png">&nbsp; 28</span>
-                    </div>
-                    <div>
-                        Fertility <span><img src="../IMAGES/human.png">&nbsp; 35</span>
-                    </div>
-                    <div>
-                        Neurology <span><img src="../IMAGES/human.png">&nbsp; 87</span>
-                    </div>
-                    <div>
-                        Nuitrition <span><img src="../IMAGES/human.png">&nbsp; 44</span>
-                    </div>
-                    <hr>
-                </div>
+    <div class="container">
+        <div class="slides">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                  <img class="showimg" src="../Images/Austin.png" style="width:20%">
+                  <p><img src="../IMAGES/professor.png">&nbsp; &nbsp;Professor</p>
+                  <p><img src="../IMAGES/maki_doctor.png" >&nbsp;&nbsp;Anesthesiologist</p>
+                  <p><img src="../IMAGES/place.png" >&nbsp;&nbsp;Department of Pediatrics - TK Hospital</p>
+                  <p>
+                      Dr. Nguyen Cao Thang has devoted more than 30 years in the field of Anesthesia - pain treatment, is an expert with strengths in: Anesthesia <br> <br>
+                      <input onclick="myFunction()" id="doctor--appointment" type="submit" value="Make an appointment now">
+                  </p>
             </div>
-            <div class="doctor__ul">
-                <div hidden class="doctor__number"><a class="number--link" href="#">1</a></div>
-                <div hidden class="doctor__number"><a class="number--link" href="#">2</a></div>
-                <div hidden class="doctor__number"><a class="number--link" href="#">3</a></div>
-                <div hidden class="doctor__number--more">...</div>
-                <div hidden class="doctor__number"><a class="number--link" href="#">37</a></div>
-                <div hidden class="doctor__number"><a class="number--link" href="#">38</a></div>
-                <div hidden class="doctor__number"><a class="number--link" href="#">39</a></div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                  <img class="showimg" src="../Images/Usman.png" style="width:20%">
+                  <p><img src="../IMAGES/professor.png">&nbsp; &nbsp;Professor</p>
+                  <p><img src="../IMAGES/maki_doctor.png" >&nbsp;&nbsp;Anesthesiologist</p>
+                  <p><img src="../IMAGES/place.png" >&nbsp;&nbsp;Department of Pediatrics - TK Hospital</p>
+                  <p>
+                      Dr. Nguyen Thanh Tung has devoted more than 30 years in the field of Anesthesia - pain treatment, is an expert with strengths in: Anesthesia <br> <br>
+                      <input onclick="myFunction()" id="doctor--appointment" type="submit" value="Make an appointment now">
+                  </p>
             </div>
-            <div class="doctor__ul-mobile"> 
-                <a href="">&lt;&lt;See More&gt;&gt;</a>
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                  <img class="showimg" src="../Images/Mika.png" style="width:20%">
+                  <p><img src="../IMAGES/professor.png">&nbsp; &nbsp;Professor</p>
+                  <p><img src="../IMAGES/maki_doctor.png" >&nbsp;&nbsp;Anesthesiologist</p>
+                  <p><img src="../IMAGES/place.png" >&nbsp;&nbsp;Department of Pediatrics - TK Hospital</p>
+                  <p>
+                      Dr. Nguyen Thi Thu has devoted more than 30 years in the field of Anesthesia - pain treatment, is an expert with strengths in: Anesthesia  <br> <br>
+                      <input onclick="myFunction()" id="doctor--appointment" type="submit" value="Make an appointment now">
+                  </p>
             </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                  <img class="showimg" src="../Images/Sebashtian.png" style="width:20%">
+                  <p><img src="../IMAGES/professor.png">&nbsp; &nbsp;Professor</p>
+                  <p><img src="../IMAGES/maki_doctor.png" >&nbsp;&nbsp;Anesthesiologist</p>
+                  <p><img src="../IMAGES/place.png" >&nbsp;&nbsp;Department of Pediatrics - TK Hospital</p>
+                  <p>
+                      Dr. Nguyen Thi Huong has devoted more than 30 years in the field of Anesthesia - pain treatment, is an expert with strengths in: Anesthesia <br> <br>
+                      <input onclick="myFunction()" id="doctor--appointment" type="submit" value="Make an appointment now">
+                  </p>
+              </div>
+        </div>
+        <div class="pull">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="../Images/Austin.png" style="width:100%" onclick="currentSlide(1)" alt="Dr. NGUYỄN CAO THĂNG">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../Images/Usman.png" style="width:100%" onclick="currentSlide(2)" alt="Dr. NGUYỄN THANH TÙNG">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../Images/Mika.png" style="width:100%" onclick="currentSlide(3)" alt="DR. NGUYỄN THỊ THU">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../Images/Sebashtian.png" style="width:100%" onclick="currentSlide(4)" alt="DR. NGUYỄN THỊ HƯƠNG">
+            </div>
+        </div>
+        <div class="doctorrole-title">
+            <h1>Doctors by Role</h1>
+        </div>
+        <div class="doctor-role">
+            <div class="role-item">
+                Home Doctor <span><img src="../IMAGES/human.png">&nbsp;17</span>
+            </div>
+            <div class="role-item">
+                Specialization <span><img src="../IMAGES/human.png">&nbsp; 300</span>
+            </div>
+            <div class="role-item">
+                Pediatrics <span><img src="../IMAGES/human.png">&nbsp; 30</span>
+            </div>
+            <div class="role-item">
+                Radiology <span><img src="../IMAGES/human.png">&nbsp; 50</span>
+            </div>
+            <div class="role-item">
+                Oncology <span><img src="../IMAGES/human.png">&nbsp; 28</span>
+            </div>
+            <div class="role-item">
+                Fertility <span><img src="../IMAGES/human.png">&nbsp; 35</span>
+            </div>
+            <div class="role-item">
+                Neurology <span><img src="../IMAGES/human.png">&nbsp; 87</span>
+            </div>
+            <div class="role-item">
+                Nuitrition <span><img src="../IMAGES/human.png">&nbsp; 44</span>
+            </div>
+        </div>
+    </div>
     </div>
     <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
     <script>

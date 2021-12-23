@@ -3,7 +3,7 @@ html, body{
     padding: 0;
 }
 iframe:first-child{
-    max-height: 100%;
+    max-height: 103px;
     width: 100%;
     
 }
@@ -22,7 +22,8 @@ iframe:first-child{
 }
 @media only screen and (max-width: 376px){
     iframe:first-child{
-        height: 240px;
+        height: 500px;
+        /* display: none; */
     }
     #footer{
         height: 500px;

@@ -159,7 +159,16 @@
       .ft-link:hover{
         color: #73BCD9;
       }
-
+    .login-btn{
+        width: 100px;
+        color: white;
+        background-color:#73BCD9;
+        border-radius: 10px;
+        margin: 10px 30px 10px 5px;
+    }
+    .login-btn:hover{
+        background-color: #84bfd6;
+    }
 /* Sửa -------------------- */
 @media only screen and (max-width: 1024px){
   .container-fluid{
@@ -212,6 +221,7 @@
 .name{
   font-size: 30px;
 }
+
 .function{
   padding-top: 10px;
 }
@@ -254,4 +264,5 @@
   .nav-mobile{
     font-size: 30px !important;
   }
+
 } 
