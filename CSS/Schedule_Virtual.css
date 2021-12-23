@@ -11,6 +11,9 @@ body{
     background-attachment: fixed;
     background-repeat:no-repeat;
 }
+form{
+    height: 50em;
+}
 .form--container{
     height: 100vh;
     width: 100%;
@@ -101,9 +104,10 @@ input , .form--container2{
 
 
 /* 2 buttons */
-.form--row>.form--button{
-    width: 40%;
-    margin: 10px auto;
+.form--row .form--button{
+    text-align: center;
+    width: 300px;
+    margin: auto;
     height: 40px;
     color: white;
     font-weight: bold;
@@ -111,12 +115,77 @@ input , .form--container2{
     border: none;
     background-color: rgb(6, 95, 115);
 }
+.form--row a{
+    margin: auto;
+}
 
 /* #nexttopayment{
     background-color: rgb(6, 95, 115);
 } */
 hr{
     margin: 20px 10px;
+}
+@media only screen and (max-width: 1024px){
+    body{
+        background-size: 1200px 100vh;
+    }
+    .form--row{
+        display: inherit;
+    }
+    .form--container2, .form--container2>div>p{
+        width: 96%;
+    }
+    .form--container2>div>h3{
+        text-align: center;
+        margin: 10px auto;
+        padding-top: 20px ;
+    }
+    .form--row>select, .form--row>input , input[type="date"], input[type="time"] {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .form--row>label{
+        margin-top: 10px;
+    }
+    .form--input {
+        width: 96%;
+    }
+    input[type="date"]{
+        width: 933px;
+    }
+    #nexttopayment{
+        margin: 10px auto;
+    }
+    .form--row:last-child{
+        text-align: center;
+    }
+    form{
+        height: 65em;
+    }
+}
+@media only screen and (max-width: 376px){
+    body{
+        background-size: 500px 100vh;
+    }
+    .form--row>.form--button{
+        width: 96%;
+    }
+    input[type="date"], input[type="time"]{
+        width: 335px;
+    }
+    #vd_note{
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    #book_time2{
+        margin-bottom: 8px;
+    }
+    hr{
+        margin-top: 20px;
+    }
+    form{
+        height: 75em;
+    }
 }
 
 

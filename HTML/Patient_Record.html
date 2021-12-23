@@ -35,10 +35,23 @@
             $scope.prDetail=detail;
         }
       })
+      app.controller("diagnoseController", function($scope, $http){
+        $http({
+          method:"GET",
+          url:"../Jason/Health_Diagnose.json"
+        }).then(function success(response){
+          $scope.healthDiagnose= response.data;
+          } 
+        ,
+        function error(response){
+          $scope.error=response.statusText;
+        }
+        )
+      })
       
     </script>
 </head>
-<body ng-app="angularApp" ng-controller="yearController">
+<body ng-app="angularApp" >
     <div class="pt">
         <div class="header">
             <!-- navigation bar of desktop -->
@@ -95,7 +108,7 @@
         </div>
       </div>
 </div>
-
+    <div ng-controller="yearController">
         <div class="pt-nav">
             <div class="pt-nav__left">
                 <div class="pt-navbar_1"><a href="Homepage.html">Homepage</a></div>
@@ -169,91 +182,86 @@
                 </div>
                 <a href="#" class="close">x</a>
             </div>
-        </div> 
-        <div class="pt-main">
+        </div>
+    </div>
+ 
+        <div class="pt-main" ng-controller="diagnoseController">
             <div class="pt-main__title">Health Diagnose</div>
             <div class="pt-main_1">
             <div class="pt-main__column pt-main__box--result">
                     <div class="pt-main__result--title">Health check results</div>
-                    <div><span>Liver: </span>not large in size, even parenchyma, deeply hypoechoic</div>
-                    <div><span>Portal and suprahepatic veins: </span>No dilatation, no thrombosis</div>
-                    <div><span> Biliary tract:</span>no dilation inside and outside, no stones</div>
-                    <div><span>Pancreas: </span>not large in size, even parenchyma</div>
-                    <div><span>Stomach: </span> Clear gastric juice</div>
-                    <div><span>Duodenal bulb: </span>normal mucosa</div>
-                    <div><span>Abdominal aorta: </span>no aneurysm</div>
-                    <div><span>Bladder: </span>no stones, thin wall</div>
-                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente libero quas nostrum corporis minima aut, id voluptates eaque animi sed nam quasi enim repellendus esse alias! Tenetur mollitia voluptatibus adipisci.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, unde! Consectetur commodi necessitatibus ut nesciunt eum voluptates, ad odio facilis laboriosam corrupti est. Sapiente officiis temporibus, ratione quaerat porro deserunt?</div>
+                    <div ng-repeat="n in healthDiagnose[0].checkResults">
+                        - {{n}}
+                    </div>
             </div>
             <div class="pt-main__column pt-main__column--2">
                 <div class="pt-main__box">
                     <div class="pt-main--item">
                     <div class="pt-main--img"><img src="../Images/heart.png" alt=""></div>
-                    <div><span> Heart </span><br> <br> 75%</div>
+                    <div><span> Heart </span><br> <br> {{healthDiagnose[0].heart.scale}}</div>
                     </div>
-                    <img src="../IMAGES/thanh1.png" alt="">
+                    <img src="{{healthDiagnose[0].heart.range}}" alt="">
                 </div>
                 <div class="pt-main__box">
                     <div class="pt-main--item">
                     <div class="pt-main--img"><img src="../IMAGES/Lungs.png" alt="Lungs"></div>
-                    <div><span> Lungs </span> <br><br> 80%</div>
+                    <div><span> Lungs </span> <br><br> {{healthDiagnose[0].lungs.scale}}</div>
                     </div>
-                    <img src="../IMAGES/thanh2.png" alt="">
+                    <img src="{{healthDiagnose[0].lungs.range}}" alt="">
                 </div>
                 <div class="pt-main__box">
                     <div class="pt-main--item">
                     <div class="pt-main--img"><img src="../IMAGES/stomach.png" alt="Stomach"></div>
-                    <div><span> Stomach </span><br> <br> 30%</div>
+                    <div><span> Stomach </span><br> <br> {{healthDiagnose[0].stomach.scale}}</div>
                     </div>
-                    <img src="../IMAGES/thanh3.png" alt="">
+                    <img src="{{healthDiagnose[0].stomach.range}}" alt="">
                 </div>
                 <div class="pt-main__box">
                     <div class="pt-main--item">
                     <div class="pt-main--img"><img src="../IMAGES/liver.png" alt="Gan"></div>
-                    <div><span> Liver </span><br> <br> 65%</div>
+                    <div><span> Liver </span><br> <br> {{healthDiagnose[0].liver.scale}}</div>
                     </div>
-                    <img src="../IMAGES/thanh4.png" alt="">
+                    <img src="{{healthDiagnose[0].liver.range}}" alt="">
                 </div>
             </div>
             <div class="pt-main__column pt-main__column--3">
                 <div class="pt-main__box pt-main__box-2">
                     <div class="pt-main--item">
                     <div class="pt-main--img"><img src="../IMAGES/Chiều cao.png" alt="Chiều cao"></div>
-                    <div><span> Height </span><br> <br> 170cm</div>
+                    <div><span> Height </span><br> <br> {{healthDiagnose[0].height}}</div>
                     </div>
                 </div>
                 <div class="pt-main__box pt-main__box-2">
                     <div class="pt-main--item">
                     <div class="pt-main--img"><img src="../IMAGES/Cân nặng.png" alt="Cân nặng"></div>
-                    <div><span> Weight </span> <br><br> 60kg</div>
+                    <div><span> Weight </span> <br><br> {{healthDiagnose[0].weight}}</div>
                     </div>
                 </div>
                 <div class="pt-main__box pt-main__box-2">
                     <div class="pt-main--item">
                     <div class="pt-main--img"><img src="../IMAGES/Nhóm máu.png" alt="Nhóm máu"></div>
-                    <div><span> Blood group </span> <br><br> A</div>
+                    <div><span> Blood group </span> <br><br> {{healthDiagnose[0].bloodGroup}}</div>
                     </div>
                 </div>
                 <div class="pt-main__box pt-main__box-2">
                     <div class="pt-main--item">
                     <div class="pt-main--img"><img src="../IMAGES/Huyết áp.png" alt="Huyết áp"></div>
-                    <div><span> Blood Pressure </span> <br><br> 134</div>
+                    <div><span> Blood Pressure </span> <br><br> {{healthDiagnose[0].bloodPressure}}</div>
                 </div>
                 </div> 
             </div>
             </div>
             <div class="pt-main__item--end">
                 <div class="pt-main__item--img">
-                    <div><img src="../IMAGES/BP1.png" alt="Biểu đồ huyết áp"></div>
+                    <div><img src="{{healthDiagnose[0].bloodPressureDiagram}}" alt="Biểu đồ huyết áp"></div>
                     <div class="pt-main__item--title">Blood pressure diagram</div>
                 </div>
                 <div class="pt-main__item--img">
-                    <div><img src="../IMAGES/HR2.png" alt="Nhịp tim"></div>
+                    <div><img src="{{healthDiagnose[0].heartRate}}" alt="Nhịp tim"></div>
                     <div class="pt-main__item--title ">Heart rate</div>
                 </div>
                 <div class="pt-main__item--img">
-                   <div> <img src="../IMAGES/SPO2_1.png" alt="SPO2"></div>
+                   <div> <img src="{{healthDiagnose[0].spo2}}" alt="SPO2"></div>
                    <div class="pt.main__item--title">SPO2</div>
                 </div>
             </div>

@@ -464,17 +464,13 @@ form input{
     margin-bottom: 7px;
     border-radius: 5px;
 }
-.login-main__form input[type='number']{
+.login-main__form input{
     width: 100%;
 }
 .login-main__form span, .login-header__title span {
     color: red;
 }
-input[type='password']{
-    width: 80%;
-    height: 25px;
-    border: none;
-}
+
 .input-password{
     border: 2px solid black;
     border-radius: 5px;
@@ -876,6 +872,9 @@ body{
 }
 .login-main{
     width: 90%;
+}
+.edit-main{
+    width: 90% !important;
 }
 
 }
