@@ -13,6 +13,7 @@ font-family: Lato;
 
 }
 
+
 .detail--column-two{
     width: 110%;
     padding: 50px;
@@ -22,11 +23,30 @@ font-family: Lato;
     font-size: 28px !important;
     font-weight: 900;
     margin: 5px 5px;
+    cursor: pointer;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    position: absolute;
+    background-color: #B0D7E2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(38, 162, 179, 0.2);
+    z-index: 1;
+  }
+.dropdown-content a:hover {background-color: #a5e1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
 .column--one--header>a{
     color:#545859 ;
     font-weight: 500;
     text-decoration: none;
+    display: block;
 }
 .column--one--specializaion{
     transform: rotate();
@@ -227,6 +247,9 @@ body {
     }
     .option--box--caption{
         font-size: 20px;
+    }
+    .dropdown-content{
+       display: none;
     }
 }
 
