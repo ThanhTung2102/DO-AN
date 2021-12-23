@@ -94,7 +94,7 @@
   .caption-container {
     text-align: center;
     background-color: rgb(41, 144, 175);
-    padding: 2px 16px;
+    padding: 10px 16px;
     color: white;
   }
   .row:after {
