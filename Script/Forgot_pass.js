@@ -64,3 +64,24 @@ function goi(){
     validateForm();
     checkAcc();
 }
+function verifyCode(){
+    let code = document.getElementById("verify-codemail").value;
+    if(code=="1111"){
+        alert("Thành công")
+        location.replace("Forgot_password_3.html")
+    }
+    else{
+        alert("Code không hợp lệ");
+    }
+}
+function checkpass(){
+    let npass = document.getElementById("form-reset").value;
+    let conf = document.getElementById("form-confirm").value;
+    if(npass!=conf){
+        alert("Mật khẩu không khớp")
+    }
+    else{
+        alert("Thành công")
+        location.replace("Login.html")
+    }
+}
