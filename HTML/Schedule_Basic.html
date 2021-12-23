@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="/Script/angularjs.js"></script>
     <script src="../Script/Schedule_Script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script>
          var urlparams = new URLSearchParams(location.search);
@@ -20,7 +21,7 @@
   <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
         <div class="main"  style="background-image: url(../Images/Schedule.png);">
             <form class="form" action="./Schedule_Basic_Confirm.html" method="get"
-            ng-app="UserApp" ng-controller="UserController" >
+            ng-app="ScheduleApp" ng-controller="UserController" >
                 <span class="form-title">Register for Basic Service</span>
                 <div class="row">
                     <div class="col">
@@ -41,7 +42,7 @@
                 <div class="row">
                     <div class="col">
                         <label class="form-label">Date you want to test</label>
-                        <input id="date" name="date" type="date" class="form-control" required>
+                        <input id="datetimepicker" name="date" type="date" class="form-control" required>
                     </div>
                 </div>
                 <div class="col-12">
@@ -58,5 +59,22 @@
         </div>
         <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script>
+          $(function(){
+    var dtToday = new Date();
+    
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+    
+    var minDate= year + '-' + month + '-' + day;
+    
+    $('#datetimepicker').attr('min', minDate);
+});
+      </script>
 </body>
 </html>
