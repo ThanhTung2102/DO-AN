@@ -19,7 +19,7 @@
 </head>
 <body>
     
-    <div class="header">
+    <div class="header" ng-app="UserAccount">
         <!-- navigation bar of desktop -->
       <div class="nav-desktop">
         <div class="container--1">
@@ -37,13 +37,13 @@
                   <input type="text" placeholder="Search">
                   <a href=""><img src="../Images/search-icon.png" alt=""></a>
               </div>
-            <div class="login_user">
+            <div class="login_user" ng-controller="UserController" >
                 <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user-circle"></i>
                     <span class="caret" style="display: none;"></span></button>
                     <ul class="dropdown-menu dropdown-menu-right ">
-                        <li class="box-item-user"><a class="item-user" href="Patient_Portal.html">Patient Portal</a></li>
-                        <li class="box-item-user"><a class="item-user" href="Patient_Record.html">Medical record</a></li>
+                        <li class="box-item-user"><a class="item-user" href="Patient_Portal.html?ID={{selectedAccount.ID}}">Patient Portal</a></li>
+                        <li class="box-item-user"><a class="item-user" href="Patient_Record.html?ID={{selectedAccount.ID}}">Medical record</a></li>
                         <li><a href="Homepage.html">Log out</a></li>
                     </ul>
                 </div>
@@ -221,6 +221,29 @@
             </div>
         </div>
     </div>
+    <script>
+        var urlparams = new URLSearchParams(location.search);
+        var id = urlparams.get("userID");
+    </script>
+    <script>
+        let User = angular.module("UserAccount",[])
+        User.controller("UserController",($scope,$http)=>{
+          $http({
+              method:"GET",
+              url:"../Jason/Account.json"
+            }).then (
+              function success (response){
+                $scope.selectedAccount = response.data.find(function(value){
+                        return value.userID = id;
+                    })
+               
+              },  
+              function error(response){
+                    $scope.error = response.statusText;
+                }
+          )
+        })
+    </script>
     <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
 </body>
 </html>
