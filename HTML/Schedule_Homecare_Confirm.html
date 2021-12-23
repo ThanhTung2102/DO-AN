@@ -10,7 +10,20 @@
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
 </head>
-
+<script>
+    function getInput(){
+      const info = new URLSearchParams(window.location.search);
+      return info;
+    }
+    var fullname = getInput().get("fullname")
+    var address = getInput().get("address");
+    var phone = getInput().get("phone");
+    var doctor = getInput().get("doctor");
+    var time = getInput().get("time");
+    var date = getInput().get("date");
+    var dob = getInput().get("dob");
+    var email=getInput().get("email")
+  </script>
 <body background="../IMAGES/homecare.png">
     <div class="product__container">
         <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
@@ -23,31 +36,31 @@
                         <div class="product__user-details">
                             <div class="product__input-box">
                                 <span class="product__details">Full Name</span>
-                                <input class="product__form-input" type="text" id="" required>
+                                <input class="product__form-input" type="text" id="fullName" required>
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Date of Birth</span>
-                                <input class="product__form-input" type="date" id=""
+                                <input class="product__form-input" type="date" id="DOB"
                                     required>
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Email</span>
-                                <input class="product__form-input" type="text" id=""
+                                <input class="product__form-input" type="text" id="Email"
                                     required>
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Phone</span>
-                                <input class="product__form-input" type="text" id=""
+                                <input class="product__form-input" type="text" id="Phone"
                                     required>
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Address</span>
-                                <input class="product__form-input" type="text" id="" required>
+                                <input class="product__form-input" type="text" id="Address" required>
                             </div>
                         </div>
                         <div class="product__input-box product__choose-doctor">
                             <span class="product__details">Choose available doctor</span>
-                            <select name="" id="">
+                            <select name="" id="Doctor" disabled>
                                 <option value="Chọn bác sĩ">Dr. Nguyễn Quốc Công Thành</option>
                                 <option value="Chọn bác sĩ">Dr. Nguyễn Cao Thăng</option>
                                 <option value="Chọn bác sĩ">Dr. Trần Thanh Tùng</option>
@@ -59,17 +72,17 @@
                             <div class="product__input-box">
                                 <span class="product__details">Date to test</span>
                                 <input class="product__form-input" type="date" placeholder="Nhập ngày bạn muốn khám"
-                                    required>
+                                    id="Date" disabled> 
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Time</span>
                                 <input class="product__form-input" type="time" placeholder="--:--"
-                                    required>
+                                    disabled id="Time">
                             </div>
                         </div>
                         <div class="product__form-button">
                             Please ensure all the information above is correct as in your email 
-                            <button>OK</button>
+                            <button onclick="myFunction()" type="submit">OK</button>
                         </div>
                     </form>
                 </div>
@@ -78,5 +91,18 @@
         <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
     </div>
 </body>
-
+<script>
+    document.getElementById("fullName").value = fullname;
+    document.getElementById("DOB").value = dob;
+    document.getElementById("Email").value = email;
+    document.getElementById("Address").value = address;
+    document.getElementById("Phone").value = phone;
+    document.getElementById("Doctor").value = doctor;
+    document.getElementById("Time").value = time;
+    document.getElementById("Date").value = date;
+    function myFunction() 
+    { 
+      window.open("/HTML/payment.html");
+    }
+</script>
 </html>

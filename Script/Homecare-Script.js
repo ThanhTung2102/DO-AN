@@ -2,7 +2,7 @@ let doctor=angular.module("DoctorApp",[])
 doctor.controller("DoctorController",($scope,$http)=>{
     $http({
         method:"GET",
-        url:"../Jason/Doctor-Schedule.json"
+        url:"../Jason/Doctor_Schedule.json"
     }).then (
         function success (response){
          $scope.doctors=response.data;
