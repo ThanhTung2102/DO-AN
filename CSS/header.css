@@ -1,14 +1,6 @@
-/*----------- header--------------- */
-body, html{
-  padding: 0;
-  margin: 0;
-}
-.col-sm-6{
-  padding-left: 130px !important;
-}
-.container-fluid{
-  padding: 2px !important;
-}
+
+/* -------------SỬa -------------- */
+
 .navbar{
   background-color: #065F73;
 }
@@ -42,11 +34,11 @@ body, html{
 .login-btn:hover{
   background-color: #84bfd6;
 }
-/*---------------- body----------------------*/
+.col img{
+  width: 250px;
+}
 .col-sm-6 button{
-  height: 50px;
-  width: 150px;
-  margin: 5px;
+  margin: 10px;
   background-color: #73BCD9;
   border-radius: 10px;
 }
@@ -55,47 +47,211 @@ body, html{
 }
 .mid-nav{
   background-color: white;
-  padding-top: 15px;
-  padding-bottom: 0;
+  padding: 10px;
 }
-
-.row{
-  width: 100%;
+.main{
+  padding: 20px;
 }
-
-
-/*-------- footer--------*/
-.bg-footer{
-  background-color: #065F73;
-  color: white;
+.form-label{
+  font-weight: bold;
 }
-.cpr-bg{
-  background-color: white;
+.form{
+  margin: 20px;
+  border-radius: 20px;
+  padding: 42px;
+  background-color: rgb(255, 255, 255, 0.18);
 }
-.cpr-bg a{
+.form-title{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.col-12{
+  text-align: center;
+  width: 200px;
+}
+.btn-sm{
+  background-color: #73BCD9;
+  padding: 5px;
   color: black;
-  text-decoration: black;
+  font-weight: bold;
+  border-radius: 20px;
 }
-.ft-link{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
+.btn-sm:hover{
+  background-color: #52a0be;
 }
-.ft-link:hover{
-  color: #73BCD9;
+.regis-btn{
+  border-radius: 10px;
 }
-
-@media only screen and (max-width: 1025px){
-  .col-sm-6 button{
-    width: 130px;
-    height: 40px;
+.regis-btn:hover{
+  background-color:#73BCD9 ;
+}
+.padding {
+  padding: 5px;
+  margin: 10px;
+}
+.form-control:focus {
+  box-shadow: 10px 0px 0px 0px #ffffff !important;
+  border-color: #4ca746;
+}
+.form-group{
+  margin: 10px;
+  padding: 5px;
+}
+.form-btn{
+  text-align: center;
+}
+#btn-payment{
+  background-color: #73BCD9;
+  border: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#btn-payment:hover{
+  background-color: #5cb5d8;
+}
+.products{
+  background-color: #f7fbff;
+    padding: 10px;
   }
-  .col-sm-6{
-    padding-left: 50px !important;
+  .products .item{
+  margin-bottom:1em;
+  }
+  .products .item-name{
+  font-weight:600;
+  font-size: 0.9em;
+  }
+  .products .item-description{
+  font-size:0.8em;
+  opacity:0.6;
+  }
+  .products .item p{
+    margin-bottom:0.2em;
+    }
+  .products .price{
+    float: right;
+    font-weight: 600;
+    font-size: 0.9em;
+    }
+  .products .total{
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      margin-top: 10px;
+      padding-top: 19px;
+      font-weight: 600;
+      line-height: 1;
+      }
+    .bg-footer{
+        background-color: #065F73;
+        color: white;
+      }
+    .cpr-bg{
+        background-color: white;
+      }
+    .cpr-bg a{
+        color: black;
+        text-decoration: black;
+      }
+      .ft-link{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      .ft-link:hover{
+        color: #73BCD9;
+      }
+
+/* Sửa -------------------- */
+@media only screen and (max-width: 1024px){
+  .container-fluid{
+    height: 100%;
   }
 }
 @media only screen and (max-width: 376px){
-  .col-sm-6{
-    padding-left: 30px !important;
+  iframe{
+    height: 240px;
   }
 }
+/* css cho header cua desktop */
+.header a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  margin-right: 20px;
+}
+.container--1{
+  display: flex;
+  background-color: #065F73;
+  justify-content: space-between;
+}
+.box__icon{
+  display: flex;
+}
+.box__icon img{
+  width: 60%;
+  margin-left: 10px;
+}
+.option{
+  display: flex;
+}
+.option img{
+  width: 10%;
+}
+.name span{
+  color: red;
+}
+.container--2{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 0 50px;
+  background-color: white;
+}
+.name img{
+  width: 25%;
+}
+.name{
+  font-size: 30px;
+}
+.function{
+  padding-top: 10px;
+}
+.function input{
+  background-color:#73BCD9 ;
+  border: none;
+  border-radius: 5px;
+}
+.nav-mobile{
+  display: flex;
+  justify-content: space-between;
+  display: none;
+  background-color: white;
+}
+.logo span{
+  color: red;
+}
+.logo img{
+  width: 30%;
+}
+@media screen and (max-width:980px) {
+  .nav-desktop{
+    display: none;
+  }
+  nav-mobile{
+    display: block;
+  }
+  .nav-mobile{
+    display: flex;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .nav-mobile button{
+    background-color:whitesmoke;
+    color: black;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 376px){
+  .nav-mobile{
+    font-size: 30px !important;
+  }
+} 
