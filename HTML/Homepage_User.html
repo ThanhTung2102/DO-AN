@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="../Script/angularjs.js"></script>
     <script src="../Script/Homepage.js"></script>
+    <script>
+        var urlParams=new URLSearchParams(location.search);
+        var id=urlParams.get("userID")
+    </script>
 </head>
 <body>
     
@@ -42,8 +46,13 @@
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user-circle"></i>
                     <span class="caret" style="display: none;"></span></button>
                     <ul class="dropdown-menu dropdown-menu-right ">
+<<<<<<< HEAD
+                        <li class="box-item-user"><a class="item-user" href="Patient_Portal.html?userID="+id>Patient Portal</a></li>
+                        <li class="box-item-user"><a class="item-user" href="Patient_Record.html">Medical record</a></li>
+=======
                         <li class="box-item-user"><a class="item-user" href="Patient_Portal.html?ID={{selectedAccount.ID}}">Patient Portal</a></li>
                         <li class="box-item-user"><a class="item-user" href="Patient_Record.html?ID={{selectedAccount.ID}}">Medical record</a></li>
+>>>>>>> 061e6c32726c043afe339b203461bff7176890d9
                         <li><a href="Homepage.html">Log out</a></li>
                     </ul>
                 </div>
