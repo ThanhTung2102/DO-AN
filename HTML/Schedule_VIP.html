@@ -9,34 +9,38 @@
     <link rel="stylesheet" href="../CSS/Schedule_VIP_Basic.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="../Script/angularjs.js"></script>
-    <script src="../Script/vip.js"></script>
-    <script src="../Script/Select_time.js"></script>
+    <script src="../Script/Schedule_Script.js"></script>
+    <script>
+        var urlparams = new URLSearchParams(location.search);
+         var id = urlparams.get("userID");  
+        </script>
 </head>
 <body>
   <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
-   
-        <div class="main" style="background-image: url(../Images/Schedule.png);" ng-app="DoctorApp" ng-controller="DoctorController">
-            <form action="/HTML/Schedule_VIP_Confirm.html" method="get" class="form">
+        <div class="main" style="background-image: url(../Images/Schedule.png);" ng-app="ScheduleApp" >
+            <form action="/HTML/Schedule_VIP_Confirm.html" method="get" class="form" ng-controller="UserController">
                 <span class="form-title">Register for VIP Service</span>
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Full Name</label>
-                      <input id="fullname" name="fullname" type="text" class="form-control" placeholder="Full Name" required>
+                      <input id="fullname" name="fullname" type="text" class="form-control" placeholder="Full Name" required
+                      ng-model="users.Name">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                       <label class="form-label">Address</label>
-                      <input id="address" name="address" type="text" class="form-control" placeholder="Address" required>
+                      <input id="address" name="address" type="text" class="form-control" placeholder="Address" required ng-model="users.Street+', '+users.Ward+', '+users.City">
                     </div>
                     <div class="col">
                         <label class="form-label">Phone Number</label>
-                        <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone number" required>
+                        <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone number" required  ng-model="users.Phone">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col" ng-controller="DoctorController">
                       <label class="form-label">Choose available doctor</label>
                       <select name="doctor" id="doctor" class="form-control" ng-model="chosenDoctor" ng-options="d.DoctorName for d in doctors">
                     </select>
@@ -49,7 +53,7 @@
                     </div>
                     <div class="col">
                         <label class="form-label">Date you want to test</label>
-                        <input id="date" name="date" type="date" class="form-control" required>
+                        <input id="datetimepicker" name="date" type="date" class="form-control" required>
                     </div>
                 </div>
                 <div class="col-12">
@@ -60,5 +64,24 @@
         <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
 </body>
+<script>
+     
+    $(function(){
+        var dtToday = new Date();
+        
+        var month = dtToday.getMonth() + 1;
+        var day = dtToday.getDate();
+        var year = dtToday.getFullYear();
+        if(month < 10)
+            month = '0' + month.toString();
+        if(day < 10)
+            day = '0' + day.toString();
+        
+        var minDate= year + '-' + month + '-' + day;
+        
+        $('#datetimepicker').attr('min', minDate);
+    });
+</script>
 </html>

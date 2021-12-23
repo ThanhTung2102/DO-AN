@@ -10,6 +10,7 @@
         @import url(../CSS/Schedule_Virtual.css);    
         @import url(../CSS/Iframe.css);      
     </style>
+    <script src="../Script/Schedule_Script.js"></script>
 </head>
 <body>
     
@@ -97,38 +98,24 @@
             </div>
         </div>
     </div>
-    <script>
-        function show2() {
-        let t2 = document.getElementById("book_time2");
-        let t2Hour = t2.value.substr(0, 2);
-        let t2Minute = t2.value.substr(3, 2);
-        if (t2Hour < t2.min) {
-            alert("Earliest time is " + t2.min );
-            t2.value = t2.min;
-        } else if (t2Hour > t2.max){
-            alert("Latest time is " + t2.max);
-            t2.value = t2.max;
-        } else {
-            console.log(t2.value);
-        }
-        };
-        $(function(){
-            var dtToday = new Date();
-            
-            var month = dtToday.getMonth() + 1;
-            var day = dtToday.getDate();
-            var year = dtToday.getFullYear();
-            if(month < 10)
-                month = '0' + month.toString();
-            if(day < 10)
-                day = '0' + day.toString();
-            
-            var minDate= year + '-' + month + '-' + day;
-            
-            $('#datetimepicker').attr('min', minDate);
-        });
-    </script>
 </form>
 <iframe id="footer" src="./footer.html" frameborder="0" name="footer" ></iframe>
+<script>
+    $(function(){
+    var dtToday = new Date();
+    
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+    
+    var minDate= year + '-' + month + '-' + day;
+    
+    $('#datetimepicker').attr('min', minDate);
+});
+</script>
 </body>
 </html>
