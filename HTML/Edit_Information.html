@@ -46,10 +46,10 @@
                 <div><input ng-model="patientInfor.user[0].Name" type="text" placeholder="type your name here"></div>
                 <div><input ng-model="patientInfor.user[0].DateOfBirth" type="date" name="date" id="date" placeholder="type your date of birth here"></div>
                 <div class="edit-sextitle">Sex <span>*</span></div>
-                <div><input type="radio" name="sex" id="sex">
+                <div><input type="radio" ng-checked="patientInfor.user[0].Gender"  ng-true-value="Nam" ng-false-value="Nữ" name="sex" id="sex" >
                 <label for="">Female</label> 
                 </div>
-                <div><input type="radio" ng-model="patientInfor.user[0].Gender" name="sex" id="sex">
+                <div><input type="radio" ng-checked="patientInfor.user[0].Gender" ng-true-value="Nữ" ng-false-value="Nam" ng-model="patientInfor.user[0].Gender" name="sex" id="sex">
                 <label for="">Male</label>
                 </div>
                 <div>Phone number <span>*</span></div>
@@ -62,7 +62,7 @@
                 <div>religion <span>*</span></div>
                 <div>
                     <select name="nationality" id="nationality" ng-model="patientInfor.user[0].Nationality"> 
-                        <option value="vietnam">Viet Nam</option>
+                        <option ng-selected="patientInfor.user[0].Nationality" value="vietnam">Viet Nam</option>
                         <option value="china">china</option>
                         <option value="Korea">Korea</option>
                         <option value="japan">Japan</option>
@@ -78,15 +78,18 @@
                     <select name="province" id="province" ng-model="patientInfor.user[0].City">
                         <option value="hatinh">Hà Tĩnh</option>
                         <option value="hanoi">Hà Nội</option>
-                        <option value="saigon">Sài Gòn</option>
+                        <option value="saigon" ng-selected="patientInfor.user[0].City">TP HCM</option>
                         <option value="dalat">Đà Lạt</option>
                     </select>
                 </div>
                 <div>
                     <select name="commune" id="commune" ng-model="patientInfor.user[0].Ward">
-                        <option value="tanloc">Tân Lộc</option>
-                        <option value="hongloc">Hồng Lộc</option>
-                        <option value="anloc">An Lộc</option>
+                        <option value="A" ng-selected="patientInfor.user[0].Ward">Phường A</option>
+                        <option value="B">Phường B</option>
+                        <option value="C">Phường C</option>
+                        <option value="D">Phường D</option>
+                        <option value="E">Phường E</option>
+
                     </select>
                 </div>
                 <div>Street <span>*</span></div>
