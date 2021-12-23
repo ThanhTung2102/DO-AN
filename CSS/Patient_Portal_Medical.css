@@ -786,6 +786,9 @@ form input{
     padding: 10px;
     width: 32%;
 }
+.edit-main{
+    width: 60% !important;
+}
 }
 @media only screen and (max-width: 400px){
 .option{
