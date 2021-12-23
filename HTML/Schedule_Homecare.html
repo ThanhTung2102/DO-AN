@@ -8,6 +8,7 @@
     <title>TK Hospital | Homecare</title>
     <link rel="stylesheet" href="../CSS/Schedule_Homecare.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
     <script src="../Script/angularjs.js"></script>
     <script src="../Script/Homecare-Script.js"></script>
@@ -18,46 +19,45 @@
             <div class="product__form-container">
                 <div class="product__form-title">REGISTER FOR HOMECARE</div>
                 <div class="product__form-content">
-                    <form action="#" method="get" class="product__form">
+                    <form action="#" method="get" class="product__form" >
                         <div class="product__user-details">
                             <div class="product__input-box">
                                 <span class="product__details">Full Name</span>
-                                <input class="product__form-input" type="text" placeholder="Type your name" disabled>
+                                <input class="product__form-input" type="text" placeholder="Type your name"  name="fullname">
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Date of Birth</span>
-                                <input class="product__form-input" type="date" placeholder="Type your birthday"disabled>
+                                <input class="product__form-input" type="date" placeholder="Type your birthday" name="dob">
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Email</span>
-                                <input class="product__form-input" type="text" placeholder="example@example.com"
-                                    disabled>
+                                <input class="product__form-input" type="text" placeholder="example@example.com"  name="email">
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Phone</span>
-                                <input class="product__form-input" type="text" placeholder="Type your phone number"
-                                    disabled>
+                                <input class="product__form-input" type="text" placeholder="Type your phone number" name="phone"
+                                    >
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Address</span>
-                                <input class="product__form-input" type="text" placeholder="Type your address" disabled>
+                                <input class="product__form-input" type="text" placeholder="Type your address"  name="address">
                             </div>
                         </div>
                         <div class=" product__input-box product__choose-doctor">
                             <span class="product__details">Choose available doctor</span>
-                            <select name="" id="" ng-model="chosenDoctor" ng-options="d.DoctorName for d in doctors">
+                            <select name="doctor" id="" ng-model="chosenDoctor" ng-options="d.DoctorName for d in doctors">
                             </select>
                         </div>
                         <div class="product__user-details">
                             <div class="product__input-box">
                                 <span class="product__details">Date your want to test</span>
-                                <input class="product__form-input" type="date" placeholder="Nhập ngày bạn muốn khám"
-                                    required>
+                                <input id="datetimepicker" class="product__form-input" type="date" placeholder="Nhập ngày bạn muốn khám"
+                                    required name="date">
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Select available time</span>
                                 <input class="product__form-input" type="time" placeholder="--:--"
-                                    required>
+                                min="08:00" max="20:00" required onchange="show2();" name="time">
                             </div>
                         </div>
                         <div class="product__form-button">
@@ -70,5 +70,35 @@
     </form>
         <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
 </body>
-
+<script>
+    function show2() {
+    let t2 = document.getElementById("book_time2");
+    let t2Hour = t2.value.substr(0, 2);
+    let t2Minute = t2.value.substr(3, 2);
+    if (t2Hour < t2.min) {
+        alert("Earliest time is " + t2.min );
+        t2.value = t2.min;
+    } else if (t2Hour > t2.max){
+        alert("Latest time is " + t2.max);
+        t2.value = t2.max;
+    } else {
+        console.log(t2.value);
+    }
+    };
+    $(function(){
+        var dtToday = new Date();
+        
+        var month = dtToday.getMonth() + 1;
+        var day = dtToday.getDate();
+        var year = dtToday.getFullYear();
+        if(month < 10)
+            month = '0' + month.toString();
+        if(day < 10)
+            day = '0' + day.toString();
+        
+        var minDate= year + '-' + month + '-' + day;
+        
+        $('#datetimepicker').attr('min', minDate);
+    });
+</script>
 </html>
