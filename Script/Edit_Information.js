@@ -1,7 +1,7 @@
 var urlparams = new URLSearchParams(location.search);
         var id = urlparams.get("userID");
         function close(){
-            location.href="Homepage.html";
+            location.replace="Homepage.html?userID="+id;
         }
    
 
