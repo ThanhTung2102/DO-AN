@@ -11,41 +11,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
     <script src="../Script/angularjs.js"></script>
-    <script src="../Script/Homecare-Script.js"></script>
+    <script src="../Script/Schedule_Script.js"></script>
+    <script>
+    var urlparams = new URLSearchParams(location.search);
+     var id = urlparams.get("userID");  
+    </script>
 <body>
         <iframe src="./header.html" frameborder="0" style="width: 100%;" height="100%" name="header" ></iframe>
         <form action="./Schedule_Homecare_Confirm.html" method="get">
-        <div class="product__page" ng-app="DoctorApp" ng-controller="DoctorController">
-            <div class="product__form-container">
+        <div class="product__page" ng-app="ScheduleApp" >
+            <div class="product__form-container" ng-app="UserApp" ng-controller="UserController" >
                 <div class="product__form-title">REGISTER FOR HOMECARE</div>
                 <div class="product__form-content">
                     <form action="#" method="get" class="product__form" >
                         <div class="product__user-details">
                             <div class="product__input-box">
                                 <span class="product__details">Full Name</span>
-                                <input class="product__form-input" type="text" placeholder="Type your name"  name="fullname">
+                                <input class="product__form-input" type="text" placeholder="Type your name"  name="fullname" ng-model="users.Name">
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Date of Birth</span>
-                                <input class="product__form-input" type="date" placeholder="Type your birthday" name="dob">
+                                <input class="product__form-input" type="date" placeholder="Type your birthday" name="dob" ng-model="users.DateOfBirth">
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Email</span>
-                                <input class="product__form-input" type="text" placeholder="example@example.com"  name="email">
+                                <input class="product__form-input" type="text" placeholder="example@example.com"  name="email" ng-model="users.Email">
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Phone</span>
                                 <input class="product__form-input" type="text" placeholder="Type your phone number" name="phone"
-                                    >
+                                  ng-model="users.Phone"  >
                             </div>
                             <div class="product__input-box">
                                 <span class="product__details">Address</span>
-                                <input class="product__form-input" type="text" placeholder="Type your address"  name="address">
+                                <input class="product__form-input" type="text" placeholder="Type your address"  name="address" ng-model="users.Street+', '+users.Ward+', '+users.City">
                             </div>
                         </div>
-                        <div class=" product__input-box product__choose-doctor">
+                        <div class=" product__input-box product__choose-doctor" ng-controller="DoctorController">
                             <span class="product__details">Choose available doctor</span>
-                            <select name="doctor" id="" ng-model="chosenDoctor" ng-options="d.DoctorName for d in doctors">
+                            <select name="doctorSelect" id="" ng-model="chosenDoctor" ng-options="d.DoctorName for d in doctors">
                             </select>
                         </div>
                         <div class="product__user-details">
@@ -71,20 +75,7 @@
         <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
 </body>
 <script>
-    function show2() {
-    let t2 = document.getElementById("book_time2");
-    let t2Hour = t2.value.substr(0, 2);
-    let t2Minute = t2.value.substr(3, 2);
-    if (t2Hour < t2.min) {
-        alert("Earliest time is " + t2.min );
-        t2.value = t2.min;
-    } else if (t2Hour > t2.max){
-        alert("Latest time is " + t2.max);
-        t2.value = t2.max;
-    } else {
-        console.log(t2.value);
-    }
-    };
+     
     $(function(){
         var dtToday = new Date();
         
