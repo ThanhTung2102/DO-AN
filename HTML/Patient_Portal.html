@@ -11,62 +11,10 @@
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/responsivePT2.css">
-    
-    <script>
-      let app= angular.module("angularApp",[]);
-      app.controller("inforController", function($scope, $http){
-        $http({
-          method:"GET",
-          url:"../Jason/User_Account.json"
-        }).then(function success(response){
-          $scope.patientInfor= response.data;
-          $scope.Address=function($scope){
-            return patientInfor[0].Street + " "+patientInfor[0].Ward+" "+patientInfor[0].Province
-          }
-        },
-        function error(response){
-          $scope.error=response.statusText;
-        }
-        )
-      })
-
-      app.controller("paymentController", function($scope, $http){
-        $http({
-          method:"GET",
-          url:"../Jason/payment.json"
-        }).then(function success(response){
-          $scope.patientInfor= response.data;
-        },
-        function error(response){
-          $scope.error=response.statusText;
-        }
-        )
-      })
-      app.controller("scheduleController", function($scope, $http){
-        $http({
-          method:"GET",
-          url:"../Jason/schedule.json"
-        }).then(function success(response){
-          $scope.schedule= response.data;
-        },
-        function error(response){
-          $scope.error=response.statusText;
-        }
-        )
-      })
-      app.controller("eventController", function($scope, $http){
-        $http({
-          method:"GET",
-          url:"../Jason/event.json"
-        }).then(function success(response){
-          $scope.event= response.data;
-        },
-        function error(response){
-          $scope.error=response.statusText;
-        }
-        )
-      })
+    <script src="../Script/Patient_Portal.js">  
     </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type=text/javascript></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type=text/javascript></script>
     <title>Patient Information</title>
 
 </head>
@@ -80,11 +28,11 @@
             <img src="../IMAGES/avatar1.png" alt="Không thể tải hình">
         </div>
         <div class="pt-header-3__content" ng-controller="inforController">
-            <div>Hello, {{patientInfor.user[0].Name}} </div>
+            <div>Hello, {{patientInfor.Name}} </div>
             <hr>
-            <div>{{patientInfor.user[0].Street}}, {{patientInfor.user[0].Ward}}, {{patientInfor.user[0].City}}</div>
-            <div><span>Phone number:</span>{{patientInfor.user[0].Phone}}</div>
-            <div><span>Email: {{patientInfor.user[0].Email}} </span></div>
+            <div>{{patientInfor.Street}}, {{patientInfor.Ward}}, {{patientInfor.City}}</div>
+            <div><span>Phone number:</span>{{patientInfor.Phone}}</div>
+            <div><span>Email: {{patientInfor.Email}} </span></div>
         </div>
     </div>
     <div class="pt1-nav">
@@ -94,7 +42,7 @@
         <div class="pt-navbar_2"><a href="#">Medical record</a></div>
       </div>
       <div class="pt1-nav__right">
-        <button onclick="editInfor()" class="pt1-nav__right--button"><i class="fa fa-edit">Edit</i></button>
+        <button onclick="editForm()" class="pt1-nav__right--button"><i class="fa fa-edit">Edit</i></button>
       </div>
     </div>
     
@@ -103,18 +51,18 @@
            <div class="pt1-main__column1--infor" ng-controller="inforController">
             <div class="pt1-main1__box pt1-main1__box1">
                 <div><img src="../IMAGES/avatar1.png" alt="Avatar"></div>
-                <div>{{patientInfor.user[0].Name}}</div>
-                <div>{{patientInfor.user[0].DateOfBirth}}</div>
-                <div>{{patientInfor.user[0].Email}}</div>
+                <div>{{patientInfor.Name}}</div>
+                <div>{{patientInfor.DateOfBirth}}</div>
+                <div>{{patientInfor.Email}}</div>
             </div>
             <div class="pt1-main1__box pt1-main1__box2">
                 <div><span> Adress </span><br>
-                  {{patientInfor.user[0].Street}}, {{patientInfor.user[0].Ward}}, {{patientInfor.user[0].City}}</div>
-                <div><span>City</span><br>{{patientInfor.user[0].City}} </div>
-                <div><span>Nation</span><br>{{patientInfor.user[0].Nationality}} </div>
-                <div><span>Job</span><br>{{patientInfor.user[0].Job}}</div>
-                <div><span>Health Insuarance Number</span><br>{{patientInfor.user[0].HealthInsuaranceCardNumber}}</div>
-                <div><span>ID number</span><br>{{patientInfor.user[0].IDNumber}}</div>
+                  {{patientInfor.Street}}, {{patientInfor.Ward}}, {{patientInfor.City}}</div>
+                <div><span>City</span><br>{{patientInfor.City}} </div>
+                <div><span>Nation</span><br>{{patientInfor.Nationality}} </div>
+                <div><span>Job</span><br>{{patientInfor.Job}}</div>
+                <div><span>Health Insuarance Number</span><br>{{patientInfor.HealthInsuaranceCardNumber}}</div>
+                <div><span>ID number</span><br>{{patientInfor.IDNumber}}</div>
             </div>
            </div> 
             <div class="pt1-main__table">
@@ -143,19 +91,19 @@
                               <div class="tab1-row">
                                 <div class="tab1-row__item">
                                   <div><span>Time</span></div>
-                                  <div> {{schedule[0].Time}}</div>
+                                  <div> {{schedule.Time}}</div>
                                 </div>
                                 <div class="tab1-row__item">
                                   <div><span>Treatment</span></div>
-                                  <div>{{schedule[0].Treatment}}</div>
+                                  <div>{{schedule.Treatment}}</div>
                                 </div>
                                 <div class="tab1-row__item">
                                   <div><span>Dentist</span></div>
-                                  <div>{{schedule[0].Dentist}}</div>
+                                  <div>{{schedule.Dentist}}</div>
                                 </div>
                                 <div class="tab1-row__item">
                                   <div><span>Patient number</span></div>
-                                  <div>{{schedule[0].Patientnumber}}</div>
+                                  <div>{{schedule.Patientnumber}}</div>
                                 </div>
                               </div>
                             </div>
@@ -172,7 +120,7 @@
                                   <th>Money</th>
                                   <th>Status</th>
                               </tr>
-                              <tr ng-repeat="p in patientInfor[0].payment">
+                              <tr ng-repeat="p in payment.payment">
                                   <td>{{p.PatientName}}</td>
                                   <td>{{p.Date}}</td>
                                   <td>{{p.Content}}</td>
@@ -197,11 +145,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  <script src="https://code.jquery.com/jquery-3.1.1.min.js" type=text/javascript></script>
-                   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type=text/javascript></script>
-                  <script src="../js/custom.js" type=text/javascript></script>    
+                  </div>    
             </div>
             </div>
             <div class="pt1-main__column pt1-main__column--2">
@@ -214,30 +158,27 @@
                     <div><textarea name="" id="valueNote" cols="32" rows="5"></textarea></div>
                     <div><button  onclick="saveNote()">Save notes</button></div>
                 </div>
-                <div class="pt1-main1__box3--footer">
+                <div class="pt1-main1__box3--footer" ng-controller="scheduleController">
                     <div><img src="../IMAGES/human_icon.png" alt=""></div>
-                    <div><span>Có hẹn khám</span><br>Doctor Lưu Hương Giang</div>
-                    <div>25/11/2021</div>
+                    <div><span>Có hẹn khám</span><br>Doctor {{schedule.Dentist}}</div>
+                    <div>{{schedule.Time}}</div>
                 </div>
             </div>
-            <div class="pt1-main__column2--file">
+            <div class="pt1-main__column2--file" ng-controller="fileController">
                 <div class="pt1-main__column--title">Files/Documents</div>
                 <div class="pt1-main__item--file">
-                    <a id="downloadMe" href="../Images/patient portal.pdf">Patient record</a>
-                    <a  href="../Images/patient portal.pdf" download="patient portal.pdf"><i class="fa fa-download"></i></a>
+                    <a id="downloadMe" href="{{file.file1}}">Medical record</a>
+                    <a  href="{{file.file1}}" download="patient portal.pdf"><i class="fa fa-download"></i></a>
                 </div>
                 <div class="pt1-main__item--file">
-                     <a href="../Images/patient portal.pdf">X-ray photo Result</a>
-                    <a href="../Images/patient portal.pdf" download="X-ray photo Result.pdf"><i class="fa fa-download"></i></a>
+                     <a href="{{file.file2}}">X-ray photo Result</a>
+                    <a href="{{file.file2}}" download="X-ray photo Result.pdf"><i class="fa fa-download"></i></a>
                 </div>
                 <div class="pt1-main__item--file">
-                    <a href="../Images/patient portal.pdf"> General results</a>
-                    <a href="../Images/patient portal.pdf" download="General results.pdf"><i class="fa fa-download"></i></a>
+                    <a href="{{file.file3}}"> General results</a>
+                    <a href="{{file.file3}}" download="General results.pdf"><i class="fa fa-download"></i></a>
                 </div>
-                <div class="pt1-main__item--file">
-                    <a href="../Images/patient portal.pdf"> Medical record</a>
-                    <a href="../Images/patient portal.pdf" download="Medical record.pdf"><i class="fa fa-download"></i></a>
-                </div>
+          
             </div>
         </div>    
       </div>
@@ -245,29 +186,7 @@
           <iframe src="./footer.html" frameborder="0" style="width: 100%" height="243px" name="footer" ></iframe>
     
 <script>
-  function editInfor(){
-    window.location.href="Edit_Information.html"
-  }
-   
-    function saveNote(){
-      
-      if (localStorage) {
-  	    // document.getElementById("btnSave").addEventListener('submit', function() {
-  	      let notes = document.getElementById('valueNote').value;
-  	      localStorage.setItem('name', notes);
-  	  // })
-    }
-    };
-  window.onload = function() {
-
-    // Retrieve user name
-    let note = localStorage.getItem('name');
-    if (note != "undefined" && note != null) {
-      document.getElementById('valueNote').value =  note;
-    } else {
-      document.getElementById('valueNote').value = note;
-    }  
-  };
+  
 </script>
     
 </body>

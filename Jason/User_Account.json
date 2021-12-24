@@ -1,5 +1,4 @@
-{
-    "user":[
+[
         {
             "userID":"01",
             "Name":"Thái Vĩnh Khang",
@@ -17,8 +16,8 @@
             "Weight":50,
             "DateOfBirth":"23/11/2001",
             "HealthInsuaranceCardNumber":"6272828299"
-        }
-        ,{
+        },
+        {
             "userID":"02",
             "Name":"Nguyễn Quốc Công Thành",
             "Gender":"Nam",
@@ -90,5 +89,4 @@
             "DateOfBirth":"23/11/2001",
             "HealthInsuaranceCardNumber":"6272828299"
         }
-    ]
-}
+]
