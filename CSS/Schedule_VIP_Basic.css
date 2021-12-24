@@ -117,3 +117,11 @@
 .ft-link:hover{
     color: #73BCD9;
 }
+.col-12{
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.col-12 button{
+    width: 200px;
+}
