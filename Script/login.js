@@ -69,3 +69,6 @@ function validateForm()
             validateForm();
             login();
         }
+function register(){
+    location.replace("Sign_Up.html")
+}
