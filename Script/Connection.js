@@ -8,20 +8,28 @@ function toAboutUs(){
         window.location.href="About_Us.html?userID="+id
     }
 }
+function blog(){
+    if(id==null){
+
+    }
+    else{
+        location.href="blog.html?userID="+id
+    }
+}
 function patientPortal(){
     
         location.href="Patient_Portal.html?userID="+id
 }
 function medicalRecord(){
     if (id==null)
-    { window.location.href="Terms_Of_Service.html"}
+    { location.href="Terms_Of_Service.html"}
     else 
     location.href="Patient_Record.html?userID="+id
 }
 function virtualSchedule(){
      
     if (id==null)
-    { window.location.href="Terms_Of_Service.html"}
+    { location.href="Terms_Of_Service.html"}
     else 
     {
        window.location.href="Schedule_Virtual.html?userID="+id
