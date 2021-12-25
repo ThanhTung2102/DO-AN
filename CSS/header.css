@@ -184,19 +184,18 @@
 .header a{
   text-decoration: none;
   color: white;
-  font-size: 24px;
   margin-right: 20px;
 }
 .container--1{
   display: flex;
   background-color: #065F73;
   justify-content: space-between;
+  font-size: 20px;
+  padding: 15px 30px;
 }
-.box__icon{
-  display: flex;
-}
-.box__icon img{
-  width: 60%;
+.box__icon {
+  font-size: 20px;
+  color: white;
   margin-left: 10px;
 }
 .option{
@@ -229,6 +228,9 @@
   background-color:#73BCD9 ;
   border: none;
   border-radius: 5px;
+  height: 35px;
+  color: white;
+  font-size: 18px;
 }
 .nav-mobile{
   display: flex;
@@ -242,6 +244,44 @@
 .logo img{
   width: 30%;
 }
+.logo_title{
+  padding-bottom: 20px;
+}
+/* Css cho dropdown */
+.login_user{
+  padding: 0px 50px;
+}
+.login_user--title{
+  color: white;
+  font-size: 20px;
+}
+.nav-right__icon{
+  font-size: 30px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #065F73;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 7px;
+  z-index: 1;
+  right: 0;
+  font-size: 15px !important;
+}
+.dropdown-content a{
+    font-size: 17px !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 @media screen and (max-width:980px) {
   .nav-desktop{
     display: none;

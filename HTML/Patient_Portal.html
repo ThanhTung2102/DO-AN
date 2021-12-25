@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <script src="../Script/angularjs.js"></script>
+    <script src="../Script/Connection.js"></script>
+    <script src="../Script/angularjs.js"></script>
     <link rel="stylesheet" href="../CSS/Patient_Portal_Medical.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/Iframe.css">
     <script src="../Script/Patient_Portal.js">  
     </script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type=text/javascript></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type=text/javascript></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="../Script/Connection.js"></script>
+    <style type="text/css">
+      
+  </style>
     <title>Patient Information</title>
 
 </head>
@@ -28,29 +25,28 @@
     <!-- navigation bar of desktop -->
   <div class="nav-desktop">
     <div class="container--1">
-      <div class="box__icon">
-          <a href="#"><img class="icon__phone" src="../Images/Phone.png" alt=""></a>
-          <a id="contact" href=""><p>Contact Us</p></a>
+      <div >
+          <a href="" class="box-icon"><i class="fa fa-phone-square" ></i></a>
+          <a href="">Contact us</a>
       </div>
       <div class="option">
-        <a class="link" target="_parent" href="Homepage.html">Home</a>
-        <a class="link" target="_parent" href="About_Us.html">About Us</a>
-        <a class="link" target="_parent" href="Service.html">Services</a>
-        <a class="link" target="_parent" href="Our_Doctors.html">Our Doctor</a>
-        <a class="link" target="_parent" href="blog.html">Blog</a>
-          <div class="search">
-              <input type="text" placeholder="Search">
-              <a href=""><img src="../Images/search-icon.png" alt=""></a>
-          </div>
+        <div><a class="link" target="_parent" href="Homepage.html">Home</a></div>
+        <div><a class="link" target="_parent" href="About_Us.html">About Us</a></div>
+        <div><a class="link" target="_parent" href="Service.html">Services</a></div>
+        <div><a class="link" target="_parent" href="Our_Doctors.html">Our Doctor</a></div>
+        <div><a class="link" target="_parent" href="blog.html">Blog</a></div>
+        <!-- <div class="header-search">
+            <input type="text" placeholder="Search">
+            <a href=""><img src="../Images/search-icon.png" alt=""></a>
+        </div> -->
         <div class="login_user" >
             <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user-circle"></i>
-                <span class="caret" style="display: none;"></span></button>
-                <ul class="dropdown-menu dropdown-menu-right ">
-                    <li class="box-item-user"><a class="item-user" onclick="patientPortal()">Patient Portal</a></li>
-                    <li class="box-item-user"><a class="item-user"onclick="medicalRecord()" >Medical record</a></li>
-                    <li><a href="Homepage.html">Log out</a></li>
-                </ul>
+              <div class="login_user--title"><i class="fa fa-user-circle"></i></div>
+              <div class="dropdown-content">
+                <p><a class="item-user" onclick="patientPortal()"><i class="fa fa-window-restore">&nbsp &nbsp</i> Patient Portal</a></p>
+                <p><a class="item-user"onclick="medicalRecord()" ><i class="fa fa-book">&nbsp &nbsp</i> Medical record</a></p>
+                <p><a href="Homepage.html"><i class="fa fa-user-shield">&nbsp &nbsp</i> Log out</a></p>
+              </div>
             </div>
         </div>
     </div>
@@ -60,7 +56,7 @@
           
           <div class="name">
             <img src="../Images/ngoinha-icon.png" alt="">
-              <span>TK</span> Hospital
+              <span class="logo_title">TK</span> Hospital
           </div>
       </div>
       <div class="function">
@@ -76,26 +72,26 @@
       <img src="../Images/ngoinha-icon.png" alt="">
         <span>TK</span> Hospital
     </div>
-    <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-bars"></i>
-      <span class="caret"></span></button>
-      <ul class="dropdown-menu dropdown-menu-right ">
-        <li><a href="Homepage.html"><i class="fa fa-home">   </i>Home</a></li>
-        <li><a href="About_Us.html"><i class="fa fa-book">   </i>About us</a></li>
-        <li><a href="Services.html"><i class="fa fa-cogs">   </i>Service</a></li>
-        <li><a href="Our_Doctors.html"><i class="fa fa-cogs">   </i>Our doctor</a></li>
-        <li><a href="blog.html"><i class="fa fa-cogs"></i>Blog</a></li>
-        <li><a href="Schedule_Virtual.html"><i class="fa fa-cogs"></i>Virtual Doctor</a></li>
-        <li><a href="Schedule_Homecare.html"><i class="fa fa-cogs"></i>Homecare</a></li>
-        <li><a href="Schedule_Basic.html"><i class="fa fa-cogs"></i>Schedule Appointment</a></li>
-        <li><a href="Patient_Portal.html"><i class="fa fa-cogs"></i>Patient_Portal</a></li>
-        <li><a href="Patient_Record.html"><i class="fa fa-cogs"></i>Medical Record</a></li>
-        <li><a href="Homepage.html"><i class="fa fa-user-shield"></i>Log Out</a></li>
-        <!-- cần sửa -->
-        <li><a href=""><i class="fa fa-envelope"></i>Contact</a></li>
-      </ul>
+    <div class="nav-right">
+      <div class="dropdown">
+        <div class="nav-right__icon"><i class="fa fa-bars"></i></div>
+        <div class="dropdown-content">
+            <p><a href="Homepage.html"><i class="fa fa-home">&nbsp &nbsp</i>Home</a></p>
+            <p><a href="About_Us.html"><i class="fa fa-book"> &nbsp &nbsp  </i>About us</a></p>
+            <p><a href="Services.html"><i class="fa fa-cogs"> &nbsp &nbsp  </i>Service</a></p>
+            <p><a href="Our_Doctors.html"><i class="fa fa-user-md"> &nbsp &nbsp  </i>Our doctor</a></p>
+            <p><a href="blog.html"><i class="fa fa-book">&nbsp &nbsp</i>Blog</a></p>
+            <p><a href="Schedule_Virtual.html"><i class="fa fa-bed">&nbsp &nbsp</i>Virtual Doctor</a></p>
+            <p><a href="Schedule_Homecare.html"><i class="fa fa-home">&nbsp &nbsp</i>Homecare</a></p>
+            <p><a href="Schedule_Basic.html"><i class="fa fa-calendar">&nbsp &nbsp</i>Schedule Appointment</a></p>
+            <p><a href="Patient_Portal.html"><i class="fa fa-window-restore">&nbsp &nbsp</i>Patient_Portal</a></p>
+            <p><a href="Patient_Record.html"><i class="fa fa-clipboard">&nbsp &nbsp</i>Medical Record</a></p>
+            <p><a href="Homepage.html"><i class="fa fa-user-shield">&nbsp &nbsp</i>Log Out</a></p>
+            <p><a href=""><i class="fa fa-envelope">&nbsp &nbsp</i>Contact</a></p>
+        </div>
     </div>
-</div>
+    </div>
+  </div>
 </div>
   <!-- header cho patient-portal  -->
     <div class="pt-header-3" >
@@ -143,82 +139,75 @@
             <div class="pt1-main__table">
                 <div id="pt2-main">
                     <div class="pt2-main__container">
-                      
-                      <div class="group-tabs">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist" style="overflow-y: auto; ">
-                          <li role="presentation" class="active">
-                            <i class="fa fa-calendar"></i>
-                            <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Medical examination schedule</a></li>
-                          <li role="presentation">
-                            <i class="fa fa-credit-card"></i>
-                            <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Hospital fee payment history</a></li>
-                          <li role="presentation">
-                            <i class="fa fa-bullhorn"></i>
-                            <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Announcement/Event</a></li>
-                          
-                        </ul>
-                  
-                        <!-- Tab panes -->
-                        <div class="tab-content" ng-controller="scheduleController">
-                          <div role="tabpanel" class="tab-pane active" id="tab1">
-                            <div class="pt-main__tab1">
-                              <div class="tab1-row">
-                                <div class="tab1-row__item">
-                                  <div><span>Time</span></div>
-                                  <div> {{schedule.Time}}</div>
-                                </div>
-                                <div class="tab1-row__item">
-                                  <div><span>Treatment</span></div>
-                                  <div>{{schedule.Treatment}}</div>
-                                </div>
-                                <div class="tab1-row__item">
-                                  <div><span>Dentist</span></div>
-                                  <div>{{schedule.Dentist}}</div>
-                                </div>
-                                <div class="tab1-row__item">
-                                  <div><span>Patient number</span></div>
-                                  <div>{{schedule.Patientnumber}}</div>
-                                </div>
+                      <div class="container">
+                        <div class="tab">
+                          <button class="tablinks active">Medical examination schedule</button>
+                          <button class="tablinks">Hospital fee payment history</button>
+                          <button class="tablinks">Announcement/Event</button>
+                        </div>
+            
+                        <div id="Medical examination schedule" class="tabcontent" ng-controller="scheduleController">
+                          <div class="pt-main__tab1">
+                            <div class="tab1-row">
+                              <div class="tab1-row__item">
+                                <div><span>Time</span></div>
+                                <div> {{schedule.Time}}</div>
+                              </div>
+                              <div class="tab1-row__item">
+                                <div><span>Treatment</span></div>
+                                <div>{{schedule.Treatment}}</div>
+                              </div>
+                              <div class="tab1-row__item">
+                                <div><span>Dentist</span></div>
+                                <div>{{schedule.Dentist}}</div>
+                              </div>
+                              <div class="tab1-row__item">
+                                <div><span>Patient number</span></div>
+                                <div>{{schedule.Patientnumber}}</div>
                               </div>
                             </div>
-                  
                           </div>
-                          <div role="tabpanel" class="tab-pane tab-pane__2" id="tab2" ng-controller="paymentController">
-                            <table>
-                              <tr>
-                                  <th>Patient Name</th>
-                                  <th>Date</th>
-                                  <th>Content</th>
-                                  <th>Patient code</th>
-                                  <th>Reciept number</th>
-                                  <th>Money</th>
-                                  <th>Status</th>
-                              </tr>
-                              <tr ng-repeat="p in payment.payment">
-                                  <td>{{p.PatientName}}</td>
-                                  <td>{{p.Date}}</td>
-                                  <td>{{p.Content}}</td>
-                                  <td>{{p.PatientCode}}</td>
-                                  <td>{{p.RecieptNumber}}</td>
-                                  <td>{{p.Money}}</td>
-                                  <td>{{p.Status}}</td>
-                              </tr>
-                              
-                          </table>
-                          </div>
-                          <div role="tabpanel" class="tab-pane" id="tab3" ng-controller="eventController">
-                            <div class="tab3-row" ng-repeat="e in event">
-                              <div class="pt2-col1">{{e.Time}}</div>
-                              <div class="pt2-col2">{{e.Content}}</div>
-                              <div class="pt2-col3"><button>New</button></div>
-                            </div>
-                            
-                      
-                          </div>
-                          
                         </div>
-                      </div>
+            
+                        <div id="Hospital fee payment history" class="tabcontent" ng-controller="paymentController">
+                            <div>
+                              <table>
+                                <tr>
+                                    <th>Patient Name</th>
+                                    <th>Date</th>
+                                    <th>Content</th>
+                                    <th>Patient code</th>
+                                    <th>Reciept number</th>
+                                    <th>Money</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr ng-repeat="p in payment.payment">
+                                    <td>{{p.PatientName}}</td>
+                                    <td>{{p.Date}}</td>
+                                    <td>{{p.Content}}</td>
+                                    <td>{{p.PatientCode}}</td>
+                                    <td>{{p.RecieptNumber}}</td>
+                                    <td>{{p.Money}}</td>
+                                    <td>{{p.Status}}</td>
+                                </tr>
+                              </table>
+                            </div>
+                        </div>
+            
+                        <div id="Announcement/Event" class="tabcontent" ng-controller="eventController">
+                            <div>
+                              <div class="tab3-row" ng-repeat="e in event">
+                                <div class="pt2-col1">{{e.Time}}</div>
+                                <div class="pt2-col2">{{e.Content}}</div>
+                                <div class="pt2-col3"><button>New</button></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="../Script/Patient_Portal_Tab.js">
+                      
+                  </script>
+                      
                     </div>
                   </div>    
             </div>
@@ -230,7 +219,7 @@
                     <div></div>
                 </div>
                 <div id="btnSave" class="pt1-main1__box3--note">
-                    <div><textarea name="" id="valueNote" cols="32" rows="5"></textarea></div>
+                    <div><textarea name="" id="valueNote" ></textarea></div>
                     <div><button  onclick="saveNote()">Save notes</button></div>
                 </div>
                 <div class="pt1-main1__box3--footer" ng-controller="scheduleController">
