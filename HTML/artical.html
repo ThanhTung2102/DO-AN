@@ -1,138 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Artical</title>
     <style>
         @import url(../CSS/Iframe.css);
-        @import url(../CSS/artical.css);        
+        @import url(../CSS/artical.css);
+        @import url(../CSS/header.css);
     </style>
-    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
 </head>
+
 <body>
-        <!-- Header -->
-        <iframe src="./header.html" frameborder="0" name="header" ></iframe>
-<!-- Content -->
+    <!-- Header -->
+    <div class="header">
+        <!-- navigation bar of desktop -->
+        <div class="nav-desktop">
+            <div class="container--1">
+                <div>
+                    <a href="" class="box-icon"><i class="fa fa-phone-square"></i></a>
+                    <a href="">Contact us</a>
+                </div>
+                <div class="option">
+                    <div><a class="link" target="_parent" href="Homepage.html">Home</a></div>
+                    <div><a class="link" target="_parent" href="About_Us.html">About Us</a></div>
+                    <div><a class="link" target="_parent" href="Service.html">Services</a></div>
+                    <div><a class="link" target="_parent" href="Our_Doctors.html">Our Doctor</a></div>
+                    <div><a class="link" target="_parent" href="Blog.html">Blog</a></div>
+                    <!-- <div class="header-search">
+                <input type="text" placeholder="Search">
+                <a href=""><img src="../Images/search-icon.png" alt=""></a>
+            </div> -->
+                    <form action="./Login.html" target="_parent">
+                        <button class="login-btn" type="submit">Log In</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container--2">
+                <div class="name__menu">
+                    <div class="name">
+                        <div> <img src="../Images/ngoinha-icon.png" alt=""></div>
+                        <div> <span class="logo_title">TK</span> Hospital</div>
+                    </div>
+                </div>
+                <div class="function">
+                    <input class="button-function" type="submit" value="Virtual Doctor" onclick="virtualSchedule()">
+                    <input class="button-function" type="submit" value="Homecare" onclick="homecareSchedule()">
+                    <input class="button-function function--3" type="submit" value="Schedule Appointment"
+                        onclick="basicSchedule()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navagation bar of ipad and phone -->
+    <div class="nav-mobile">
+        <div class="logo">
+            <img src="../Images/ngoinha-icon.png" alt="">
+            <span>TK</span> Hospital
+        </div>
+        <div class="nav-right">
+            <div class="dropdown">
+                <div class="nav-right__icon"><i class="fa fa-bars"></i></div>
+                <div class="dropdown-content">
+                    <p><a href="Homepage.html"><i class="fa fa-home">&nbsp &nbsp</i>Home</a></p>
+                    <p><a href="About_Us.html"><i class="fa fa-book"> &nbsp &nbsp </i>About us</a></p>
+                    <p><a href="Services.html"><i class="fa fa-cogs"> &nbsp &nbsp </i>Service</a></p>
+                    <p><a href="Our_Doctors.html"><i class="fa fa-user-md"> &nbsp &nbsp </i>Our doctor</a></p>
+                    <p><a href="blog.html"><i class="fa fa-book">&nbsp &nbsp</i>Blog</a></p>
+                    <p><a href="Schedule_Virtual.html"><i class="fa fa-bed">&nbsp &nbsp</i>Virtual Doctor</a></p>
+                    <p><a href="Schedule_Homecare.html"><i class="fa fa-home">&nbsp &nbsp</i>Homecare</a></p>
+                    <p><a href="Schedule_Basic.html"><i class="fa fa-calendar">&nbsp &nbsp</i>Schedule Appointment</a>
+                    </p>
+                    <p><a href="Login.html"><i class="fa fa-user-shield">&nbsp &nbsp</i>Log In</a></p>
+                    <p><a href=""><i class="fa fa-envelope">&nbsp &nbsp</i>Contact</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
     <div id="art__container--1">
         <div class="art--header art--bold">
             <h1>Thông tin thêm về vaccine AstraZeneca và tử vong sau khi tiêm vaccine COVID-19</h1>
         </div>
     </div>
 
-<div id="art__container--2">
-    <img class="img--header" src="../Images/Vaccine-AstraZeneca.jpg" alt="">
-</div>
-<div id="art__container--3">
-    <div class="art--recommend">
-        <div>
-        <p class="art--bold" id="art__header--recommend">Recommend for you</p>
-        <div class="art--related">
+    <div id="art__container--2">
+        <img class="img--header" src="../Images/Vaccine-AstraZeneca.jpg" alt="">
+    </div>
+    <div id="art__container--3">
+        <div class="art--recommend">
             <div>
-                <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                <p class="art--bold" id="art__header--recommend">Recommend for you</p>
+                <div class="art--related">
+                    <div>
+                        <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                    </div>
+                    <div class="art--information">
+                        <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                            facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam
+                            impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
+                    </div>
                 </div>
-                <div class="art--information">
-                <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
-                </div>
-        </div>
-        <p class="art--bold">Based on like</p>
+                <p class="art--bold">Based on like</p>
 
-        <div class="art--related">
-            <div>
-                <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                <div class="art--related">
+                    <div>
+                        <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                    </div>
+                    <div class="art--information">
+                        <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                            facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam
+                            impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
+                    </div>
                 </div>
-                <div class="art--information">
-                <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
+            </div>
+        </div>
+        <div class="art__content--all">
+            <p class="art--small">2 tiếng trước <span class="art--gradient">&ensp; By Nguyễn Cao Thăng</span></p>
+            <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta doloribus nam
+                adipisci laudantium ullam molestias cum error enim ut! Excepturi tenetur itaque natus amet voluptates
+                unde sequi saepe at.</p>
+            <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At consectetur fugit aut
+                dignissimos adipisci tempora quidem mollitia obcaecati harum maxime! Nam voluptatibus eum quisquam
+                soluta corporis obcaecati quia ut impedit?</p>
+            <hr>
+            <p class="art--large art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                soluta quod ipsum velit natus excepturi explicabo sit hic, unde mollitia saepe inventore modi tempora
+                libero, fuga recusandae ad dolorem veniam.</p>
+            <hr>
+            <div class="art__img--content">
+                <img src="../Images/Vaccine-AstraZeneca.jpg" alt="">
+
+                <p class="art--small art--note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ad
+                    deleniti dignissimos natus quibusdam rem molestiae repellat, odio dicta quod saepe nisi enim
+                    corporis vel assumenda obcaecati aut? Quam, esse.</p>
+            </div>
+            <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit
+                repellendus repudiandae, nemo rerum fugiat id, similique ab nulla voluptates aliquid consequuntur eum
+                totam et ipsum dolor. Vitae, doloribus totam.</p>
+            <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur id
+                asperiores maiores, quasi beatae nobis! Ex tenetur repellendus, voluptatem commodi corrupti quam minus
+                iusto fugit praesentium dicta quis neque.</p>
+            <p class="art--content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis labore esse
+                facilis inventore sequi eum dolorum ipsam veritatis, illum provident in perferendis aspernatur ex
+                mollitia et sed voluptas nulla praesentium?</p>
+            <div class="art__img--content">
+                <img src="../Images/Vaccine-AstraZeneca.jpg" alt="">
+
+                <p class="art--small art--note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ad
+                    deleniti dignissimos natus quibusdam rem molestiae repellat, odio dicta quod saepe nisi enim
+                    corporis vel assumenda obcaecati aut? Quam, esse.</p>
+            </div>
+            <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit,
+                excepturi ipsum eaque quibusdam sapiente optio distinctio, illo tempora autem fuga tenetur aspernatur
+                voluptas, dicta aut ex perspiciatis. Voluptate, et.</p>
+            <p class="art--content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestiae aliquam
+                sed sapiente nihil, tenetur, minus fugiat hic assumenda tempore eos impedit unde inventore itaque minima
+                ratione repellat. Hic, optio.</p>
+            <div class="art__recommend--signup">
+                <div>
+                    <h3>Sign up</h3>
+                    <p class="art--small art--note art--gradient">Lets fuckin' sign up</p>
+                    <p class="art--small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
+                        praesentium? Dolores, cupiditate? In eaque harum nam! Suscipit commodi minus minima, cupiditate
+                        vitae provident asperiores quaerat earum quae magni, placeat perferendis.</p>
+                    <input id="art--signup" type="submit" name="Signup" value="Get this newletter">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div id="art__container--4">
+        <h2>Related Topics</h2>
+        <div class="art--scroll">
+            <div class="art__row--related">
+                <div class="art--related">
+                    <div>
+                        <a href=""><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                    </div>
+                    <div class="art--information">
+                        <a href="#" class="art--bold">MEOMEO</a>
+                    </div>
+                </div>
+                <div class="art--related">
+                    <div>
+                        <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                    </div>
+                    <div class="art--information">
+                        <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                            facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam
+                            impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
+                    </div>
+                </div>
+                <div class="art--related">
+                    <div>
+                        <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                    </div>
+                    <div class="art--information">
+                        <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                            facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam
+                            impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
+                    </div>
+                </div>
+                <div class="art--related">
+                    <div>
+                        <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                    </div>
+                    <div class="art--information">
+                        <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                            facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam
+                            impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
+                    </div>
+                </div>
+                <div class="art--related">
+                    <div>
+                        <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
+                    </div>
+                    <div class="art--information">
+                        <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                            facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam
+                            impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="art__content--all">
-        <p class="art--small">2 tiếng trước <span class="art--gradient">&ensp; By Nguyễn Cao Thăng</span></p>
-        <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta doloribus nam adipisci laudantium ullam molestias cum error enim ut! Excepturi tenetur itaque natus amet voluptates unde sequi saepe at.</p>
-        <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At consectetur fugit aut dignissimos adipisci tempora quidem mollitia obcaecati harum maxime! Nam voluptatibus eum quisquam soluta corporis obcaecati quia ut impedit?</p>
-        <hr>
-        <p class="art--large art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium soluta quod ipsum velit natus excepturi explicabo sit hic, unde mollitia saepe inventore modi tempora libero, fuga recusandae ad dolorem veniam.</p>
-        <hr>
-        <div class="art__img--content">
-            <img src="../Images/Vaccine-AstraZeneca.jpg" alt="">
-        
-        <p class="art--small art--note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ad deleniti dignissimos natus quibusdam rem molestiae repellat, odio dicta quod saepe nisi enim corporis vel assumenda obcaecati aut? Quam, esse.</p>
-        </div>
-        <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit repellendus repudiandae, nemo rerum fugiat id, similique ab nulla voluptates aliquid consequuntur eum totam et ipsum dolor. Vitae, doloribus totam.</p>
-        <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur id asperiores maiores, quasi beatae nobis! Ex tenetur repellendus, voluptatem commodi corrupti quam minus iusto fugit praesentium dicta quis neque.</p>
-        <p class="art--content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis labore esse facilis inventore sequi eum dolorum ipsam veritatis, illum provident in perferendis aspernatur ex mollitia et sed voluptas nulla praesentium?</p>
-        <div class="art__img--content">
-            <img src="../Images/Vaccine-AstraZeneca.jpg" alt="">
-        
-        <p class="art--small art--note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ad deleniti dignissimos natus quibusdam rem molestiae repellat, odio dicta quod saepe nisi enim corporis vel assumenda obcaecati aut? Quam, esse.</p>
-        </div>
-        <p class="art--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit, excepturi ipsum eaque quibusdam sapiente optio distinctio, illo tempora autem fuga tenetur aspernatur voluptas, dicta aut ex perspiciatis. Voluptate, et.</p>
-        <p class="art--content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestiae aliquam sed sapiente nihil, tenetur, minus fugiat hic assumenda tempore eos impedit unde inventore itaque minima ratione repellat. Hic, optio.</p>
-        <div class="art__recommend--signup">
-            <div>
-            <h3>Sign up</h3>
-            <p class="art--small art--note art--gradient">Lets fuckin' sign up</p>
-            <p class="art--small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, praesentium? Dolores, cupiditate? In eaque harum nam! Suscipit commodi minus minima, cupiditate vitae provident asperiores quaerat earum quae magni, placeat perferendis.</p>
-            <input id="art--signup" type="submit" name="Signup" value="Get this newletter">
-            </div>
-        </div>
-        <hr>
-    </div>
-</div>
-<div id="art__container--4">
-    <h2>Related Topics</h2>
-    <div class="art--scroll">
-    <div class="art__row--related">
-        <div class="art--related">
-            <div>
-                <a href=""><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
-            </div>
-            <div class="art--information">
-                <a href="#" class="art--bold">MEOMEO</a>
-            </div>
-        </div>
-        <div class="art--related">
-            <div>
-            <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
-            </div>
-            <div class="art--information">
-            <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
-            </div>
-        </div>
-        <div class="art--related">
-            <div>
-                <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
-                </div>
-                <div class="art--information">
-                <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
-                </div>
-        </div>
-        <div class="art--related">
-            <div>
-                <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
-            </div>
-            <div class="art--information">
-                <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
-            </div>
-        </div>
-        <div class="art--related">
-            <div>
-                <a href="#"><img class="art__img--related" src="../Images/Web--washhand.jpg" alt=""></a>
-                </div>
-                <div class="art--information">
-                <a href="#" class="art--bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere sed, voluptates fuga distinctio expedita tempora eaque nesciunt. Beatae, aperiam impedit. Illo quisquam quasi tempore odio officia est quo alias?</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    
-<!-- footer -->
-<iframe id="footer" src="./footer.html" frameborder="0" name="footer" ></iframe>
- <!-- <div class="footer">
+
+    <!-- footer -->
+    <iframe id="footer" src="./footer.html" frameborder="0" name="footer"></iframe>
+    <!-- <div class="footer">
         <div class="footer-bar">
             <div class="footer-mar footer-logo">
                 <a href="Homepage.html"><img src="../images/TK Hospital.png" alt="" class="logo"></a>
@@ -164,4 +265,5 @@
 
 
 </body>
+
 </html>

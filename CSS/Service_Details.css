@@ -99,8 +99,10 @@ font-weight: 700;
 margin-top: 10px;
 }
 .detail--related--option{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
    text-align: center;
+   justify-content: space-around;
     margin: 50px 0px 0px;
 }
 .related--option--box{
@@ -294,13 +296,14 @@ body {
     .detail--related{
         margin-top: 8px;
     }
+    
     .related--option--box{
-        max-width: 80px;
+        max-width: 200px;
+        margin:0 ;
     }
-    .option--box--img>img{
-        max-width: 80px;
-        height: 80px;
 
+    .option--box--img>img{
+       max-width: 100%;
     }
     .option--box--caption{
         font-size: 12px;

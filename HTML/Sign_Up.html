@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../CSS/Patient_Portal_Medical.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/Iframe.css">
-    <link rel="stylesheet" href="../CSS/responsivePT2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../Script/Register.js"></script>
 </head>
 
 <body>
@@ -40,7 +40,6 @@
         </div>
         <div class="container--2">
           <div class="name__menu">
-              
               <div class="name">
                 <img src="../Images/ngoinha-icon.png" alt="">
                   <span class="logo_title">TK</span> Hospital
@@ -72,9 +71,7 @@
                 <p><a href="Schedule_Virtual.html"><i class="fa fa-bed">&nbsp &nbsp</i>Virtual Doctor</a></p>
                 <p><a href="Schedule_Homecare.html"><i class="fa fa-home">&nbsp &nbsp</i>Homecare</a></p>
                 <p><a href="Schedule_Basic.html"><i class="fa fa-calendar">&nbsp &nbsp</i>Schedule Appointment</a></p>
-                <p><a href="Patient_Portal.html"><i class="fa fa-window-restore">&nbsp &nbsp</i>Patient_Portal</a></p>
-                <p><a href="Patient_Record.html"><i class="fa fa-clipboard">&nbsp &nbsp</i>Medical Record</a></p>
-                <p><a href="Homepage.html"><i class="fa fa-user-shield">&nbsp &nbsp</i>Log Out</a></p>
+                <p><a href="Login.html"><i class="fa fa-user-shield">&nbsp &nbsp</i>Log In</a></p>
                 <p><a href=""><i class="fa fa-envelope">&nbsp &nbsp</i>Contact</a></p>
             </div>
         </div>
@@ -166,50 +163,7 @@
 </body>
 <script>
     
-    function validateEmail() {
-            var email = document.getElementById('email');
-            var mailFormat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})/;
-           
-            if (email.value == "") {
-                alert( "Please enter your Email or Phone Number  ");
-            }
-            else if (!mailFormat.test(email.value)) {
-                alert( "Email Address is not valid, Please provide a valid Email or phone number ");
-                return false;
-            }
-            else {
-
-            }
-        }
     
-    function validatePhone(){
-            var phoneNum=document.getElementById('phone');
-            var phoneFormat= /((09|03|07|08|05)+([0-9]{8})\b)/g;
-            if (phoneNum.value == "") {
-                alert( "Please enter your Email or Phone Number");
-            }
-            else if (!phoneFormat.test(phoneNum.value)) {
-                alert( "Phone number is not valid, Please provide a valid phone number ");
-                return false;
-            }
-            else {
-            }
-
-        }
-        function validateIdNumber(){
-            var idNum=document.getElementById('idNum');
-            var idFormat=/(([0-9]{9}) | ([0-9]{11})\b)/g;
-            if (idNum.value == "") {
-                alert( "Please enter your ID Number");
-            }
-            else if (!idFormat.test(idNum.value)) {
-                alert( "ID Number is not valid, Please provide a valid ID Number");
-                return false;
-            }
-            else {
-            }
-        }
-     
     $(function(){
         var dtToday = new Date();
         

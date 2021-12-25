@@ -522,13 +522,17 @@ form input{
     border-radius: 5px;
 }
 .signup-form input[type="text"], input[type="number"], input[type="date"],  input[type="password"], select {
-    width: 90%;
+    width: 100%;
 }
 .signup-input--email{
     width: 95%;
 }
 .signup-input--health{
     width: 95%;
+}
+.forgot-pw>a{
+    color: black;
+    margin-bottom: 7px;
 }
 .signup-sextitle, .signup-emailtitle, .signup-emailbutton, .signup-healthtitle, .healthnumber{
     grid-column-start: 1;
@@ -648,9 +652,6 @@ form input{
     left: 0;
     background: rgba(0,0,0,0.7) ;
     display: none;
-    
- }
- .popup-container{
     
  }
   .popup-content{

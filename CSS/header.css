@@ -1,8 +1,9 @@
-
-/* -------------SỬa -------------- */
-
+body{
+  font-family: Roboto !important;
+}
 .navbar{
   background-color: #065F73;
+
 }
 .nav-brand__color{
   color: white;
@@ -30,6 +31,8 @@
   background-color:#73BCD9;
   border-radius: 10px;
   margin-left: 30px;
+  height: 35px;
+  margin-top:20px;
 }
 .login-btn:hover{
   background-color: #84bfd6;
@@ -169,18 +172,7 @@
     .login-btn:hover{
         background-color: #84bfd6;
     }
-/* Sửa -------------------- */
-@media only screen and (max-width: 1024px){
-  .container-fluid{
-    height: 100%;
-  }
-}
-@media only screen and (max-width: 376px){
-  iframe{
-    height: 240px;
-  }
-}
-/* css cho header cua desktop */
+
 .header a{
   text-decoration: none;
   color: white;
@@ -196,14 +188,17 @@
 .login_user .login_user--title{
   line-height: 56px;
 }
-.box__icon {
-  font-size: 20px;
-  color: white;
-  margin-left: 10px;
-  display: flex;
+.box-icon {
+  font-size: 45px;
+  color:white;
+  margin-left: 5px;
+  background-color:#065F73 ;
+  rotate: 90deg;
+  
 }
 .container--1 a{
   line-height: 56px;
+  font-size: 30px;
 }
 
 .icon__phone{
@@ -226,10 +221,14 @@
   background-color: white;
 }
 .name img{
-  width: 25%;
+
+  height: 50%;
 }
+
 .name{
   font-size: 30px;
+  display: flex;
+  padding-top: 10px;
 }
 
 .function{
@@ -254,9 +253,6 @@
 }
 .logo img{
   width: 30%;
-}
-.logo_title{
-  padding-bottom: 20px;
 }
 /* Css cho dropdown */
 .login_user{
@@ -287,13 +283,14 @@
 }
 .dropdown-content a{
     font-size: 17px !important;
+    color: white;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:1030px) {
   .nav-desktop{
     display: none;
   }
