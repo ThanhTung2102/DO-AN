@@ -105,6 +105,10 @@ input , .form--container2{
 
 
 /* 2 buttons */
+.form--button{
+    line-height: 40px;
+    border-radius: 10px;
+}
 .form--row .form--button{
     text-align: center;
     width: 300px;
@@ -118,6 +122,7 @@ input , .form--container2{
 }
 .form--row a{
     margin: auto;
+    text-decoration: none;
 }
 
 /* #nexttopayment{
