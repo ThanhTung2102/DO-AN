@@ -15,13 +15,14 @@ form{
     height: 50em;
 }
 .form--container{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
 }
 .form--container2{
-    top: 30px;
+    margin-top: 20px;
 }
 .form--container2>div>h3,
 .form--container2
@@ -48,7 +49,7 @@ form{
 .form--container2{
     background-color: rgba(209, 202, 202, 0.3);
     width: 50%;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     position: relative;
 }
 
@@ -160,7 +161,7 @@ hr{
         text-align: center;
     }
     form{
-        height: 65em;
+        height: 80em;
     }
 }
 @media only screen and (max-width: 376px){
@@ -184,7 +185,7 @@ hr{
         margin-top: 20px;
     }
     form{
-        height: 75em;
+        height: 90em;
     }
 }
 
