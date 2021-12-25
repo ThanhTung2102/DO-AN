@@ -160,9 +160,15 @@ a>img{
 #home__header-2{
     margin-left: 5%;
     margin-top: -5%;
-    font-size: 45px;
+    
+    
+    
+}
+#home__header-2>a{
+    color: rgb(197, 46, 46);
     font-weight: bold;
-    color: rgba(147, 17, 17, 1);
+    font-size: 45px;
+    text-decoration: none;
 }
 .part3{
     margin-left: auto;
