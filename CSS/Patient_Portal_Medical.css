@@ -466,7 +466,7 @@ form input{
     border-radius: 5px;
 }
 .login-main__form input{
-    width: 100%;
+    width: 100% !important;
 }
 .login-main__form span, .login-header__title span {
     color: red;
@@ -522,7 +522,7 @@ form input{
     border-radius: 5px;
 }
 .signup-form input[type="text"], input[type="number"], input[type="date"],  input[type="password"], select {
-    width: 100%;
+    width: 90%;
 }
 .signup-input--email{
     width: 95%;
