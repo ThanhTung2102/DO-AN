@@ -7,34 +7,34 @@ function validateForm()
     var kt = isNaN(username);
     if(kt==true){
         if (username == ''){
-        alert('Bạn chưa nhập tên đăng nhập');
+        alert('Please enter your mail or phone number');
         }
         else if (password == '')
         {
-            alert('Bạn chưa nhập mật khẩu');
+            alert('Please enter your password');
         }
         else if(cham<1 ||  a<1 ){
             alert("Đăng nhập không hợp lệ")
         }
         else if (username[0]=='.' || username[0]=='@'){
-                alert('Mail không hợp lệ')
+                alert('Invalid mail account')
             }
         for(let i =1; i<username.length;i++){
             if(username[i]=='@'&& username[i+1]=='@'){
-                alert('Mail không hợp lệ')
+                alert('Invalid Mail account')
             }
             else if(username[i]=='.'&&username[i+1]=='.'){
-                alert('Mail không hợp lệ')
+                alert('Invalid Mail account')
             }
             else if(username[username.length-1]=='.' || username[username.    length-1]=='@'){
-                alert('Mail không hợp lệ')
+                alert('Invalid Mail account')
             }
         } 
     }
     else{
         for(let i =1; i< username.length;i++){
             if(username[0]!=0){
-                alert('Phone không hợp lệ')
+                alert('Invalid Phone number')
                 break;
             }
         }
@@ -54,7 +54,7 @@ function validateForm()
                 for(p of check.account){
                     if(p.UserName==u && p.Password==w )
                     {
-                        alert("thành công")
+                        alert("Log In Successfully")
                         location.replace("Homepage_User.html?userID="+p.userID)
                         return ;
                     }
