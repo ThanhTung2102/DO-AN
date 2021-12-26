@@ -45,7 +45,7 @@ var urlparams = new URLSearchParams(location.search);
       app.controller("paymentController", function($scope, $http){
         $http({
           method:"GET",
-          url:"../Jason/payment.json"
+          url:"../Jason/Payment.json"
         }).then(function success(response){
           $scope.payment=response.data.find(value=>value.userID==id);
         },
@@ -57,7 +57,7 @@ var urlparams = new URLSearchParams(location.search);
       app.controller("scheduleController", function($scope, $http){
         $http({
           method:"GET",
-          url:"../Jason/schedule.json"
+          url:"../Jason/Schedule.json"
         }).then(function success(response){
           $scope.schedule=response.data.find(value=>value.userID==id);
         },
@@ -69,7 +69,7 @@ var urlparams = new URLSearchParams(location.search);
       app.controller("eventController", function($scope, $http){
         $http({
           method:"GET",
-          url:"../Jason/event.json"
+          url:"../Jason/Event.json"
         }).then(function success(response){
           $scope.event=response.data;
         },
