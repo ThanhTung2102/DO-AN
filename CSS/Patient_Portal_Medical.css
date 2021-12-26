@@ -87,6 +87,7 @@ a{
 .pt-nav{
     margin:0 12vw ;
     display: flex;
+    flex-wrap: wrap;
 }
 .pt-nav a{
     text-decoration: none;
@@ -821,6 +822,9 @@ form input{
 .pt-main__box--result{
     width: 300px !important;
     margin-bottom: 20px;
+}
+.pt-header-3{
+    margin-top: 10px;
 }
 body{
     margin: auto !important;
