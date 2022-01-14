@@ -21,6 +21,8 @@
         const info = new URLSearchParams(window.location.search);
         return info;
       }
+      var urlparams = new URLSearchParams(location.search);
+         var id = urlparams.get("userID");
       var fullname = getInput().get("fullname")
       var address = getInput().get("address");
       var phone = getInput().get("phone");
@@ -103,7 +105,7 @@
     </div>
 </div>
         <div class="main" style="background-image: url(../Images/Schedule.png);">
-            <form class="form" action="#" method="get" onsubmit="regis()">
+            <form class="form" action="../HTML/Homepage_User.html?userID=" method="get" onsubmit="regis()">
                 <span class="form-title">Register for Basic Service</span>
                 <div class="row">
                     <div class="col">
@@ -128,7 +130,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button class="btn-sm" onclick="myFunction()" type="submit">Confirm to Register</button>
+                    <button class="btn-sm" type="submit">Confirm to Register</button>
                 </div>
             </form>
         </div>
@@ -138,9 +140,6 @@
       document.getElementById("address").value = address;
       document.getElementById("phone").value = phone;
       document.getElementById("date").value = date;
-      function myFunction(){
-        window.open("/HTML/Homepage.html", '_self')
-      }
       function regis(){
         alert("Register Successfully!")
       }
