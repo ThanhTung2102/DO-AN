@@ -61,7 +61,7 @@ body{
     padding-left: 15px;
     border: 1px solid #ccc;
     border-bottom-width: 2px;
-    transition: all 0.3s ease;
+    
 }
 .product__user-details .product__input-box .product__form-input:focus,
 .product__user-details .product__form-input:valid{
