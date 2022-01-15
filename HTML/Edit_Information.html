@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="../CSS/Patient_Portal_Medical.css">
-    <link rel="stylesheet" href="../CSS/responsivePT2.css">
+
     <link rel="stylesheet" href="../CSS/Iframe.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -109,10 +109,10 @@
                 <div><input ng-model="patientInfor.Name" type="text" placeholder="type your name here"></div>
                 <div><input ng-model="patientInfor.DateOfBirth" type="text" name="date" id="datetimepicker" placeholder="type your date of birth here"></div>
                 <div class="edit-sextitle">Sex <span>*</span></div>
-                <div><input type="radio" ng-checked="patientInfor.Gender"  ng-true-value="Nam" ng-false-value="Nữ" name="sex" id="sex" >
+                <div><input type="radio" ng-checked="patientInfor.Gender"  ng-true-value="Nữ" ng-false-value="Nam" name="sex" id="sex" >
                 <label for="">Female</label> 
                 </div>
-                <div><input type="radio" ng-checked="patientInfor.Gender" ng-true-value="Nữ" ng-false-value="Nam" ng-model="patientInfor.Gender" name="sex" id="sex">
+                <div><input type="radio" ng-checked="patientInfor.Gender" ng-true-value="Nam" ng-false-value="Nữ" name="sex" id="sex">
                 <label for="">Male</label>
                 </div>
                 <div>Phone number <span>*</span></div>
@@ -124,8 +124,8 @@
                 <div>Nationality <span>*</span></div>
                 <div>religion <span>*</span></div>
                 <div>
-                    <select name="nationality" id="nationality" ng-model="patientInfor.Nationality"> 
-                        <option ng-selected="patientInfor.Nationality" value="vietnam">Viet Nam</option>
+                    <select name="nationality" id="nationality" ng-selected="patientInfor.Nationality"> 
+                        <option  value="vietnam">Viet Nam</option>
                         <option value="china">china</option>
                         <option value="Korea">Korea</option>
                         <option value="japan">Japan</option>

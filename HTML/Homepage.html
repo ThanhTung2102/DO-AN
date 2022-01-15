@@ -213,7 +213,7 @@
     </div>
     <!-- Homepage part 5 -->
     <div class="bodyContainer part5" ng-app="NewsApp" ng-controller="NewsController">
-        <div class="newsContainer" ng-repeat="n in newsList">
+        <div class="newsContainer" ng-repeat="n in newsList| limitTo:3" >
             <div class="news--img">
                 <img src="{{'../Images/'+n.newsImage}}" alt="">
             </div>

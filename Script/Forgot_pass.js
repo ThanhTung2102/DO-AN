@@ -12,17 +12,17 @@ function validateForm()
             alert("Đăng nhập không hợp lệ")
         }
         else if (username[0]=='.' || username[0]=='@'){
-                alert('Mail không hợp lệ')
+                alert('Mail không hợp lệ') // email k đc bắt dầu bằng . hoặc @
             }
         for(let i =1; i<username.length;i++){
             if(username[i]=='@'&& username[i+1]=='@'){
-                alert('Mail không hợp lệ')
+                alert('Mail không hợp lệ') // email k có 2 @@ liên tiếp
             }
             else if(username[i]=='.'&&username[i+1]=='.'){
-                alert('Mail không hợp lệ')
+                alert('Mail không hợp lệ') // emal k có 2 .. liên tiếp
             }
             else if(username[username.length-1]=='.' || username[username.    length-1]=='@'){
-                alert('Mail không hợp lệ')
+                alert('Mail không hợp lệ') // k có @ hay . ở cuối
             }
         } 
         return;
